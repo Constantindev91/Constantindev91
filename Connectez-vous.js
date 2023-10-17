@@ -2,7 +2,7 @@ $('#submit').click((event) => {
     event.preventDefault();
 
     $.ajax({
-        url: 'Connectez-vous.php',
+        url: 'login.php',
         type: 'POST',
         dataType: 'json',
         data: {
