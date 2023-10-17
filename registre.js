@@ -2,7 +2,7 @@ $('#submit').click((event) => {
     event.preventDefault();
 
     $.ajax({
-        url: 'register.php',
+        url: 'registre.php',
         type: 'POST',
         dataType: 'json',
         data: {
@@ -13,7 +13,7 @@ $('#submit').click((event) => {
             pwd: $('#pwd').val()
         },
         success: (res) => {
-            res.success ? window.location.replace('login.html') : alert(res.error);
+            res.success ? window.location.replace('Connectez-vous.html') : alert(res.error);
         }
     });
 });
