@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(222, 176, 176);
+  }
+  
+  #inscription{
+      width:400px;
+      margin:0 auto;
+      margin-top:10%;
+  }
+  
+  form {
+      width:100%;
+      padding: 30px;
+      border: 2px solid #000000;
+      background: #fff;
+      box-shadow: 100px 5px 100 rgba(18, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  #inscription h1{
+      width: 38%;
+      margin: 0 auto;
+      padding-bottom: 10px;
+      animation: both;
+  }
+  
+  input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+      background-color:whitesmoke;
+      color: black;
+      padding: 15px 15px; 
+      margin: 10px 500px 560px 20px;
+      width: 30%;
+      margin-left: 542px;
+      margin-top: 10px;
+  }
+  
+  #a{
+      color: #0c6075;
+      background-color: #68c0d6;
+      mask-repeat:no-repeat;
+  }
+  
+  #inscrire {
+      border: 3px solid #000000;
+  }

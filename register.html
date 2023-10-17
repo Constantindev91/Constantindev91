@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="register.css" type="text/css">
+        <title>Inscription</title>
+    </head>
+
+    <body>
+        <div id="inscription">            
+            <h1>Inscription</h1>
+
+            <form method="POST" id="form">    
+                <label><b>Nom</b></label>
+                <input type="text" placeholder="Entrer votre nom" name="firstname" id="firstname" required>
+                <label><b>Prénom</b></label>
+                <input type="text" placeholder="Entrer votre prénom" name="lastname" id="lastname" required>
+                <br>
+                <label><b>Date de naissance</b></label>
+                <input type="date" name="birthdate" id="birthdate" required>
+                <br>
+                <br>
+                <label><b>E-mail</b></label>
+                <input type="email" placeholder="Entrer votre email" id="email" name="email" required>
+                <br>
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer votre mot de passe" name="pwd" id="pwd" required>
+                <br>    
+                </div> 
+                
+                <input type="submit" name="submit" value="S'inscrire" id="submit">
+            </form>
+        </div>
+            <script src="register.js"></script>
+    </body>
+</html>
