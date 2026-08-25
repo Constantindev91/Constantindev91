@@ -519,7 +519,7 @@
     "element": "Fire",
     "power": 75,
     "rarity": 3,
-    "description": "Un tir surpuissant qui embrase tout sur son passage jusqu'aux filets."
+    "description": "Un tir féroce qui submerge la défense adverse avant de foudroyer le gardien."
   },
   {
     "id": "fire_blast",
@@ -528,7 +528,7 @@
     "element": "Fire",
     "power": 77,
     "rarity": 2,
-    "description": "Une technique de tir dévastateur qui déstabilise le gardien au moment crucial."
+    "description": "Une frappe extraordinaire chargée d'énergie élémentaire, presque impossible à anticiper."
   },
   {
     "id": "maximum_fire",
@@ -537,7 +537,7 @@
     "element": "Fire",
     "power": 77,
     "rarity": 3,
-    "description": "Un tir surpuissant qui pulvérise tout sur son passage jusqu'aux filets."
+    "description": "Un tir légendaire qui traverse la défense adverse avant de foudroyer le gardien."
   },
   {
     "id": "inferno_shot",
@@ -546,7 +546,7 @@
     "element": "Fire",
     "power": 74,
     "rarity": 3,
-    "description": "Un tir surpuissant qui traverse tout sur son passage jusqu'aux filets."
+    "description": "Un tir surpuissant qui pulvérise tout sur son passage jusqu'aux filets."
   },
   {
     "id": "dark_flare",
@@ -555,7 +555,7 @@
     "element": "Fire",
     "power": 89,
     "rarity": 4,
-    "description": "Un tir surpuissant qui submerge tout sur son passage jusqu'aux filets."
+    "description": "Un tir extraordinaire qui submerge la défense adverse avant de foudroyer le gardien."
   },
   {
     "id": "triangle_z",
@@ -564,7 +564,7 @@
     "element": "Fire",
     "power": 91,
     "rarity": 5,
-    "description": "Une technique de tir dévastateur qui déstabilise le gardien au moment crucial."
+    "description": "Une frappe spectaculaire chargée d'énergie élémentaire, presque impossible à anticiper."
   },
   {
     "id": "big_bang",
@@ -573,7 +573,7 @@
     "element": "Wind",
     "power": 90,
     "rarity": 4,
-    "description": "Une technique de tir redoutable qui déstabilise le gardien au moment crucial."
+    "description": "Un tir surpuissant qui submerge tout sur son passage jusqu'aux filets."
   },
   {
     "id": "ryuusei_blade",
@@ -582,7 +582,7 @@
     "element": "Earth",
     "power": 89,
     "rarity": 4,
-    "description": "Une technique de tir spectaculaire qui déstabilise le gardien au moment crucial."
+    "description": "Un tir fantastique qui pulvérise la défense adverse avant de foudroyer le gardien."
   },
   {
     "id": "tenchi_no_hasha",
@@ -591,7 +591,7 @@
     "element": "Earth",
     "power": 90,
     "rarity": 5,
-    "description": "Un tir légendaire qui transperce la défense adverse avant de foudroyer le gardien."
+    "description": "Une technique de tir féroce qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "majin_pegasus_arrow",
@@ -600,7 +600,7 @@
     "element": "Fire",
     "power": 94,
     "rarity": 5,
-    "description": "Un tir surpuissant qui submerge tout sur son passage jusqu'aux filets."
+    "description": "Une technique de tir unique qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "blizzard_arrow",
@@ -609,7 +609,7 @@
     "element": "Wood",
     "power": 65,
     "rarity": 2,
-    "description": "Un tir surpuissant qui submerge tout sur son passage jusqu'aux filets."
+    "description": "Un tir légendaire qui transperce la défense adverse avant de foudroyer le gardien."
   },
   {
     "id": "hyousetsu_no_ken",
@@ -618,7 +618,7 @@
     "element": "Wood",
     "power": 87,
     "rarity": 4,
-    "description": "Un tir surpuissant qui balaie tout sur son passage jusqu'aux filets."
+    "description": "Une frappe féroce chargée d'énergie élémentaire, presque impossible à anticiper."
   },
   {
     "id": "kaen_musou",
@@ -627,7 +627,7 @@
     "element": "Fire",
     "power": 69,
     "rarity": 2,
-    "description": "Une frappe fulgurant chargée d'énergie élémentaire, presque impossible à anticiper."
+    "description": "Une technique de tir redoutable qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "raimei_blast",
@@ -636,7 +636,7 @@
     "element": "Wind",
     "power": 81,
     "rarity": 3,
-    "description": "Un tir dévastateur qui balaie la défense adverse avant de foudroyer le gardien."
+    "description": "Un tir surpuissant qui embrase tout sur son passage jusqu'aux filets."
   },
   {
     "id": "shippu_no_yaiba",
@@ -654,7 +654,7 @@
     "element": "Wood",
     "power": 61,
     "rarity": 1,
-    "description": "Une technique de tir féroce qui déstabilise le gardien au moment crucial."
+    "description": "Une frappe légendaire chargée d'énergie élémentaire, presque impossible à anticiper."
   },
   {
     "id": "tornado_spark",
@@ -663,7 +663,7 @@
     "element": "Wind",
     "power": 78,
     "rarity": 2,
-    "description": "Une technique de tir féroce qui déstabilise le gardien au moment crucial."
+    "description": "Une technique de tir légendaire qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "rock_crusher",
@@ -672,7 +672,7 @@
     "element": "Earth",
     "power": 58,
     "rarity": 1,
-    "description": "Une frappe fulgurant chargée d'énergie élémentaire, presque impossible à anticiper."
+    "description": "Un tir unique qui pulvérise la défense adverse avant de foudroyer le gardien."
   },
   {
     "id": "thunder_beat",
@@ -681,7 +681,7 @@
     "element": "Wind",
     "power": 67,
     "rarity": 2,
-    "description": "Une technique de tir dévastateur qui déstabilise le gardien au moment crucial."
+    "description": "Un tir surpuissant qui embrase tout sur son passage jusqu'aux filets."
   },
   {
     "id": "howling_cannon",
@@ -690,7 +690,7 @@
     "element": "Earth",
     "power": 88,
     "rarity": 4,
-    "description": "Une technique de tir redoutable qui déstabilise le gardien au moment crucial."
+    "description": "Une technique de tir unique qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "flame_geist",
@@ -699,7 +699,7 @@
     "element": "Fire",
     "power": 93,
     "rarity": 5,
-    "description": "Un tir impressionnant qui submerge la défense adverse avant de foudroyer le gardien."
+    "description": "Une technique de tir unique qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "zangetsu_axel",
@@ -708,7 +708,7 @@
     "element": "Earth",
     "power": 87,
     "rarity": 4,
-    "description": "Un tir surpuissant qui submerge tout sur son passage jusqu'aux filets."
+    "description": "Une technique de tir implacable qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "death_drop",
@@ -717,7 +717,7 @@
     "element": "Earth",
     "power": 80,
     "rarity": 3,
-    "description": "Une technique de tir spectaculaire qui déstabilise le gardien au moment crucial."
+    "description": "Un tir extraordinaire qui traverse la défense adverse avant de foudroyer le gardien."
   },
   {
     "id": "falcon_wing_shoot",
@@ -726,7 +726,7 @@
     "element": "Wind",
     "power": 80,
     "rarity": 3,
-    "description": "Un tir surpuissant qui submerge tout sur son passage jusqu'aux filets."
+    "description": "Une technique de tir redoutable qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "panther_feint_shot",
@@ -735,7 +735,7 @@
     "element": "Wood",
     "power": 74,
     "rarity": 2,
-    "description": "Un tir surpuissant qui embrase tout sur son passage jusqu'aux filets."
+    "description": "Une technique de tir unique qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "golden_spike",
@@ -744,7 +744,7 @@
     "element": "Earth",
     "power": 83,
     "rarity": 3,
-    "description": "Une frappe féroce chargée d'énergie élémentaire, presque impossible à anticiper."
+    "description": "Un tir surpuissant qui pulvérise tout sur son passage jusqu'aux filets."
   },
   {
     "id": "meteor_impact",
@@ -753,7 +753,7 @@
     "element": "Fire",
     "power": 84,
     "rarity": 4,
-    "description": "Un tir surpuissant qui submerge tout sur son passage jusqu'aux filets."
+    "description": "Une frappe extraordinaire chargée d'énergie élémentaire, presque impossible à anticiper."
   },
   {
     "id": "twin_boost",
@@ -762,7 +762,7 @@
     "element": "Wind",
     "power": 79,
     "rarity": 3,
-    "description": "Une technique de tir implacable qui déstabilise le gardien au moment crucial."
+    "description": "Un tir surpuissant qui balaie tout sur son passage jusqu'aux filets."
   },
   {
     "id": "perfect_tie",
@@ -771,7 +771,7 @@
     "element": "Fire",
     "power": 89,
     "rarity": 4,
-    "description": "Une technique de tir dévastateur qui déstabilise le gardien au moment crucial."
+    "description": "Un tir surpuissant qui balaie tout sur son passage jusqu'aux filets."
   },
   {
     "id": "bakunetsu_dynamite",
@@ -780,7 +780,7 @@
     "element": "Fire",
     "power": 74,
     "rarity": 3,
-    "description": "Un tir fulgurant qui submerge la défense adverse avant de foudroyer le gardien."
+    "description": "Un tir surpuissant qui submerge tout sur son passage jusqu'aux filets."
   },
   {
     "id": "explode_fang",
@@ -789,7 +789,7 @@
     "element": "Earth",
     "power": 68,
     "rarity": 2,
-    "description": "Une frappe fulgurant chargée d'énergie élémentaire, presque impossible à anticiper."
+    "description": "Un tir surpuissant qui embrase tout sur son passage jusqu'aux filets."
   },
   {
     "id": "kishin_shoot",
@@ -798,7 +798,7 @@
     "element": "Earth",
     "power": 82,
     "rarity": 4,
-    "description": "Une technique de tir spectaculaire qui déstabilise le gardien au moment crucial."
+    "description": "Une frappe fantastique chargée d'énergie élémentaire, presque impossible à anticiper."
   },
   {
     "id": "fenrir_fang",
@@ -807,7 +807,7 @@
     "element": "Wood",
     "power": 79,
     "rarity": 3,
-    "description": "Un tir fulgurant qui traverse la défense adverse avant de foudroyer le gardien."
+    "description": "Une frappe féroce chargée d'énergie élémentaire, presque impossible à anticiper."
   },
   {
     "id": "volcano_burst",
@@ -816,7 +816,7 @@
     "element": "Fire",
     "power": 64,
     "rarity": 2,
-    "description": "Un tir dévastateur qui submerge la défense adverse avant de foudroyer le gardien."
+    "description": "Un tir surpuissant qui submerge tout sur son passage jusqu'aux filets."
   },
   {
     "id": "grand_fire_tornado",
@@ -825,7 +825,7 @@
     "element": "Fire",
     "power": 95,
     "rarity": 5,
-    "description": "Une frappe impressionnant chargée d'énergie élémentaire, presque impossible à anticiper."
+    "description": "Une technique de tir féroce qui déstabilise le gardien au moment crucial."
   },
   {
     "id": "sidewinder",
@@ -834,7 +834,7 @@
     "element": "Wind",
     "power": 70,
     "rarity": 2,
-    "description": "Une feinte implacable qui trompe l'adversaire et ouvre un couloir vers le but."
+    "description": "Une technique de dribble redoutable, aussi élégante qu'efficace pour éliminer un adversaire."
   },
   {
     "id": "mist_screen",
@@ -843,7 +843,7 @@
     "element": "Wood",
     "power": 78,
     "rarity": 2,
-    "description": "Un dribble implacable qui laisse les défenseurs sur place en une fraction de seconde."
+    "description": "Un dribble redoutable qui laisse les défenseurs sur place en une fraction de seconde."
   },
   {
     "id": "snake_dribble",
@@ -852,7 +852,7 @@
     "element": "Earth",
     "power": 62,
     "rarity": 1,
-    "description": "Une technique de dribble fulgurant, aussi élégante qu'efficace pour éliminer un adversaire."
+    "description": "Un déplacement implacable qui rend le porteur du ballon presque insaisissable."
   },
   {
     "id": "panther_slip",
@@ -861,7 +861,7 @@
     "element": "Wood",
     "power": 73,
     "rarity": 2,
-    "description": "Une technique de dribble dévastateur, aussi élégante qu'efficace pour éliminer un adversaire."
+    "description": "Un dribble légendaire qui laisse les défenseurs sur place en une fraction de seconde."
   },
   {
     "id": "devil_step",
@@ -870,7 +870,7 @@
     "element": "Earth",
     "power": 90,
     "rarity": 4,
-    "description": "Une technique de dribble féroce, aussi élégante qu'efficace pour éliminer un adversaire."
+    "description": "Un déplacement spectaculaire qui rend le porteur du ballon presque insaisissable."
   },
   {
     "id": "shadow_step",
@@ -879,7 +879,7 @@
     "element": "Wind",
     "power": 76,
     "rarity": 3,
-    "description": "Un déplacement fulgurant qui rend le porteur du ballon presque insaisissable."
+    "description": "Un dribble légendaire qui laisse les défenseurs sur place en une fraction de seconde."
   },
   {
     "id": "wind_dash",
@@ -888,7 +888,7 @@
     "element": "Wind",
     "power": 55,
     "rarity": 1,
-    "description": "Un dribble légendaire qui laisse les défenseurs sur place en une fraction de seconde."
+    "description": "Un dribble redoutable qui laisse les défenseurs sur place en une fraction de seconde."
   },
   {
     "id": "rolling_fake",
@@ -897,7 +897,7 @@
     "element": "Wood",
     "power": 78,
     "rarity": 2,
-    "description": "Une technique de dribble impressionnant, aussi élégante qu'efficace pour éliminer un adversaire."
+    "description": "Un dribble extraordinaire qui laisse les défenseurs sur place en une fraction de seconde."
   },
   {
     "id": "quick_turn_delta",
@@ -906,7 +906,7 @@
     "element": "Earth",
     "power": 81,
     "rarity": 3,
-    "description": "Une feinte fulgurant qui trompe l'adversaire et ouvre un couloir vers le but."
+    "description": "Une feinte implacable qui trompe l'adversaire et ouvre un couloir vers le but."
   },
   {
     "id": "phoenix_step",
@@ -915,7 +915,7 @@
     "element": "Fire",
     "power": 84,
     "rarity": 3,
-    "description": "Un dribble implacable qui laisse les défenseurs sur place en une fraction de seconde."
+    "description": "Une technique de dribble spectaculaire, aussi élégante qu'efficace pour éliminer un adversaire."
   },
   {
     "id": "bakunetsu_dash",
@@ -924,7 +924,7 @@
     "element": "Fire",
     "power": 70,
     "rarity": 2,
-    "description": "Une technique de dribble spectaculaire, aussi élégante qu'efficace pour éliminer un adversaire."
+    "description": "Un dribble légendaire qui laisse les défenseurs sur place en une fraction de seconde."
   },
   {
     "id": "serpent_weave",
@@ -933,7 +933,7 @@
     "element": "Earth",
     "power": 82,
     "rarity": 3,
-    "description": "Une technique de dribble féroce, aussi élégante qu'efficace pour éliminer un adversaire."
+    "description": "Une technique de dribble unique, aussi élégante qu'efficace pour éliminer un adversaire."
   },
   {
     "id": "ghost_runner",
@@ -942,7 +942,7 @@
     "element": "Wind",
     "power": 91,
     "rarity": 4,
-    "description": "Une technique de dribble impressionnant, aussi élégante qu'efficace pour éliminer un adversaire."
+    "description": "Une technique de dribble légendaire, aussi élégante qu'efficace pour éliminer un adversaire."
   },
   {
     "id": "ice_slide_dribble",
@@ -951,7 +951,7 @@
     "element": "Wood",
     "power": 67,
     "rarity": 2,
-    "description": "Un dribble féroce qui laisse les défenseurs sur place en une fraction de seconde."
+    "description": "Une technique de dribble redoutable, aussi élégante qu'efficace pour éliminer un adversaire."
   },
   {
     "id": "field_master",
@@ -960,7 +960,7 @@
     "element": "Earth",
     "power": 91,
     "rarity": 4,
-    "description": "Un dribble fulgurant qui laisse les défenseurs sur place en une fraction de seconde."
+    "description": "Une technique de dribble fantastique, aussi élégante qu'efficace pour éliminer un adversaire."
   },
   {
     "id": "falcon_claw_dribble",
@@ -969,7 +969,7 @@
     "element": "Wind",
     "power": 78,
     "rarity": 3,
-    "description": "Un déplacement fulgurant qui rend le porteur du ballon presque insaisissable."
+    "description": "Une feinte féroce qui trompe l'adversaire et ouvre un couloir vers le but."
   },
   {
     "id": "genkai_toppa",
@@ -978,7 +978,7 @@
     "element": "Fire",
     "power": 91,
     "rarity": 5,
-    "description": "Un dribble dévastateur qui laisse les défenseurs sur place en une fraction de seconde."
+    "description": "Un dribble légendaire qui laisse les défenseurs sur place en une fraction de seconde."
   },
   {
     "id": "rondo_step",
@@ -987,7 +987,7 @@
     "element": "Wood",
     "power": 73,
     "rarity": 2,
-    "description": "Un déplacement spectaculaire qui rend le porteur du ballon presque insaisissable."
+    "description": "Un déplacement unique qui rend le porteur du ballon presque insaisissable."
   },
   {
     "id": "illusion_step",
@@ -996,7 +996,7 @@
     "element": "Earth",
     "power": 89,
     "rarity": 4,
-    "description": "Une technique de dribble implacable, aussi élégante qu'efficace pour éliminer un adversaire."
+    "description": "Une feinte fantastique qui trompe l'adversaire et ouvre un couloir vers le but."
   },
   {
     "id": "blitz_turn",
@@ -1005,7 +1005,7 @@
     "element": "Wind",
     "power": 73,
     "rarity": 2,
-    "description": "Une technique de dribble dévastateur, aussi élégante qu'efficace pour éliminer un adversaire."
+    "description": "Une feinte légendaire qui trompe l'adversaire et ouvre un couloir vers le but."
   },
   {
     "id": "dragon_weave",
@@ -1014,7 +1014,7 @@
     "element": "Earth",
     "power": 96,
     "rarity": 5,
-    "description": "Une feinte impressionnant qui trompe l'adversaire et ouvre un couloir vers le but."
+    "description": "Un dribble unique qui laisse les défenseurs sur place en une fraction de seconde."
   },
   {
     "id": "silent_phantom",
@@ -1023,7 +1023,7 @@
     "element": "Wind",
     "power": 74,
     "rarity": 3,
-    "description": "Un déplacement féroce qui rend le porteur du ballon presque insaisissable."
+    "description": "Une technique de dribble unique, aussi élégante qu'efficace pour éliminer un adversaire."
   },
   {
     "id": "hades_net",
@@ -1032,7 +1032,7 @@
     "element": "Earth",
     "power": 90,
     "rarity": 4,
-    "description": "Un tacle redoutable qui coupe net l'élan de l'attaquant adverse."
+    "description": "Une technique défensive unique qui verrouille la zone devant le but."
   },
   {
     "id": "perfect_barrier",
@@ -1041,7 +1041,7 @@
     "element": "Earth",
     "power": 81,
     "rarity": 3,
-    "description": "Une technique défensive redoutable qui verrouille la zone devant le but."
+    "description": "Une intervention unique qui repousse le ballon avec une force implacable."
   },
   {
     "id": "death_zone_press",
@@ -1050,7 +1050,7 @@
     "element": "Earth",
     "power": 69,
     "rarity": 2,
-    "description": "Un mur défensif impressionnant, capable d'arrêter les offensives les plus dangereuses."
+    "description": "Un tacle implacable qui coupe net l'élan de l'attaquant adverse."
   },
   {
     "id": "aurora_shield",
@@ -1059,7 +1059,7 @@
     "element": "Wood",
     "power": 81,
     "rarity": 3,
-    "description": "Une intervention impressionnant qui repousse le ballon avec une force implacable."
+    "description": "Une intervention unique qui repousse le ballon avec une force implacable."
   },
   {
     "id": "iron_guard",
@@ -1068,7 +1068,7 @@
     "element": "Earth",
     "power": 57,
     "rarity": 1,
-    "description": "Une technique défensive dévastateur qui verrouille la zone devant le but."
+    "description": "Un tacle légendaire qui coupe net l'élan de l'attaquant adverse."
   },
   {
     "id": "grand_fortress",
@@ -1077,7 +1077,7 @@
     "element": "Earth",
     "power": 90,
     "rarity": 4,
-    "description": "Une intervention impressionnant qui repousse le ballon avec une force implacable."
+    "description": "Un mur défensif extraordinaire, capable d'arrêter les offensives les plus dangereuses."
   },
   {
     "id": "titan_wall",
@@ -1086,7 +1086,7 @@
     "element": "Earth",
     "power": 75,
     "rarity": 3,
-    "description": "Une technique défensive fulgurant qui verrouille la zone devant le but."
+    "description": "Un tacle fantastique qui coupe net l'élan de l'attaquant adverse."
   },
   {
     "id": "bear_trap_block",
@@ -1095,7 +1095,7 @@
     "element": "Earth",
     "power": 69,
     "rarity": 2,
-    "description": "Un tacle légendaire qui coupe net l'élan de l'attaquant adverse."
+    "description": "Un tacle redoutable qui coupe net l'élan de l'attaquant adverse."
   },
   {
     "id": "storm_shield",
@@ -1104,7 +1104,7 @@
     "element": "Wind",
     "power": 71,
     "rarity": 2,
-    "description": "Une intervention implacable qui repousse le ballon avec une force implacable."
+    "description": "Un mur défensif extraordinaire, capable d'arrêter les offensives les plus dangereuses."
   },
   {
     "id": "volcanic_barrier",
@@ -1113,7 +1113,7 @@
     "element": "Fire",
     "power": 77,
     "rarity": 3,
-    "description": "Une technique défensive dévastateur qui verrouille la zone devant le but."
+    "description": "Une intervention unique qui repousse le ballon avec une force implacable."
   },
   {
     "id": "diamond_barrier",
@@ -1122,7 +1122,7 @@
     "element": "Wood",
     "power": 82,
     "rarity": 4,
-    "description": "Une technique défensive impressionnant qui verrouille la zone devant le but."
+    "description": "Une intervention redoutable qui repousse le ballon avec une force implacable."
   },
   {
     "id": "genbu_shield",
@@ -1131,7 +1131,7 @@
     "element": "Earth",
     "power": 92,
     "rarity": 5,
-    "description": "Une intervention dévastateur qui repousse le ballon avec une force implacable."
+    "description": "Une intervention spectaculaire qui repousse le ballon avec une force implacable."
   },
   {
     "id": "rock_fortress",
@@ -1140,7 +1140,7 @@
     "element": "Earth",
     "power": 72,
     "rarity": 2,
-    "description": "Une technique défensive redoutable qui verrouille la zone devant le but."
+    "description": "Une intervention légendaire qui repousse le ballon avec une force implacable."
   },
   {
     "id": "wolf_fang_block",
@@ -1149,7 +1149,7 @@
     "element": "Wood",
     "power": 75,
     "rarity": 2,
-    "description": "Un tacle fulgurant qui coupe net l'élan de l'attaquant adverse."
+    "description": "Une intervention féroce qui repousse le ballon avec une force implacable."
   },
   {
     "id": "silent_defense",
@@ -1158,7 +1158,7 @@
     "element": "Wind",
     "power": 57,
     "rarity": 1,
-    "description": "Un mur défensif légendaire, capable d'arrêter les offensives les plus dangereuses."
+    "description": "Un tacle féroce qui coupe net l'élan de l'attaquant adverse."
   },
   {
     "id": "gale_barrier",
@@ -1167,7 +1167,7 @@
     "element": "Wind",
     "power": 78,
     "rarity": 3,
-    "description": "Une technique défensive spectaculaire qui verrouille la zone devant le but."
+    "description": "Une intervention spectaculaire qui repousse le ballon avec une force implacable."
   },
   {
     "id": "absolute_zero_wall",
@@ -1176,7 +1176,7 @@
     "element": "Wood",
     "power": 91,
     "rarity": 4,
-    "description": "Une intervention fulgurant qui repousse le ballon avec une force implacable."
+    "description": "Une technique défensive extraordinaire qui verrouille la zone devant le but."
   },
   {
     "id": "emperor_penguin_no_3",
@@ -1185,7 +1185,7 @@
     "element": "Wood",
     "power": 76,
     "rarity": 3,
-    "description": "Une prise impressionnant spectaculaire qui sauve les buts au dernier instant."
+    "description": "Une technique de gardien fantastique, capable de dévier les tirs les plus surpuissants."
   },
   {
     "id": "majin_hand_second",
@@ -1194,7 +1194,7 @@
     "element": "Earth",
     "power": 91,
     "rarity": 5,
-    "description": "Une prise fulgurant spectaculaire qui sauve les buts au dernier instant."
+    "description": "Une prise implacable spectaculaire qui sauve les buts au dernier instant."
   },
   {
     "id": "fortress_catch",
@@ -1203,7 +1203,7 @@
     "element": "Earth",
     "power": 71,
     "rarity": 2,
-    "description": "Un arrêt légendaire qui repousse même les frappes les plus dévastatrices."
+    "description": "Une technique de gardien spectaculaire, capable de dévier les tirs les plus surpuissants."
   },
   {
     "id": "grand_fortress_catch",
@@ -1212,7 +1212,7 @@
     "element": "Earth",
     "power": 91,
     "rarity": 4,
-    "description": "Un arrêt légendaire qui repousse même les frappes les plus dévastatrices."
+    "description": "Une technique de gardien unique, capable de dévier les tirs les plus surpuissants."
   },
   {
     "id": "phoenix_catch",
@@ -1221,7 +1221,7 @@
     "element": "Fire",
     "power": 76,
     "rarity": 3,
-    "description": "Une parade redoutable qui permet au gardien de capter les tirs les plus puissants."
+    "description": "Une technique de gardien fantastique, capable de dévier les tirs les plus surpuissants."
   },
   {
     "id": "dragon_fist_catch",
@@ -1230,7 +1230,7 @@
     "element": "Earth",
     "power": 89,
     "rarity": 4,
-    "description": "Une technique de gardien implacable, capable de dévier les tirs les plus surpuissants."
+    "description": "Une technique de gardien légendaire, capable de dévier les tirs les plus surpuissants."
   },
   {
     "id": "meteor_catch",
@@ -1239,7 +1239,7 @@
     "element": "Fire",
     "power": 80,
     "rarity": 3,
-    "description": "Une prise implacable spectaculaire qui sauve les buts au dernier instant."
+    "description": "Un arrêt redoutable qui repousse même les frappes les plus dévastatrices."
   },
   {
     "id": "hawk_eye_catch",
@@ -1248,7 +1248,7 @@
     "element": "Wind",
     "power": 78,
     "rarity": 2,
-    "description": "Un arrêt féroce qui repousse même les frappes les plus dévastatrices."
+    "description": "Une prise fantastique spectaculaire qui sauve les buts au dernier instant."
   },
   {
     "id": "ice_wall_catch",
@@ -1257,7 +1257,7 @@
     "element": "Wood",
     "power": 66,
     "rarity": 2,
-    "description": "Un arrêt légendaire qui repousse même les frappes les plus dévastatrices."
+    "description": "Une technique de gardien spectaculaire, capable de dévier les tirs les plus surpuissants."
   },
   {
     "id": "thunder_grip",
@@ -1266,7 +1266,7 @@
     "element": "Wind",
     "power": 75,
     "rarity": 3,
-    "description": "Une technique de gardien dévastateur, capable de dévier les tirs les plus surpuissants."
+    "description": "Une parade spectaculaire qui permet au gardien de capter les tirs les plus puissants."
   },
   {
     "id": "genbu_catch",
@@ -1275,7 +1275,7 @@
     "element": "Earth",
     "power": 86,
     "rarity": 4,
-    "description": "Une parade fulgurant qui permet au gardien de capter les tirs les plus puissants."
+    "description": "Une technique de gardien fantastique, capable de dévier les tirs les plus surpuissants."
   },
   {
     "id": "titan_grip",
@@ -1284,7 +1284,7 @@
     "element": "Earth",
     "power": 56,
     "rarity": 1,
-    "description": "Une prise implacable spectaculaire qui sauve les buts au dernier instant."
+    "description": "Une parade fantastique qui permet au gardien de capter les tirs les plus puissants."
   },
   {
     "id": "falcon_dive",
@@ -1293,7 +1293,7 @@
     "element": "Wind",
     "power": 81,
     "rarity": 3,
-    "description": "Une technique de gardien fulgurant, capable de dévier les tirs les plus surpuissants."
+    "description": "Une technique de gardien féroce, capable de dévier les tirs les plus surpuissants."
   },
   {
     "id": "absolute_catch",
@@ -1302,7 +1302,7 @@
     "element": "Wood",
     "power": 91,
     "rarity": 5,
-    "description": "Une technique de gardien fulgurant, capable de dévier les tirs les plus surpuissants."
+    "description": "Une parade légendaire qui permet au gardien de capter les tirs les plus puissants."
   },
   {
     "id": "guardian_angel_catch",
@@ -1311,7 +1311,7 @@
     "element": "Wood",
     "power": 72,
     "rarity": 2,
-    "description": "Un arrêt légendaire qui repousse même les frappes les plus dévastatrices."
+    "description": "Une technique de gardien extraordinaire, capable de dévier les tirs les plus surpuissants."
   },
   {
     "id": "shadow_grip_catch",
@@ -1320,6 +1320,6 @@
     "element": "Wind",
     "power": 57,
     "rarity": 1,
-    "description": "Un arrêt redoutable qui repousse même les frappes les plus dévastatrices."
+    "description": "Un arrêt féroce qui repousse même les frappes les plus dévastatrices."
   }
 ]

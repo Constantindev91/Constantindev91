@@ -16,7 +16,8 @@
       "technique": 87
     },
     "signature_technique": "majin_the_hand",
-    "flavor": "Le capitaine passionné de Raimon, dont l'amour du football n'a d'égal que la puissance de ses parades."
+    "flavor": "Le capitaine passionné de Raimon, dont l'amour du football n'a d'égal que la puissance de ses parades.",
+    "base_price": 9960
   },
   {
     "id": "gouenji_shuuya",
@@ -35,7 +36,8 @@
       "technique": 98
     },
     "signature_technique": "bakunetsu_storm",
-    "flavor": "Un attaquant d'exception dont le tir surpuissant peut littéralement enflammer le ballon."
+    "flavor": "Un attaquant d'exception dont le tir surpuissant peut littéralement enflammer le ballon.",
+    "base_price": 9360
   },
   {
     "id": "kidou_yuuto",
@@ -54,7 +56,8 @@
       "technique": 99
     },
     "signature_technique": "kaiser_phoenix",
-    "flavor": "Un stratège aux lunettes emblématiques, capable de lire le jeu plusieurs coups à l'avance."
+    "flavor": "Un stratège aux lunettes emblématiques, capable de lire le jeu plusieurs coups à l'avance.",
+    "base_price": 9440
   },
   {
     "id": "fubuki_shirou",
@@ -73,7 +76,8 @@
       "technique": 88
     },
     "signature_technique": "eternal_blizzard",
-    "flavor": "Un attaquant venu du nord, aussi calme que glacial dans ses frappes décisives."
+    "flavor": "Un attaquant venu du nord, aussi calme que glacial dans ses frappes décisives.",
+    "base_price": 9320
   },
   {
     "id": "kazemaru_ichirouta",
@@ -92,7 +96,8 @@
       "technique": 84
     },
     "signature_technique": "zero_wind",
-    "flavor": "Le sprinteur de Raimon, si rapide que ses adversaires le voient à peine passer."
+    "flavor": "Le sprinteur de Raimon, si rapide que ses adversaires le voient à peine passer.",
+    "base_price": 5500
   },
   {
     "id": "kabeyama_heigorou",
@@ -111,7 +116,8 @@
       "technique": 56
     },
     "signature_technique": "iron_wall",
-    "flavor": "Un roc humain qui préfère encaisser les chocs plutôt que de reculer d'un centimètre."
+    "flavor": "Un roc humain qui préfère encaisser les chocs plutôt que de reculer d'un centimètre.",
+    "base_price": 1580
   },
   {
     "id": "kageno_jin",
@@ -130,7 +136,8 @@
       "technique": 65
     },
     "signature_technique": "phantom_dribble",
-    "flavor": "Un joueur discret mais fiable, toujours prêt à soutenir ses coéquipiers."
+    "flavor": "Un joueur discret mais fiable, toujours prêt à soutenir ses coéquipiers.",
+    "base_price": 1720
   },
   {
     "id": "shishido_sakichi",
@@ -149,7 +156,8 @@
       "technique": 56
     },
     "signature_technique": "bear_charge",
-    "flavor": "Un défenseur costaud qui impose le respect par sa seule carrure."
+    "flavor": "Un défenseur costaud qui impose le respect par sa seule carrure.",
+    "base_price": 1580
   },
   {
     "id": "kurimatsu_teppei",
@@ -168,7 +176,8 @@
       "technique": 48
     },
     "signature_technique": "basic_catch",
-    "flavor": "Un gardien remplaçant courageux, toujours prêt à se jeter sur le ballon."
+    "flavor": "Un gardien remplaçant courageux, toujours prêt à se jeter sur le ballon.",
+    "base_price": 1000
   },
   {
     "id": "shourinji_ayumu",
@@ -187,7 +196,8 @@
       "technique": 58
     },
     "signature_technique": "gale_spin",
-    "flavor": "Un joueur agile qui compense son manque de puissance par sa vivacité."
+    "flavor": "Un joueur agile qui compense son manque de puissance par sa vivacité.",
+    "base_price": 1160
   },
   {
     "id": "someoka_ryuugo",
@@ -206,7 +216,8 @@
       "technique": 77
     },
     "signature_technique": "wolf_legend",
-    "flavor": "Un attaquant fougueux dont le tempérament de feu déborde parfois sur le terrain."
+    "flavor": "Un attaquant fougueux dont le tempérament de feu déborde parfois sur le terrain.",
+    "base_price": 3080
   },
   {
     "id": "domon_asuka",
@@ -225,7 +236,8 @@
       "technique": 49
     },
     "signature_technique": "killer_slide",
-    "flavor": "Un défenseur loyal, prêt à tout sacrifier pour protéger ses buts."
+    "flavor": "Un défenseur loyal, prêt à tout sacrifier pour protéger ses buts.",
+    "base_price": 1640
   },
   {
     "id": "handa_shinichi",
@@ -244,7 +256,8 @@
       "technique": 52
     },
     "signature_technique": "cyclone_step",
-    "flavor": "Un milieu de terrain modeste mais toujours volontaire à l'entraînement."
+    "flavor": "Un milieu de terrain modeste mais toujours volontaire à l'entraînement.",
+    "base_price": 1040
   },
   {
     "id": "kino_aki",
@@ -263,7 +276,8 @@
       "technique": 61
     },
     "signature_technique": "byakuya_no_hime",
-    "flavor": "Une joueuse élégante dont les passes précises orchestrent le jeu de Raimon."
+    "flavor": "Une joueuse élégante dont les passes précises orchestrent le jeu de Raimon.",
+    "base_price": 1640
   },
   {
     "id": "otonashi_haruna",
@@ -282,7 +296,8 @@
       "technique": 52
     },
     "signature_technique": "shinkuu_kyuu",
-    "flavor": "La manageuse dévouée de Raimon, qui prête parfois main forte sur le terrain."
+    "flavor": "La manageuse dévouée de Raimon, qui prête parfois main forte sur le terrain.",
+    "base_price": 1040
   },
   {
     "id": "hiroto_kiyama",
@@ -301,7 +316,8 @@
       "technique": 85
     },
     "signature_technique": "mugen_no_kanata",
-    "flavor": "Un ancien génie d'Aliea Gakuen devenu un attaquant loyal et redoutable pour Raimon."
+    "flavor": "Un ancien génie d'Aliea Gakuen devenu un attaquant loyal et redoutable pour Raimon.",
+    "base_price": 5460
   },
   {
     "id": "midorikawa_ryuuji",
@@ -320,7 +336,8 @@
       "technique": 64
     },
     "signature_technique": "kaleidoscope",
-    "flavor": "Un ailier créatif dont les dribbles déroutent la défense adverse."
+    "flavor": "Un ailier créatif dont les dribbles déroutent la défense adverse.",
+    "base_price": 3040
   },
   {
     "id": "fudou_akio",
@@ -339,7 +356,8 @@
       "technique": 78
     },
     "signature_technique": "illusion_ball",
-    "flavor": "Un tacticien retors dont les dribbles hypnotiques trompent l'oeil de tout défenseur."
+    "flavor": "Un tacticien retors dont les dribbles hypnotiques trompent l'oeil de tout défenseur.",
+    "base_price": 5420
   },
   {
     "id": "sakuma_jirou",
@@ -358,7 +376,8 @@
       "technique": 62
     },
     "signature_technique": "bakunetsu_tackle",
-    "flavor": "Un défenseur au regard perçant caché derrière un bandeau légendaire."
+    "flavor": "Un défenseur au regard perçant caché derrière un bandeau légendaire.",
+    "base_price": 2920
   },
   {
     "id": "genda_koujirou",
@@ -377,7 +396,8 @@
       "technique": 88
     },
     "signature_technique": "the_hand",
-    "flavor": "Le gardien inébranlable de Teikoku, dont la présence seule dissuade les tirs faibles."
+    "flavor": "Le gardien inébranlable de Teikoku, dont la présence seule dissuade les tirs faibles.",
+    "base_price": 5520
   },
   {
     "id": "kidou_ep2",
@@ -396,7 +416,8 @@
       "technique": 85
     },
     "signature_technique": "kaiser_phoenix",
-    "flavor": "Le capitaine implacable de Teikoku avant sa rédemption à Raimon."
+    "flavor": "Le capitaine implacable de Teikoku avant sa rédemption à Raimon.",
+    "base_price": 5480
   },
   {
     "id": "touramaru_utsunomiya",
@@ -415,7 +436,8 @@
       "technique": 69
     },
     "signature_technique": "dragon_crash",
-    "flavor": "Un jeune prodige au tir surpuissant, digne héritier de la fureur du dragon."
+    "flavor": "Un jeune prodige au tir surpuissant, digne héritier de la fureur du dragon.",
+    "base_price": 2920
   },
   {
     "id": "tsunami_jousuke",
@@ -434,7 +456,8 @@
       "technique": 68
     },
     "signature_technique": "ice_ground",
-    "flavor": "Un surfeur passionné dont l'énergie débordante électrise chaque match."
+    "flavor": "Un surfeur passionné dont l'énergie débordante électrise chaque match.",
+    "base_price": 2960
   },
   {
     "id": "tachimukai_yuuki",
@@ -453,7 +476,8 @@
       "technique": 54
     },
     "signature_technique": "fist_of_justice",
-    "flavor": "Un jeune gardien travailleur qui a forgé sa technique à force de persévérance."
+    "flavor": "Un jeune gardien travailleur qui a forgé sa technique à force de persévérance.",
+    "base_price": 1520
   },
   {
     "id": "ichinose_kazuya",
@@ -472,7 +496,8 @@
       "technique": 78
     },
     "signature_technique": "bakunetsu_screw",
-    "flavor": "Un ancien capitaine de Raimon devenu un pilier discret de Teikoku."
+    "flavor": "Un ancien capitaine de Raimon devenu un pilier discret de Teikoku.",
+    "base_price": 3120
   },
   {
     "id": "kabeyama_reserve",
@@ -491,7 +516,8 @@
       "technique": 50
     },
     "signature_technique": "kazan_no_hoou",
-    "flavor": "Un débutant plein d'ambition qui rêve d'égaler les grands attaquants."
+    "flavor": "Un débutant plein d'ambition qui rêve d'égaler les grands attaquants.",
+    "base_price": 1000
   },
   {
     "id": "hiroto_royal",
@@ -510,7 +536,8 @@
       "technique": 76
     },
     "signature_technique": "mugen_no_kanata",
-    "flavor": "Le capitaine élégant de la Royal Academy, formé aux plus hautes exigences britanniques."
+    "flavor": "Le capitaine élégant de la Royal Academy, formé aux plus hautes exigences britanniques.",
+    "base_price": 5500
   },
   {
     "id": "fideo_ardena",
@@ -529,7 +556,8 @@
       "technique": 78
     },
     "signature_technique": "kaleidoscope",
-    "flavor": "Un milieu italien au style artistique, dont chaque passe ressemble à une oeuvre d'art."
+    "flavor": "Un milieu italien au style artistique, dont chaque passe ressemble à une oeuvre d'art.",
+    "base_price": 5420
   },
   {
     "id": "edgar_valtinas",
@@ -548,7 +576,8 @@
       "technique": 77
     },
     "signature_technique": "gaia_wall",
-    "flavor": "Un défenseur au sang-froid royal, aussi rigide qu'une muraille de pierre."
+    "flavor": "Un défenseur au sang-froid royal, aussi rigide qu'une muraille de pierre.",
+    "base_price": 3140
   },
   {
     "id": "gazelle_suzuno",
@@ -567,7 +596,8 @@
       "technique": 87
     },
     "signature_technique": "ice_ground",
-    "flavor": "Le rival de toujours de Fubuki, aussi froid et tranchant que la glace elle-même."
+    "flavor": "Le rival de toujours de Fubuki, aussi froid et tranchant que la glace elle-même.",
+    "base_price": 5500
   },
   {
     "id": "nagumo_haruya",
@@ -586,7 +616,8 @@
       "technique": 85
     },
     "signature_technique": "kazan_no_hoou",
-    "flavor": "Un attaquant impulsif animé par une rage ardente qui consume tout sur son passage."
+    "flavor": "Un attaquant impulsif animé par une rage ardente qui consume tout sur son passage.",
+    "base_price": 5460
   },
   {
     "id": "hiroto_aliea",
@@ -605,7 +636,8 @@
       "technique": 90
     },
     "signature_technique": "genesis_destroyer",
-    "flavor": "Sous les couleurs de Genesis, un joueur au potentiel extraterrestre effrayant."
+    "flavor": "Sous les couleurs de Genesis, un joueur au potentiel extraterrestre effrayant.",
+    "base_price": 5560
   },
   {
     "id": "reize",
@@ -624,7 +656,8 @@
       "technique": 79
     },
     "signature_technique": "kaleidoscope",
-    "flavor": "Recruté par Genesis, il n'a pourtant jamais oublié son amour sincère du ballon rond."
+    "flavor": "Recruté par Genesis, il n'a pourtant jamais oublié son amour sincère du ballon rond.",
+    "base_price": 3120
   },
   {
     "id": "hitomiko_epsilon",
@@ -643,7 +676,8 @@
       "technique": 65
     },
     "signature_technique": "dark_mist",
-    "flavor": "Une joueuse froide et calculatrice, à l'image de son équipe méthodique."
+    "flavor": "Une joueuse froide et calculatrice, à l'image de son équipe méthodique.",
+    "base_price": 1720
   },
   {
     "id": "gemini_ace",
@@ -662,7 +696,8 @@
       "technique": 67
     },
     "signature_technique": "dark_lightning",
-    "flavor": "Un joueur discipliné formé dans le système impitoyable de Gemini Storm."
+    "flavor": "Un joueur discipliné formé dans le système impitoyable de Gemini Storm.",
+    "base_price": 2900
   },
   {
     "id": "prominence_striker",
@@ -681,7 +716,8 @@
       "technique": 58
     },
     "signature_technique": "bakunetsu_bakushinsei",
-    "flavor": "Un jeune attaquant de Prominence, embrasé par l'ambition de dominer le tournoi."
+    "flavor": "Un jeune attaquant de Prominence, embrasé par l'ambition de dominer le tournoi.",
+    "base_price": 1560
   },
   {
     "id": "hitomiko_kira",
@@ -700,7 +736,8 @@
       "technique": 67
     },
     "signature_technique": "dark_mist",
-    "flavor": "L'entraîneuse froide et redoutable de l'équipe Zeus, formée à l'ancienne école."
+    "flavor": "L'entraîneuse froide et redoutable de l'équipe Zeus, formée à l'ancienne école.",
+    "base_price": 2900
   },
   {
     "id": "atsuishi_shigeto",
@@ -719,7 +756,8 @@
       "technique": 59
     },
     "signature_technique": "kong_gate",
-    "flavor": "Un gardien massif de Zeus dont les parades semblent défier la logique."
+    "flavor": "Un gardien massif de Zeus dont les parades semblent défier la logique.",
+    "base_price": 3020
   },
   {
     "id": "kiyama_hiroto_ij",
@@ -738,7 +776,8 @@
       "technique": 87
     },
     "signature_technique": "mugen_no_kanata",
-    "flavor": "Sous le maillot national, un attaquant devenu la pierre angulaire de l'attaque japonaise."
+    "flavor": "Sous le maillot national, un attaquant devenu la pierre angulaire de l'attaque japonaise.",
+    "base_price": 5500
   },
   {
     "id": "gouenji_ij",
@@ -757,7 +796,8 @@
       "technique": 75
     },
     "signature_technique": "bakunetsu_storm",
-    "flavor": "L'ace incontesté de l'équipe nationale, dont la seule présence change le cours d'un match."
+    "flavor": "L'ace incontesté de l'équipe nationale, dont la seule présence change le cours d'un match.",
+    "base_price": 5560
   },
   {
     "id": "kidou_ij",
@@ -776,7 +816,8 @@
       "technique": 90
     },
     "signature_technique": "kaiser_phoenix",
-    "flavor": "Capitaine du Japon, il orchestre chaque attaque avec une intelligence tactique redoutable."
+    "flavor": "Capitaine du Japon, il orchestre chaque attaque avec une intelligence tactique redoutable.",
+    "base_price": 5580
   },
   {
     "id": "kabeyama_ij",
@@ -795,7 +836,8 @@
       "technique": 76
     },
     "signature_technique": "gaia_wall",
-    "flavor": "Le rempart massif de l'équipe nationale, aussi imposant que rassurant."
+    "flavor": "Le rempart massif de l'équipe nationale, aussi imposant que rassurant.",
+    "base_price": 3120
   },
   {
     "id": "matsukaze_tenma",
@@ -814,7 +856,8 @@
       "technique": 99
     },
     "signature_technique": "god_break",
-    "flavor": "Le nouveau capitaine de Raimon, dont le sourire et la détermination inspirent toute l'équipe."
+    "flavor": "Le nouveau capitaine de Raimon, dont le sourire et la détermination inspirent toute l'équipe.",
+    "base_price": 9460
   },
   {
     "id": "shindou_takuto",
@@ -833,7 +876,8 @@
       "technique": 99
     },
     "signature_technique": "kaleidoscope",
-    "flavor": "Le stratège au piano, dont chaque passe résonne comme une mélodie parfaite."
+    "flavor": "Le stratège au piano, dont chaque passe résonne comme une mélodie parfaite.",
+    "base_price": 9420
   },
   {
     "id": "kirino_ranmaru",
@@ -852,7 +896,8 @@
       "technique": 80
     },
     "signature_technique": "odin_sword",
-    "flavor": "Un défenseur élégant et technique, aussi doué en attaque qu'en défense."
+    "flavor": "Un défenseur élégant et technique, aussi doué en attaque qu'en défense.",
+    "base_price": 5420
   },
   {
     "id": "tsurugi_kyousuke",
@@ -871,7 +916,8 @@
       "technique": 99
     },
     "signature_technique": "ittouryoudan",
-    "flavor": "Un attaquant solitaire au talent brut, capable de fendre les défenses en deux."
+    "flavor": "Un attaquant solitaire au talent brut, capable de fendre les défenses en deux.",
+    "base_price": 9400
   },
   {
     "id": "kariya_masaki",
@@ -890,7 +936,8 @@
       "technique": 66
     },
     "signature_technique": "odin_sword",
-    "flavor": "Un joueur espiègle et rapide, aussi malicieux sur le terrain qu'en dehors."
+    "flavor": "Un joueur espiègle et rapide, aussi malicieux sur le terrain qu'en dehors.",
+    "base_price": 2920
   },
   {
     "id": "kurama_norihito",
@@ -909,7 +956,8 @@
       "technique": 50
     },
     "signature_technique": "gale_spin",
-    "flavor": "Un défenseur méfiant qui a appris à faire confiance à ses coéquipiers avec le temps."
+    "flavor": "Un défenseur méfiant qui a appris à faire confiance à ses coéquipiers avec le temps.",
+    "base_price": 1600
   },
   {
     "id": "hayami_tsurugi",
@@ -928,7 +976,8 @@
       "technique": 55
     },
     "signature_technique": "cyclone_step",
-    "flavor": "Un défenseur rigoureux qui accorde une grande importance à la discipline tactique."
+    "flavor": "Un défenseur rigoureux qui accorde une grande importance à la discipline tactique.",
+    "base_price": 1560
   },
   {
     "id": "nishiki_ryouma",
@@ -947,7 +996,8 @@
       "technique": 59
     },
     "signature_technique": "phantom_dribble",
-    "flavor": "Un joueur agile aux techniques de rue, imprévisible balle au pied."
+    "flavor": "Un joueur agile aux techniques de rue, imprévisible balle au pied.",
+    "base_price": 1600
   },
   {
     "id": "shinsuke_kariya_gk",
@@ -966,7 +1016,8 @@
       "technique": 60
     },
     "signature_technique": "gigantic_wind_catch",
-    "flavor": "Un gardien prometteur, encore en quête de la parade parfaite."
+    "flavor": "Un gardien prometteur, encore en quête de la parade parfaite.",
+    "base_price": 2960
   },
   {
     "id": "kageyama_hikaru",
@@ -985,7 +1036,8 @@
       "technique": 64
     },
     "signature_technique": "dark_mist",
-    "flavor": "Un joueur formé sous la pression écrasante du Secteur V."
+    "flavor": "Un joueur formé sous la pression écrasante du Secteur V.",
+    "base_price": 1700
   },
   {
     "id": "aoyama_shunsuke",
@@ -1004,7 +1056,8 @@
       "technique": 45
     },
     "signature_technique": "shippuu_dash_shoot",
-    "flavor": "Un joueur enthousiaste, encore loin du niveau des titulaires mais toujours motivé."
+    "flavor": "Un joueur enthousiaste, encore loin du niveau des titulaires mais toujours motivé.",
+    "base_price": 980
   },
   {
     "id": "shinsei_manager",
@@ -1023,7 +1076,8 @@
       "technique": 47
     },
     "signature_technique": "shinkuu_kyuu",
-    "flavor": "La manageuse déterminée de Raimon, aussi précieuse hors du terrain que sur le banc."
+    "flavor": "La manageuse déterminée de Raimon, aussi précieuse hors du terrain que sur le banc.",
+    "base_price": 940
   },
   {
     "id": "kirino_early",
@@ -1042,7 +1096,8 @@
       "technique": 49
     },
     "signature_technique": "byakuya_no_hime",
-    "flavor": "Avant sa gloire, un jeune défenseur encore hésitant mais déjà technique."
+    "flavor": "Avant sa gloire, un jeune défenseur encore hésitant mais déjà technique.",
+    "base_price": 1640
   },
   {
     "id": "shindou_seidouzan",
@@ -1061,7 +1116,8 @@
       "technique": 52
     },
     "signature_technique": "iron_wall",
-    "flavor": "Le capitaine inflexible de Seidouzan, formé à une discipline martiale stricte."
+    "flavor": "Le capitaine inflexible de Seidouzan, formé à une discipline martiale stricte.",
+    "base_price": 1500
   },
   {
     "id": "kidoukan_ace",
@@ -1080,7 +1136,8 @@
       "technique": 79
     },
     "signature_technique": "dark_lightning",
-    "flavor": "L'as de Kidoukan, réputé pour son sens tactique aiguisé."
+    "flavor": "L'as de Kidoukan, réputé pour son sens tactique aiguisé.",
+    "base_price": 3140
   },
   {
     "id": "dragon_link_ace",
@@ -1099,7 +1156,8 @@
       "technique": 81
     },
     "signature_technique": "dragon_crash",
-    "flavor": "Le capitaine charismatique de Dragon Link, aussi fier que redoutable."
+    "flavor": "Le capitaine charismatique de Dragon Link, aussi fier que redoutable.",
+    "base_price": 3160
   },
   {
     "id": "white_knight_gk",
@@ -1118,7 +1176,8 @@
       "technique": 62
     },
     "signature_technique": "emperor_penguin_catch",
-    "flavor": "Le gardien loyal des White Knights, fidèle à son code d'honneur chevaleresque."
+    "flavor": "Le gardien loyal des White Knights, fidèle à son code d'honneur chevaleresque.",
+    "base_price": 1640
   },
   {
     "id": "arakumo_striker",
@@ -1137,7 +1196,8 @@
       "technique": 61
     },
     "signature_technique": "wolf_legend",
-    "flavor": "Un attaquant discret d'Arakumo, souvent sous-estimé par ses adversaires."
+    "flavor": "Un attaquant discret d'Arakumo, souvent sous-estimé par ses adversaires.",
+    "base_price": 1620
   },
   {
     "id": "shin_teikoku_ace",
@@ -1156,7 +1216,8 @@
       "technique": 81
     },
     "signature_technique": "illusion_ball",
-    "flavor": "Le général tacticien du renouveau de Teikoku, héritier d'une longue tradition victorieuse."
+    "flavor": "Le général tacticien du renouveau de Teikoku, héritier d'une longue tradition victorieuse.",
+    "base_price": 3180
   },
   {
     "id": "fifth_sector_gk",
@@ -1175,7 +1236,8 @@
       "technique": 57
     },
     "signature_technique": "guardian_stone",
-    "flavor": "Un gardien solide, produit du système d'entraînement rigide du Secteur V."
+    "flavor": "Un gardien solide, produit du système d'entraînement rigide du Secteur V.",
+    "base_price": 1560
   },
   {
     "id": "tenma_cs",
@@ -1194,7 +1256,8 @@
       "technique": 86
     },
     "signature_technique": "god_break",
-    "flavor": "Voyageant à travers le temps, Tenma continue de porter l'esprit de Raimon envers et contre tout."
+    "flavor": "Voyageant à travers le temps, Tenma continue de porter l'esprit de Raimon envers et contre tout.",
+    "base_price": 5500
   },
   {
     "id": "tsurugi_cs",
@@ -1213,7 +1276,8 @@
       "technique": 93
     },
     "signature_technique": "ittouryoudan",
-    "flavor": "Confronté à son propre passé, Tsurugi affine encore la puissance de sa frappe légendaire."
+    "flavor": "Confronté à son propre passé, Tsurugi affine encore la puissance de sa frappe légendaire.",
+    "base_price": 5620
   },
   {
     "id": "kiyama_hakuryuu",
@@ -1232,7 +1296,8 @@
       "technique": 90
     },
     "signature_technique": "mugen_no_kanata",
-    "flavor": "Un agent mystérieux d'El Dorado, dont les intentions restent longtemps voilées."
+    "flavor": "Un agent mystérieux d'El Dorado, dont les intentions restent longtemps voilées.",
+    "base_price": 5580
   },
   {
     "id": "beta_el_dorado",
@@ -1251,7 +1316,8 @@
       "technique": 64
     },
     "signature_technique": "dark_lightning",
-    "flavor": "Un membre discipliné d'El Dorado, dévoué corps et âme à sa mission."
+    "flavor": "Un membre discipliné d'El Dorado, dévoué corps et âme à sa mission.",
+    "base_price": 2880
   },
   {
     "id": "gamma_el_dorado",
@@ -1270,7 +1336,8 @@
       "technique": 76
     },
     "signature_technique": "kazan_no_hoou",
-    "flavor": "Un attaquant impitoyable d'El Dorado, entraîné à ne jamais montrer d'émotion."
+    "flavor": "Un attaquant impitoyable d'El Dorado, entraîné à ne jamais montrer d'émotion.",
+    "base_price": 3060
   },
   {
     "id": "protocol_omega",
@@ -1289,7 +1356,8 @@
       "technique": 77
     },
     "signature_technique": "genesis_destroyer",
-    "flavor": "Le fer de lance de Protocol Omega, redouté pour sa puissance surhumaine."
+    "flavor": "Le fer de lance de Protocol Omega, redouté pour sa puissance surhumaine.",
+    "base_price": 5460
   },
   {
     "id": "kirino_cs",
@@ -1308,7 +1376,8 @@
       "technique": 87
     },
     "signature_technique": "odin_sword",
-    "flavor": "Dans le tumulte des voyages temporels, Kirino reste le pilier fiable de la défense."
+    "flavor": "Dans le tumulte des voyages temporels, Kirino reste le pilier fiable de la défense.",
+    "base_price": 5560
   },
   {
     "id": "shinsuke_cs",
@@ -1327,7 +1396,8 @@
       "technique": 73
     },
     "signature_technique": "phantom_dribble",
-    "flavor": "Kariya continue de semer la confusion chez ses adversaires, même à travers les âges."
+    "flavor": "Kariya continue de semer la confusion chez ses adversaires, même à travers les âges.",
+    "base_price": 3000
   },
   {
     "id": "hakuren_cs",
@@ -1346,7 +1416,8 @@
       "technique": 62
     },
     "signature_technique": "kaleidoscope",
-    "flavor": "Un agent secondaire d'El Dorado, formé pour infiltrer les équipes adverses."
+    "flavor": "Un agent secondaire d'El Dorado, formé pour infiltrer les équipes adverses.",
+    "base_price": 1660
   },
   {
     "id": "tenma_galaxy",
@@ -1365,7 +1436,8 @@
       "technique": 81
     },
     "signature_technique": "god_break",
-    "flavor": "Face à une menace venue de l'espace, Tenma rassemble la Terre entière derrière son ballon."
+    "flavor": "Face à une menace venue de l'espace, Tenma rassemble la Terre entière derrière son ballon.",
+    "base_price": 5400
   },
   {
     "id": "shindou_galaxy",
@@ -1384,7 +1456,8 @@
       "technique": 82
     },
     "signature_technique": "kaleidoscope",
-    "flavor": "Le stratège de toujours, désormais à la tête d'une sélection mondiale inédite."
+    "flavor": "Le stratège de toujours, désormais à la tête d'une sélection mondiale inédite.",
+    "base_price": 5420
   },
   {
     "id": "kirino_galaxy",
@@ -1403,7 +1476,8 @@
       "technique": 82
     },
     "signature_technique": "odin_sword",
-    "flavor": "Un défenseur devenu pilier incontournable de l'équipe qui représente toute la planète."
+    "flavor": "Un défenseur devenu pilier incontournable de l'équipe qui représente toute la planète.",
+    "base_price": 5460
   },
   {
     "id": "kirika_hera",
@@ -1422,7 +1496,8 @@
       "technique": 86
     },
     "signature_technique": "hurricane_shoot",
-    "flavor": "Une attaquante venue d'ailleurs, dont le style de jeu défie toute logique terrestre."
+    "flavor": "Une attaquante venue d'ailleurs, dont le style de jeu défie toute logique terrestre.",
+    "base_price": 5480
   },
   {
     "id": "sein_shinsei",
@@ -1441,7 +1516,8 @@
       "technique": 76
     },
     "signature_technique": "dark_mist",
-    "flavor": "Un joueur énigmatique de Big Waves, aux origines mystérieuses."
+    "flavor": "Un joueur énigmatique de Big Waves, aux origines mystérieuses.",
+    "base_price": 3080
   },
   {
     "id": "earth_eleven_gk",
@@ -1460,7 +1536,8 @@
       "technique": 89
     },
     "signature_technique": "kong_gate",
-    "flavor": "Le dernier rempart de la sélection terrienne face à l'invasion galactique."
+    "flavor": "Le dernier rempart de la sélection terrienne face à l'invasion galactique.",
+    "base_price": 5540
   },
   {
     "id": "shinsei_ij_ace",
@@ -1479,7 +1556,8 @@
       "technique": 89
     },
     "signature_technique": "bakunetsu_screw",
-    "flavor": "Le nouvel espoir du Japon, prêt à reprendre le flambeau de ses glorieux aînés."
+    "flavor": "Le nouvel espoir du Japon, prêt à reprendre le flambeau de ses glorieux aînés.",
+    "base_price": 5540
   },
   {
     "id": "big_waves_df",
@@ -1498,7 +1576,8 @@
       "technique": 60
     },
     "signature_technique": "raging_gale_wall",
-    "flavor": "Un défenseur discipliné de Big Waves, formé aux techniques les plus avancées."
+    "flavor": "Un défenseur discipliné de Big Waves, formé aux techniques les plus avancées.",
+    "base_price": 1660
   },
   {
     "id": "isuke_matsukaze",
@@ -1517,7 +1596,8 @@
       "technique": 74
     },
     "signature_technique": "shippuu_dash_shoot",
-    "flavor": "Un jeune joueur de la nouvelle génération, marchant sur les traces de son père Tenma."
+    "flavor": "Un jeune joueur de la nouvelle génération, marchant sur les traces de son père Tenma.",
+    "base_price": 3040
   },
   {
     "id": "ares_villain_ace",
@@ -1536,7 +1616,8 @@
       "technique": 91
     },
     "signature_technique": "genesis_destroyer",
-    "flavor": "Une figure menaçante qui plonge le football lycéen dans le chaos absolu."
+    "flavor": "Une figure menaçante qui plonge le football lycéen dans le chaos absolu.",
+    "base_price": 9240
   },
   {
     "id": "orion_captain",
@@ -1555,7 +1636,8 @@
       "technique": 75
     },
     "signature_technique": "mugen_no_kanata",
-    "flavor": "Le capitaine énigmatique d'Orion, porteur d'un lourd secret sur le passé du football."
+    "flavor": "Le capitaine énigmatique d'Orion, porteur d'un lourd secret sur le passé du football.",
+    "base_price": 5580
   },
   {
     "id": "orion_striker",
@@ -1574,7 +1656,8 @@
       "technique": 80
     },
     "signature_technique": "kazan_no_hoou",
-    "flavor": "Un attaquant discipliné, produit du système d'entraînement impitoyable d'Orion."
+    "flavor": "Un attaquant discipliné, produit du système d'entraînement impitoyable d'Orion.",
+    "base_price": 3140
   },
   {
     "id": "kino_natsumi",
@@ -1593,7 +1676,8 @@
       "technique": 52
     },
     "signature_technique": "gale_spin",
-    "flavor": "Une joueuse pleine d'entrain qui apprend encore les bases du jeu collectif."
+    "flavor": "Une joueuse pleine d'entrain qui apprend encore les bases du jeu collectif.",
+    "base_price": 1040
   },
   {
     "id": "megane_kageyama",
@@ -1612,7 +1696,8 @@
       "technique": 44
     },
     "signature_technique": "guardian_stone",
-    "flavor": "Un défenseur besogneux dont la vue perçante compense un manque de puissance."
+    "flavor": "Un défenseur besogneux dont la vue perçante compense un manque de puissance.",
+    "base_price": 940
   },
   {
     "id": "max_hurn",
@@ -1631,7 +1716,8 @@
       "technique": 46
     },
     "signature_technique": "bakunetsu_bakushinsei",
-    "flavor": "Un attaquant enthousiaste qui n'a pas encore trouvé la constance dans ses tirs."
+    "flavor": "Un attaquant enthousiaste qui n'a pas encore trouvé la constance dans ses tirs.",
+    "base_price": 940
   },
   {
     "id": "jack_wallside_reserve",
@@ -1650,7 +1736,8 @@
       "technique": 49
     },
     "signature_technique": "bear_charge",
-    "flavor": "Un défenseur remplaçant qui rêve un jour de titulariser aux côtés des grands."
+    "flavor": "Un défenseur remplaçant qui rêve un jour de titulariser aux côtés des grands.",
+    "base_price": 1020
   },
   {
     "id": "teikoku_df_1",
@@ -1669,7 +1756,8 @@
       "technique": 51
     },
     "signature_technique": "killer_slide",
-    "flavor": "Un défenseur froid et méthodique, formé à l'école stricte de Teikoku."
+    "flavor": "Un défenseur froid et méthodique, formé à l'école stricte de Teikoku.",
+    "base_price": 1560
   },
   {
     "id": "teikoku_mf_1",
@@ -1688,7 +1776,8 @@
       "technique": 64
     },
     "signature_technique": "dark_mist",
-    "flavor": "Un milieu discret qui distille des passes précises au service du collectif."
+    "flavor": "Un milieu discret qui distille des passes précises au service du collectif.",
+    "base_price": 1700
   },
   {
     "id": "occult_df",
@@ -1707,7 +1796,8 @@
       "technique": 48
     },
     "signature_technique": "ice_ground",
-    "flavor": "Un défenseur solide originaire des plages du sud, aussi calme que la mer."
+    "flavor": "Un défenseur solide originaire des plages du sud, aussi calme que la mer.",
+    "base_price": 1700
   },
   {
     "id": "prominence_df",
@@ -1726,7 +1816,8 @@
       "technique": 62
     },
     "signature_technique": "bakunetsu_tackle",
-    "flavor": "Un défenseur de Prominence, forgé par un entraînement d'une intensité extrême."
+    "flavor": "Un défenseur de Prominence, forgé par un entraînement d'une intensité extrême.",
+    "base_price": 1700
   },
   {
     "id": "gemini_df",
@@ -1745,7 +1836,8 @@
       "technique": 48
     },
     "signature_technique": "raging_gale_wall",
-    "flavor": "Un défenseur discipliné, produit du système impitoyable de Gemini Storm."
+    "flavor": "Un défenseur discipliné, produit du système impitoyable de Gemini Storm.",
+    "base_price": 1700
   },
   {
     "id": "epsilon_df",
@@ -1764,7 +1856,8 @@
       "technique": 59
     },
     "signature_technique": "gaia_wall",
-    "flavor": "Un défenseur d'élite d'Epsilon, dont la rigueur tactique ne laisse rien au hasard."
+    "flavor": "Un défenseur d'élite d'Epsilon, dont la rigueur tactique ne laisse rien au hasard.",
+    "base_price": 3080
   },
   {
     "id": "raimon_go_fw2",
@@ -1783,7 +1876,8 @@
       "technique": 44
     },
     "signature_technique": "shippuu_dash_shoot",
-    "flavor": "Un jeune espoir de Raimon, encore en apprentissage mais déterminé à progresser."
+    "flavor": "Un jeune espoir de Raimon, encore en apprentissage mais déterminé à progresser.",
+    "base_price": 1120
   },
   {
     "id": "raimon_go_df2",
@@ -1802,7 +1896,8 @@
       "technique": 74
     },
     "signature_technique": "bear_charge",
-    "flavor": "Un défenseur imposant et loyal, toujours prêt à sacrifier son corps pour l'équipe."
+    "flavor": "Un défenseur imposant et loyal, toujours prêt à sacrifier son corps pour l'équipe.",
+    "base_price": 3080
   },
   {
     "id": "raimon_go_fw3",
@@ -1821,7 +1916,8 @@
       "technique": 49
     },
     "signature_technique": "raging_gale_wall",
-    "flavor": "Un défenseur méthodique qui privilégie toujours la sécurité de son équipe."
+    "flavor": "Un défenseur méthodique qui privilégie toujours la sécurité de son équipe.",
+    "base_price": 1640
   },
   {
     "id": "raimon_go_gk2",
@@ -1840,7 +1936,8 @@
       "technique": 75
     },
     "signature_technique": "chaos_break_catch",
-    "flavor": "Un gardien flamboyant à la personnalité extravagante, mais redoutablement efficace."
+    "flavor": "Un gardien flamboyant à la personnalité extravagante, mais redoutablement efficace.",
+    "base_price": 5260
   },
   {
     "id": "manabe_jinichirou",
@@ -1859,7 +1956,8 @@
       "technique": 55
     },
     "signature_technique": "hurricane_shoot",
-    "flavor": "Un attaquant fougueux, souvent moqué mais jamais découragé."
+    "flavor": "Un attaquant fougueux, souvent moqué mais jamais découragé.",
+    "base_price": 1560
   },
   {
     "id": "shinsei_df1",
@@ -1878,7 +1976,8 @@
       "technique": 49
     },
     "signature_technique": "odin_sword",
-    "flavor": "Un jeune défenseur prometteur de la nouvelle génération de Raimon."
+    "flavor": "Un jeune défenseur prometteur de la nouvelle génération de Raimon.",
+    "base_price": 1640
   },
   {
     "id": "hakuryuu_partner",
@@ -1897,7 +1996,8 @@
       "technique": 49
     },
     "signature_technique": "cyclone_step",
-    "flavor": "Un attaquant en devenir, encore loin du niveau de ses coéquipiers vedettes."
+    "flavor": "Un attaquant en devenir, encore loin du niveau de ses coéquipiers vedettes.",
+    "base_price": 980
   },
   {
     "id": "seidouzan_df",
@@ -1916,7 +2016,8 @@
       "technique": 43
     },
     "signature_technique": "iron_wall",
-    "flavor": "Un défenseur robuste, formé dans la discipline stricte de Seidouzan."
+    "flavor": "Un défenseur robuste, formé dans la discipline stricte de Seidouzan.",
+    "base_price": 940
   },
   {
     "id": "kidoukan_df",
@@ -1935,7 +2036,8 @@
       "technique": 40
     },
     "signature_technique": "raging_gale_wall",
-    "flavor": "Un jeune défenseur de Kidoukan, encore en quête de régularité."
+    "flavor": "Un jeune défenseur de Kidoukan, encore en quête de régularité.",
+    "base_price": 1080
   },
   {
     "id": "dragon_link_df",
@@ -1954,7 +2056,8 @@
       "technique": 40
     },
     "signature_technique": "bakunetsu_tackle",
-    "flavor": "Un défenseur fougueux de Dragon Link, parfois trop impulsif dans ses tacles."
+    "flavor": "Un défenseur fougueux de Dragon Link, parfois trop impulsif dans ses tacles.",
+    "base_price": 1080
   },
   {
     "id": "white_knights_fw",
@@ -1973,7 +2076,8 @@
       "technique": 46
     },
     "signature_technique": "byakuya_no_hime",
-    "flavor": "Un attaquant chevaleresque, encore jeune mais plein de fair-play."
+    "flavor": "Un attaquant chevaleresque, encore jeune mais plein de fair-play.",
+    "base_price": 940
   },
   {
     "id": "arakumo_gk",
@@ -1992,7 +2096,8 @@
       "technique": 46
     },
     "signature_technique": "basic_catch",
-    "flavor": "Un gardien débutant d'Arakumo, encore en quête de confiance en lui."
+    "flavor": "Un gardien débutant d'Arakumo, encore en quête de confiance en lui.",
+    "base_price": 980
   },
   {
     "id": "shin_teikoku_df",
@@ -2011,7 +2116,8 @@
       "technique": 62
     },
     "signature_technique": "gaia_wall",
-    "flavor": "Un défenseur discipliné, héritier de la rigueur historique de Teikoku."
+    "flavor": "Un défenseur discipliné, héritier de la rigueur historique de Teikoku.",
+    "base_price": 1700
   },
   {
     "id": "cs_alpha",
@@ -2030,7 +2136,8 @@
       "technique": 78
     },
     "signature_technique": "genesis_destroyer",
-    "flavor": "Un agent redoutable d'El Dorado, dont le vrai visage reste longtemps un mystère."
+    "flavor": "Un agent redoutable d'El Dorado, dont le vrai visage reste longtemps un mystère.",
+    "base_price": 3100
   },
   {
     "id": "cs_delta",
@@ -2049,7 +2156,8 @@
       "technique": 55
     },
     "signature_technique": "dark_lightning",
-    "flavor": "Un membre discret d'El Dorado, dont les intentions demeurent longtemps ambiguës."
+    "flavor": "Un membre discret d'El Dorado, dont les intentions demeurent longtemps ambiguës.",
+    "base_price": 1580
   },
   {
     "id": "cs_raimon_fw2",
@@ -2068,7 +2176,8 @@
       "technique": 52
     },
     "signature_technique": "phantom_dribble",
-    "flavor": "Nishiki continue d'étonner par son style de jeu inspiré de la rue, même face au temps."
+    "flavor": "Nishiki continue d'étonner par son style de jeu inspiré de la rue, même face au temps.",
+    "base_price": 1720
   },
   {
     "id": "cs_raimon_gk",
@@ -2087,7 +2196,8 @@
       "technique": 70
     },
     "signature_technique": "gigantic_wind_catch",
-    "flavor": "Le gardien de Raimon continue de progresser face à des adversaires toujours plus forts."
+    "flavor": "Le gardien de Raimon continue de progresser face à des adversaires toujours plus forts.",
+    "base_price": 2940
   },
   {
     "id": "protocol_omega_df",
@@ -2106,7 +2216,8 @@
       "technique": 73
     },
     "signature_technique": "dark_mist",
-    "flavor": "Un défenseur formé pour ne montrer aucune faiblesse, quel que soit l'adversaire."
+    "flavor": "Un défenseur formé pour ne montrer aucune faiblesse, quel que soit l'adversaire.",
+    "base_price": 3060
   },
   {
     "id": "galaxy_hakuren",
@@ -2125,7 +2236,8 @@
       "technique": 89
     },
     "signature_technique": "eternal_blizzard",
-    "flavor": "Toujours aussi glacial, Fubuki prête main forte à l'équipe qui défend la Terre."
+    "flavor": "Toujours aussi glacial, Fubuki prête main forte à l'équipe qui défend la Terre.",
+    "base_price": 5540
   },
   {
     "id": "galaxy_gouenji",
@@ -2144,7 +2256,8 @@
       "technique": 92
     },
     "signature_technique": "bakunetsu_storm",
-    "flavor": "Même des années plus tard, la frappe de Gouenji reste l'arme ultime de la Terre."
+    "flavor": "Même des années plus tard, la frappe de Gouenji reste l'arme ultime de la Terre.",
+    "base_price": 5600
   },
   {
     "id": "galaxy_endou",
@@ -2163,7 +2276,8 @@
       "technique": 83
     },
     "signature_technique": "majin_the_hand",
-    "flavor": "Devenu entraîneur puis gardien de secours, Endou n'a rien perdu de sa légende."
+    "flavor": "Devenu entraîneur puis gardien de secours, Endou n'a rien perdu de sa légende.",
+    "base_price": 5420
   },
   {
     "id": "big_waves_fw2",
@@ -2182,7 +2296,8 @@
       "technique": 74
     },
     "signature_technique": "hurricane_shoot",
-    "flavor": "Un attaquant venu d'ailleurs, dont le style spectaculaire fascine les foules."
+    "flavor": "Un attaquant venu d'ailleurs, dont le style spectaculaire fascine les foules.",
+    "base_price": 3020
   },
   {
     "id": "shinsei_df2",
@@ -2201,7 +2316,8 @@
       "technique": 50
     },
     "signature_technique": "gaia_wall",
-    "flavor": "Un jeune défenseur du renouveau japonais, encore en pleine progression."
+    "flavor": "Un jeune défenseur du renouveau japonais, encore en pleine progression.",
+    "base_price": 1600
   },
   {
     "id": "earth_eleven_mf2",
@@ -2220,7 +2336,8 @@
       "technique": 75
     },
     "signature_technique": "kaleidoscope",
-    "flavor": "Un milieu de terrain élégant, sélectionné parmi les meilleurs joueurs de la planète."
+    "flavor": "Un milieu de terrain élégant, sélectionné parmi les meilleurs joueurs de la planète.",
+    "base_price": 3060
   },
   {
     "id": "ares_df",
@@ -2239,7 +2356,8 @@
       "technique": 66
     },
     "signature_technique": "gaia_wall",
-    "flavor": "Un défenseur impitoyable formé sous la doctrine radicale d'Ares."
+    "flavor": "Un défenseur impitoyable formé sous la doctrine radicale d'Ares.",
+    "base_price": 2920
   },
   {
     "id": "ares_mf",
@@ -2258,7 +2376,8 @@
       "technique": 79
     },
     "signature_technique": "dark_lightning",
-    "flavor": "Un tacticien froid, chargé d'orchestrer le chaos semé par Ares."
+    "flavor": "Un tacticien froid, chargé d'orchestrer le chaos semé par Ares.",
+    "base_price": 3140
   },
   {
     "id": "orion_df",
@@ -2277,7 +2396,8 @@
       "technique": 51
     },
     "signature_technique": "killer_slide",
-    "flavor": "Un défenseur discipliné d'Orion, fidèle aux méthodes d'entraînement les plus dures."
+    "flavor": "Un défenseur discipliné d'Orion, fidèle aux méthodes d'entraînement les plus dures.",
+    "base_price": 1560
   },
   {
     "id": "orion_gk",
@@ -2296,7 +2416,8 @@
       "technique": 65
     },
     "signature_technique": "dark_gaia_catch",
-    "flavor": "Un gardien mystérieux d'Orion, dont le passé reste enveloppé de secrets."
+    "flavor": "Un gardien mystérieux d'Orion, dont le passé reste enveloppé de secrets.",
+    "base_price": 2840
   },
   {
     "id": "raimon_fw_extra",
@@ -2315,7 +2436,8 @@
       "technique": 54
     },
     "signature_technique": "kazan_no_hoou",
-    "flavor": "Un jeune attaquant fougueux qui espère un jour porter le brassard de capitaine."
+    "flavor": "Un jeune attaquant fougueux qui espère un jour porter le brassard de capitaine.",
+    "base_price": 1060
   },
   {
     "id": "teikoku_gk",
@@ -2334,7 +2456,8 @@
       "technique": 69
     },
     "signature_technique": "dark_gaia_catch",
-    "flavor": "Un gardien sérieux et méthodique, digne représentant de la rigueur de Teikoku."
+    "flavor": "Un gardien sérieux et méthodique, digne représentant de la rigueur de Teikoku.",
+    "base_price": 2920
   },
   {
     "id": "zeus_fw",
@@ -2353,7 +2476,8 @@
       "technique": 79
     },
     "signature_technique": "bakunetsu_screw",
-    "flavor": "Un attaquant puissant de l'équipe Zeus, redouté pour la brutalité de ses tirs."
+    "flavor": "Un attaquant puissant de l'équipe Zeus, redouté pour la brutalité de ses tirs.",
+    "base_price": 3120
   },
   {
     "id": "zeus_mf",
@@ -2372,7 +2496,8 @@
       "technique": 53
     },
     "signature_technique": "meteor_break",
-    "flavor": "Un milieu de terrain rigoureux, produit du système d'entraînement traditionnel de Zeus."
+    "flavor": "Un milieu de terrain rigoureux, produit du système d'entraînement traditionnel de Zeus.",
+    "base_price": 1680
   },
   {
     "id": "hakuren_df",
@@ -2391,7 +2516,8 @@
       "technique": 63
     },
     "signature_technique": "emperor_penguin_catch",
-    "flavor": "Un défenseur discipliné du nord, habitué à jouer sous des conditions extrêmes."
+    "flavor": "Un défenseur discipliné du nord, habitué à jouer sous des conditions extrêmes.",
+    "base_price": 1720
   },
   {
     "id": "diamond_dust_mf",
@@ -2410,7 +2536,8 @@
       "technique": 57
     },
     "signature_technique": "byakuya_no_hime",
-    "flavor": "Un milieu élégant de Diamond Dust, dont le jeu reflète la pureté de la neige."
+    "flavor": "Un milieu élégant de Diamond Dust, dont le jeu reflète la pureté de la neige.",
+    "base_price": 1560
   },
   {
     "id": "inazuma_japan_df2",
@@ -2429,7 +2556,8 @@
       "technique": 75
     },
     "signature_technique": "killer_slide",
-    "flavor": "Sélectionné pour le Japon, Domon continue de veiller jalousement sur sa défense."
+    "flavor": "Sélectionné pour le Japon, Domon continue de veiller jalousement sur sa défense.",
+    "base_price": 3100
   },
   {
     "id": "inazuma_japan_mf2",
@@ -2448,7 +2576,8 @@
       "technique": 69
     },
     "signature_technique": "bakunetsu_screw",
-    "flavor": "Un milieu de terrain fiable, apprécié pour sa polyvalence au sein du collectif national."
+    "flavor": "Un milieu de terrain fiable, apprécié pour sa polyvalence au sein du collectif national.",
+    "base_price": 2940
   },
   {
     "id": "raimon_cs_df2",
@@ -2467,6 +2596,3407 @@
       "technique": 74
     },
     "signature_technique": "bear_charge",
-    "flavor": "Toujours aussi solide, Kurumada continue de rassurer sa défense à travers les époques."
+    "flavor": "Toujours aussi solide, Kurumada continue de rassurer sa défense à travers les époques.",
+    "base_price": 3080
+  },
+  {
+    "id": "tobitaka_seiya",
+    "name": "Tobitaka Seiya",
+    "name_en": "Zack Swift",
+    "team_origin": "Zeus",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 4,
+    "stats": {
+      "kick": 89,
+      "pass": 75,
+      "defense": 69,
+      "speed": 77,
+      "technique": 75
+    },
+    "signature_technique": "ryuusei_blade",
+    "flavor": "L'ace redouté de Zeus, dont la puissance de frappe a longtemps semblé invincible.",
+    "base_price": 5380
+  },
+  {
+    "id": "gran_genesis",
+    "name": "Gran",
+    "name_en": "Gran",
+    "team_origin": "Genesis",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 3,
+    "stats": {
+      "kick": 76,
+      "pass": 85,
+      "defense": 64,
+      "speed": 71,
+      "technique": 87
+    },
+    "signature_technique": "maximum_fire",
+    "flavor": "Le stratège encapuchonné de Genesis, aussi calme que redoutablement calculateur.",
+    "base_price": 3160
+  },
+  {
+    "id": "matatagi_hayato",
+    "name": "Matatagi Hayato",
+    "name_en": "Hayato Matatagi",
+    "team_origin": "Kidoukan",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 4,
+    "stats": {
+      "kick": 87,
+      "pass": 74,
+      "defense": 65,
+      "speed": 75,
+      "technique": 76
+    },
+    "signature_technique": "big_bang",
+    "flavor": "Le capitaine ultra-rapide de Kidoukan, dont le sprint fulgurant laisse les défenses sur place.",
+    "base_price": 5340
+  },
+  {
+    "id": "fei_rune",
+    "name": "Fei Rune",
+    "name_en": "Fei Rune",
+    "team_origin": "El Dorado",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 5,
+    "stats": {
+      "kick": 78,
+      "pass": 92,
+      "defense": 82,
+      "speed": 88,
+      "technique": 93
+    },
+    "signature_technique": "dragon_weave",
+    "flavor": "Un agent mystérieux d'El Dorado dont les intentions réelles restent enveloppées de mystère.",
+    "base_price": 9240
+  },
+  {
+    "id": "nelly_raimon",
+    "name": "Nelly Raimon",
+    "name_en": "Nelly Raimon",
+    "team_origin": "Raimon (CS)",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 96,
+      "pass": 71,
+      "defense": 74,
+      "speed": 78,
+      "technique": 79
+    },
+    "signature_technique": "grand_fire",
+    "flavor": "Une attaquante énergique fraîchement arrivée à Raimon, prête à bousculer les certitudes de l'équipe.",
+    "base_price": 3220
+  },
+  {
+    "id": "shindou_cs",
+    "name": "Shindou Takuto (Chrono Stone)",
+    "name_en": "Shindou Takuto (Chrono Stone)",
+    "team_origin": "Raimon (CS)",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 4,
+    "stats": {
+      "kick": 78,
+      "pass": 85,
+      "defense": 74,
+      "speed": 79,
+      "technique": 87
+    },
+    "signature_technique": "illusion_step",
+    "flavor": "Le capitaine élégant de Raimon, dont le jeu de passes reste d'une précision inégalée à travers le temps.",
+    "base_price": 5460
+  },
+  {
+    "id": "amemiya_taiyou",
+    "name": "Amemiya Taiyou",
+    "name_en": "Amemiya Taiyou",
+    "team_origin": "Earth Eleven",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 4,
+    "stats": {
+      "kick": 86,
+      "pass": 63,
+      "defense": 67,
+      "speed": 78,
+      "technique": 67
+    },
+    "signature_technique": "zero_wind",
+    "flavor": "Le capitaine solaire d'Earth Eleven, dont l'enthousiasme intact rallie une planète entière.",
+    "base_price": 5280
+  },
+  {
+    "id": "cs_sigma",
+    "name": "Sigma",
+    "name_en": "Sigma",
+    "team_origin": "El Dorado",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 58,
+      "pass": 65,
+      "defense": 73,
+      "speed": 74,
+      "technique": 59
+    },
+    "signature_technique": "perfect_barrier",
+    "flavor": "Un agent d'El Dorado à l'identité codée, aussi discipliné que ses semblables Alpha et Beta.",
+    "base_price": 2940
+  },
+  {
+    "id": "cs_zeta",
+    "name": "Zeta",
+    "name_en": "Zeta",
+    "team_origin": "El Dorado",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 71,
+      "pass": 80,
+      "defense": 61,
+      "speed": 75,
+      "technique": 75
+    },
+    "signature_technique": "bakunetsu_screw",
+    "flavor": "Le dernier agent connu du commando d'El Dorado, spécialiste des manœuvres de diversion.",
+    "base_price": 3060
+  },
+  {
+    "id": "kazemaru_ij",
+    "name": "Kazemaru Ichirouta (Japan)",
+    "name_en": "Ichirouta Kazemaru (Japan)",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 4,
+    "stats": {
+      "kick": 80,
+      "pass": 82,
+      "defense": 99,
+      "speed": 90,
+      "technique": 91
+    },
+    "signature_technique": "diamond_barrier",
+    "flavor": "Le latéral le plus rapide du Japon, dont les montées éclair déstabilisent toutes les défenses.",
+    "base_price": 5600
+  },
+  {
+    "id": "endou_ij",
+    "name": "Endou Mamoru (Japan)",
+    "name_en": "Mark Evans (Japan)",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Wood",
+    "rarity": 4,
+    "stats": {
+      "kick": 76,
+      "pass": 83,
+      "defense": 95,
+      "speed": 88,
+      "technique": 85
+    },
+    "signature_technique": "grand_fortress_catch",
+    "flavor": "Le capitaine du Japon, dont la passion pour le football porte l'équipe nationale entière.",
+    "base_price": 5540
+  },
+  {
+    "id": "fubuki_ij",
+    "name": "Fubuki Shirou (Japan)",
+    "name_en": "Shirou Fubuki (Japan)",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 4,
+    "stats": {
+      "kick": 99,
+      "pass": 84,
+      "defense": 74,
+      "speed": 88,
+      "technique": 84
+    },
+    "signature_technique": "kishin_riki",
+    "flavor": "L'attaquant aux deux âmes, désormais réunies, qui porte l'attaque du Japon.",
+    "base_price": 5560
+  },
+  {
+    "id": "tachimukai_ij",
+    "name": "Tachimukai Yuuki (Japan)",
+    "name_en": "Tachimukai Yuuki (Japan)",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 56,
+      "pass": 70,
+      "defense": 82,
+      "speed": 73,
+      "technique": 79
+    },
+    "signature_technique": "fist_of_justice",
+    "flavor": "Le second gardien du Japon, dont la détermination compense un gabarit modeste.",
+    "base_price": 3060
+  },
+  {
+    "id": "toramaru_ij",
+    "name": "Toramaru Utsunomiya (Japan)",
+    "name_en": "Toramaru Utsunomiya (Japan)",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 84,
+      "pass": 72,
+      "defense": 61,
+      "speed": 77,
+      "technique": 73
+    },
+    "signature_technique": "maximum_fire",
+    "flavor": "Le jeune prodige d'Okinawa, devenu une arme offensive redoutable pour le Japon.",
+    "base_price": 3080
+  },
+  {
+    "id": "someoka_ij",
+    "name": "Someoka Ryuugo (Japan)",
+    "name_en": "Dylan Keats (Japan)",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 73,
+      "pass": 54,
+      "defense": 50,
+      "speed": 64,
+      "technique": 68
+    },
+    "signature_technique": "golden_spike",
+    "flavor": "L'attaquant loup solitaire, dont la hargne inspire les jeunes recrues du Japon.",
+    "base_price": 2860
+  },
+  {
+    "id": "fudou_ij",
+    "name": "Fudou Akio (Japan)",
+    "name_en": "Bob Shearer (Japan)",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 56,
+      "pass": 78,
+      "defense": 63,
+      "speed": 61,
+      "technique": 69
+    },
+    "signature_technique": "silent_phantom",
+    "flavor": "L'ancien rebelle de Teikoku, devenu un rouage essentiel du milieu de terrain national.",
+    "base_price": 2920
+  },
+  {
+    "id": "sakuma_ij",
+    "name": "Sakuma Jirou (Japan)",
+    "name_en": "Sam Kincaid (Japan)",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 56,
+      "pass": 59,
+      "defense": 83,
+      "speed": 64,
+      "technique": 66
+    },
+    "signature_technique": "gale_barrier",
+    "flavor": "Le défenseur borgne qui a surmonté ses blessures pour représenter fièrement le Japon.",
+    "base_price": 2940
+  },
+  {
+    "id": "raimon_gk_mamorigami",
+    "name": "Raimon no Mamorigami",
+    "name_en": "Raimon Guardian Deity",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 45,
+      "pass": 54,
+      "defense": 66,
+      "speed": 57,
+      "technique": 63
+    },
+    "signature_technique": "guardian_angel_catch",
+    "flavor": "Le dernier rempart de Raimon, déterminé à garder sa cage inviolée coûte que coûte.",
+    "base_price": 1620
+  },
+  {
+    "id": "raimon_df_senshi",
+    "name": "Raimon no Senshi",
+    "name_en": "Raimon Warrior",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 1,
+    "stats": {
+      "kick": 40,
+      "pass": 41,
+      "defense": 62,
+      "speed": 52,
+      "technique": 40
+    },
+    "signature_technique": "guardian_stone",
+    "flavor": "Un roc défensif de Raimon, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 1000
+  },
+  {
+    "id": "raimon_df_bouheki",
+    "name": "Raimon no Bouheki",
+    "name_en": "Raimon Defender",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 1,
+    "stats": {
+      "kick": 51,
+      "pass": 53,
+      "defense": 67,
+      "speed": 61,
+      "technique": 55
+    },
+    "signature_technique": "silent_defense",
+    "flavor": "Un joueur de Raimon dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 1200
+  },
+  {
+    "id": "raimon_df_gouheki",
+    "name": "Raimon no Gouheki",
+    "name_en": "Raimon Iron Wall",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 49,
+      "pass": 50,
+      "defense": 74,
+      "speed": 56,
+      "technique": 54
+    },
+    "signature_technique": "bakunetsu_step",
+    "flavor": "Un roc défensif de Raimon, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 1620
+  },
+  {
+    "id": "raimon_df_senshi_2",
+    "name": "Raimon no Senshi",
+    "name_en": "Raimon Warrior",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 40,
+      "pass": 43,
+      "defense": 53,
+      "speed": 50,
+      "technique": 49
+    },
+    "signature_technique": "wind_dash",
+    "flavor": "Un défenseur robuste de Raimon, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 1000
+  },
+  {
+    "id": "raimon_mf_shireikan",
+    "name": "Raimon no Shireikan",
+    "name_en": "Raimon Commander",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 4,
+    "stats": {
+      "kick": 85,
+      "pass": 96,
+      "defense": 83,
+      "speed": 84,
+      "technique": 94
+    },
+    "signature_technique": "kaleidoscope",
+    "flavor": "Un milieu de terrain de Raimon, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 5600
+  },
+  {
+    "id": "raimon_mf_sente",
+    "name": "Raimon no Sente",
+    "name_en": "Raimon Playmaker",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 5,
+    "stats": {
+      "kick": 88,
+      "pass": 99,
+      "defense": 90,
+      "speed": 95,
+      "technique": 99
+    },
+    "signature_technique": "genkai_toppa",
+    "flavor": "Un milieu de terrain de Raimon, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 9380
+  },
+  {
+    "id": "raimon_mf_enjin",
+    "name": "Raimon no Enjin",
+    "name_en": "Raimon Engine",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 5,
+    "stats": {
+      "kick": 82,
+      "pass": 96,
+      "defense": 78,
+      "speed": 92,
+      "technique": 98
+    },
+    "signature_technique": "maou_no_bumon",
+    "flavor": "Un joueur polyvalent de Raimon, capable de faire basculer une rencontre en une passe.",
+    "base_price": 9280
+  },
+  {
+    "id": "raimon_mf_shireikan_2",
+    "name": "Raimon no Shireikan",
+    "name_en": "Raimon Commander",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 61,
+      "pass": 76,
+      "defense": 60,
+      "speed": 67,
+      "technique": 72
+    },
+    "signature_technique": "golden_spike",
+    "flavor": "Un milieu de terrain de Raimon, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 2960
+  },
+  {
+    "id": "raimon_fw_kirisaki",
+    "name": "Raimon no Kirisaki",
+    "name_en": "Raimon Spearhead",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 69,
+      "pass": 47,
+      "defense": 40,
+      "speed": 53,
+      "technique": 56
+    },
+    "signature_technique": "shippuu_dash_shoot",
+    "flavor": "Un buteur de Raimon dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 1120
+  },
+  {
+    "id": "raimon_fw_senkou",
+    "name": "Raimon no Senkou",
+    "name_en": "Raimon Vanguard",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 65,
+      "pass": 59,
+      "defense": 43,
+      "speed": 57,
+      "technique": 56
+    },
+    "signature_technique": "tornado_spark",
+    "flavor": "Un attaquant prometteur de Raimon, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1600
+  },
+  {
+    "id": "raimon_fw_senkou_2",
+    "name": "Raimon no Senkou",
+    "name_en": "Raimon Vanguard",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 68,
+      "pass": 54,
+      "defense": 50,
+      "speed": 57,
+      "technique": 60
+    },
+    "signature_technique": "panther_feint_shot",
+    "flavor": "Une pointe rapide de Raimon, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 1640
+  },
+  {
+    "id": "raimon_fw_senkou_3",
+    "name": "Raimon no Senkou",
+    "name_en": "Raimon Vanguard",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 65,
+      "pass": 53,
+      "defense": 46,
+      "speed": 55,
+      "technique": 58
+    },
+    "signature_technique": "fire_blast",
+    "flavor": "Un attaquant prometteur de Raimon, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1580
+  },
+  {
+    "id": "teikoku_gakuen_gk_yousai",
+    "name": "Teikoku Gakuen no Yousai",
+    "name_en": "Teikoku Gakuen Fortress",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Wind",
+    "rarity": 4,
+    "stats": {
+      "kick": 74,
+      "pass": 79,
+      "defense": 99,
+      "speed": 82,
+      "technique": 92
+    },
+    "signature_technique": "chaos_break_catch",
+    "flavor": "Un gardien solide de Teikoku Gakuen, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 5540
+  },
+  {
+    "id": "teikoku_gakuen_df_kishi",
+    "name": "Teikoku Gakuen no Kishi",
+    "name_en": "Teikoku Gakuen Knight",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 52,
+      "pass": 58,
+      "defense": 68,
+      "speed": 62,
+      "technique": 51
+    },
+    "signature_technique": "death_zone_press",
+    "flavor": "Un défenseur robuste de Teikoku Gakuen, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 1640
+  },
+  {
+    "id": "teikoku_gakuen_df_kishi_2",
+    "name": "Teikoku Gakuen no Kishi",
+    "name_en": "Teikoku Gakuen Knight",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 73,
+      "pass": 72,
+      "defense": 88,
+      "speed": 82,
+      "technique": 78
+    },
+    "signature_technique": "gaia_wall",
+    "flavor": "Un joueur de Teikoku Gakuen dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 5420
+  },
+  {
+    "id": "teikoku_gakuen_df_bouheki",
+    "name": "Teikoku Gakuen no Bouheki",
+    "name_en": "Teikoku Gakuen Defender",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 68,
+      "pass": 72,
+      "defense": 89,
+      "speed": 80,
+      "technique": 78
+    },
+    "signature_technique": "quick_turn_delta",
+    "flavor": "Un roc défensif de Teikoku Gakuen, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 3160
+  },
+  {
+    "id": "teikoku_gakuen_mf_enjin",
+    "name": "Teikoku Gakuen no Enjin",
+    "name_en": "Teikoku Gakuen Engine",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 55,
+      "pass": 73,
+      "defense": 55,
+      "speed": 67,
+      "technique": 68
+    },
+    "signature_technique": "thunder_beat",
+    "flavor": "Un milieu de terrain de Teikoku Gakuen, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 1760
+  },
+  {
+    "id": "teikoku_gakuen_mf_shihaisha",
+    "name": "Teikoku Gakuen no Shihaisha",
+    "name_en": "Teikoku Gakuen Controller",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 52,
+      "pass": 62,
+      "defense": 44,
+      "speed": 52,
+      "technique": 55
+    },
+    "signature_technique": "panther_feint_shot",
+    "flavor": "Un joueur polyvalent de Teikoku Gakuen, capable de faire basculer une rencontre en une passe.",
+    "base_price": 1540
+  },
+  {
+    "id": "teikoku_gakuen_fw_housha",
+    "name": "Teikoku Gakuen no Housha",
+    "name_en": "Teikoku Gakuen Striker",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 5,
+    "stats": {
+      "kick": 99,
+      "pass": 78,
+      "defense": 81,
+      "speed": 85,
+      "technique": 90
+    },
+    "signature_technique": "flame_geist",
+    "flavor": "Un buteur de Teikoku Gakuen dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 9240
+  },
+  {
+    "id": "teikoku_gakuen_fw_senkou",
+    "name": "Teikoku Gakuen no Senkou",
+    "name_en": "Teikoku Gakuen Vanguard",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 75,
+      "pass": 52,
+      "defense": 48,
+      "speed": 63,
+      "technique": 67
+    },
+    "signature_technique": "shippu_no_yaiba",
+    "flavor": "Une pointe rapide de Teikoku Gakuen, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 1700
+  },
+  {
+    "id": "zeus_gk_mamorite",
+    "name": "Zeus no Mamorite",
+    "name_en": "Zeus Guardian",
+    "team_origin": "Zeus",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 48,
+      "pass": 51,
+      "defense": 67,
+      "speed": 51,
+      "technique": 64
+    },
+    "signature_technique": "guardian_angel_catch",
+    "flavor": "Un gardien discret de Zeus qui progresse match après match dans l'ombre des titulaires.",
+    "base_price": 1600
+  },
+  {
+    "id": "zeus_df_gouheki",
+    "name": "Zeus no Gouheki",
+    "name_en": "Zeus Iron Wall",
+    "team_origin": "Zeus",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 78,
+      "pass": 75,
+      "defense": 95,
+      "speed": 78,
+      "technique": 76
+    },
+    "signature_technique": "gale_barrier",
+    "flavor": "Un défenseur robuste de Zeus, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 3220
+  },
+  {
+    "id": "zeus_df_senshi",
+    "name": "Zeus no Senshi",
+    "name_en": "Zeus Warrior",
+    "team_origin": "Zeus",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 76,
+      "pass": 82,
+      "defense": 99,
+      "speed": 94,
+      "technique": 89
+    },
+    "signature_technique": "emperor_penguin_no2",
+    "flavor": "Un roc défensif de Zeus, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 5600
+  },
+  {
+    "id": "zeus_mf_shihaisha",
+    "name": "Zeus no Shihaisha",
+    "name_en": "Zeus Controller",
+    "team_origin": "Zeus",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 55,
+      "pass": 74,
+      "defense": 60,
+      "speed": 63,
+      "technique": 66
+    },
+    "signature_technique": "fire_blast",
+    "flavor": "Un joueur polyvalent de Zeus, capable de faire basculer une rencontre en une passe.",
+    "base_price": 1760
+  },
+  {
+    "id": "zeus_mf_sente",
+    "name": "Zeus no Sente",
+    "name_en": "Zeus Playmaker",
+    "team_origin": "Zeus",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 46,
+      "pass": 63,
+      "defense": 47,
+      "speed": 55,
+      "technique": 62
+    },
+    "signature_technique": "shippuu_dash_shoot",
+    "flavor": "Un stratège discret de Zeus, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1160
+  },
+  {
+    "id": "zeus_fw_ace",
+    "name": "Zeus no Ace",
+    "name_en": "Zeus Ace",
+    "team_origin": "Zeus",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 86,
+      "pass": 74,
+      "defense": 60,
+      "speed": 82,
+      "technique": 79
+    },
+    "signature_technique": "silent_phantom",
+    "flavor": "Un buteur de Zeus dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 3140
+  },
+  {
+    "id": "royal_academy_gk_mamorite",
+    "name": "Royal Academy no Mamorite",
+    "name_en": "Royal Academy Guardian",
+    "team_origin": "Royal Academy",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Wood",
+    "rarity": 1,
+    "stats": {
+      "kick": 40,
+      "pass": 48,
+      "defense": 77,
+      "speed": 49,
+      "technique": 63
+    },
+    "signature_technique": "titan_grip",
+    "flavor": "Le dernier rempart de Royal Academy, déterminé à garder sa cage inviolée coûte que coûte.",
+    "base_price": 1160
+  },
+  {
+    "id": "royal_academy_df_kishi",
+    "name": "Royal Academy no Kishi",
+    "name_en": "Royal Academy Knight",
+    "team_origin": "Royal Academy",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 3,
+    "stats": {
+      "kick": 61,
+      "pass": 63,
+      "defense": 78,
+      "speed": 67,
+      "technique": 62
+    },
+    "signature_technique": "gale_barrier",
+    "flavor": "Un défenseur robuste de Royal Academy, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 2940
+  },
+  {
+    "id": "royal_academy_df_kishi_2",
+    "name": "Royal Academy no Kishi",
+    "name_en": "Royal Academy Knight",
+    "team_origin": "Royal Academy",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 5,
+    "stats": {
+      "kick": 82,
+      "pass": 88,
+      "defense": 97,
+      "speed": 92,
+      "technique": 85
+    },
+    "signature_technique": "maou_no_bumon",
+    "flavor": "Un défenseur robuste de Royal Academy, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 9280
+  },
+  {
+    "id": "royal_academy_mf_enjin",
+    "name": "Royal Academy no Enjin",
+    "name_en": "Royal Academy Engine",
+    "team_origin": "Royal Academy",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 47,
+      "pass": 66,
+      "defense": 48,
+      "speed": 54,
+      "technique": 66
+    },
+    "signature_technique": "blizzard_arrow",
+    "flavor": "Un milieu de terrain de Royal Academy, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 1600
+  },
+  {
+    "id": "royal_academy_mf_shireikan",
+    "name": "Royal Academy no Shireikan",
+    "name_en": "Royal Academy Commander",
+    "team_origin": "Royal Academy",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 49,
+      "pass": 68,
+      "defense": 46,
+      "speed": 52,
+      "technique": 65
+    },
+    "signature_technique": "byakuya_no_hime",
+    "flavor": "Un joueur polyvalent de Royal Academy, capable de faire basculer une rencontre en une passe.",
+    "base_price": 1600
+  },
+  {
+    "id": "royal_academy_fw_housha",
+    "name": "Royal Academy no Housha",
+    "name_en": "Royal Academy Striker",
+    "team_origin": "Royal Academy",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 75,
+      "pass": 54,
+      "defense": 41,
+      "speed": 60,
+      "technique": 55
+    },
+    "signature_technique": "fire_blast",
+    "flavor": "Un attaquant prometteur de Royal Academy, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1620
+  },
+  {
+    "id": "hakuren_df_senshi",
+    "name": "Hakuren no Senshi",
+    "name_en": "Hakuren Warrior",
+    "team_origin": "Hakuren",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 3,
+    "stats": {
+      "kick": 52,
+      "pass": 62,
+      "defense": 80,
+      "speed": 64,
+      "technique": 62
+    },
+    "signature_technique": "volcanic_barrier",
+    "flavor": "Un roc défensif de Hakuren, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 2900
+  },
+  {
+    "id": "hakuren_mf_shireikan",
+    "name": "Hakuren no Shireikan",
+    "name_en": "Hakuren Commander",
+    "team_origin": "Hakuren",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 3,
+    "stats": {
+      "kick": 60,
+      "pass": 74,
+      "defense": 65,
+      "speed": 67,
+      "technique": 77
+    },
+    "signature_technique": "silent_phantom",
+    "flavor": "Un milieu de terrain de Hakuren, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 3000
+  },
+  {
+    "id": "hakuren_fw_kirisaki",
+    "name": "Hakuren no Kirisaki",
+    "name_en": "Hakuren Spearhead",
+    "team_origin": "Hakuren",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 61,
+      "pass": 43,
+      "defense": 40,
+      "speed": 53,
+      "technique": 57
+    },
+    "signature_technique": "tornado_spark",
+    "flavor": "Un buteur de Hakuren dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 1500
+  },
+  {
+    "id": "hakuren_fw_senkou",
+    "name": "Hakuren no Senkou",
+    "name_en": "Hakuren Vanguard",
+    "team_origin": "Hakuren",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 78,
+      "pass": 50,
+      "defense": 51,
+      "speed": 59,
+      "technique": 55
+    },
+    "signature_technique": "bakunetsu_step",
+    "flavor": "Un attaquant prometteur de Hakuren, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1660
+  },
+  {
+    "id": "occult_diamond_dust_df_gouheki",
+    "name": "Occult / Diamond Dust no Gouheki",
+    "name_en": "Occult / Diamond Dust Iron Wall",
+    "team_origin": "Occult / Diamond Dust",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 5,
+    "stats": {
+      "kick": 82,
+      "pass": 83,
+      "defense": 97,
+      "speed": 95,
+      "technique": 81
+    },
+    "signature_technique": "genbu_shield",
+    "flavor": "Un roc défensif de Occult / Diamond Dust, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 9260
+  },
+  {
+    "id": "occult_diamond_dust_mf_shireikan",
+    "name": "Occult / Diamond Dust no Shireikan",
+    "name_en": "Occult / Diamond Dust Commander",
+    "team_origin": "Occult / Diamond Dust",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 50,
+      "pass": 60,
+      "defense": 42,
+      "speed": 49,
+      "technique": 63
+    },
+    "signature_technique": "sidewinder",
+    "flavor": "Un joueur polyvalent de Occult / Diamond Dust, capable de faire basculer une rencontre en une passe.",
+    "base_price": 1540
+  },
+  {
+    "id": "occult_diamond_dust_fw_housha",
+    "name": "Occult / Diamond Dust no Housha",
+    "name_en": "Occult / Diamond Dust Striker",
+    "team_origin": "Occult / Diamond Dust",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 3,
+    "stats": {
+      "kick": 82,
+      "pass": 73,
+      "defense": 69,
+      "speed": 76,
+      "technique": 77
+    },
+    "signature_technique": "grand_fire",
+    "flavor": "Un attaquant prometteur de Occult / Diamond Dust, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 3120
+  },
+  {
+    "id": "diamond_dust_gk_mamorite",
+    "name": "Diamond Dust no Mamorite",
+    "name_en": "Diamond Dust Guardian",
+    "team_origin": "Diamond Dust",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Wood",
+    "rarity": 1,
+    "stats": {
+      "kick": 40,
+      "pass": 51,
+      "defense": 60,
+      "speed": 50,
+      "technique": 56
+    },
+    "signature_technique": "shadow_grip_catch",
+    "flavor": "Un gardien solide de Diamond Dust, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 1080
+  },
+  {
+    "id": "diamond_dust_df_senshi",
+    "name": "Diamond Dust no Senshi",
+    "name_en": "Diamond Dust Warrior",
+    "team_origin": "Diamond Dust",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 48,
+      "pass": 52,
+      "defense": 71,
+      "speed": 58,
+      "technique": 45
+    },
+    "signature_technique": "storm_shield",
+    "flavor": "Un joueur de Diamond Dust dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 1580
+  },
+  {
+    "id": "diamond_dust_df_senshi_2",
+    "name": "Diamond Dust no Senshi",
+    "name_en": "Diamond Dust Warrior",
+    "team_origin": "Diamond Dust",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 3,
+    "stats": {
+      "kick": 66,
+      "pass": 63,
+      "defense": 81,
+      "speed": 67,
+      "technique": 63
+    },
+    "signature_technique": "dark_mist",
+    "flavor": "Un défenseur robuste de Diamond Dust, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 2980
+  },
+  {
+    "id": "diamond_dust_mf_shireikan",
+    "name": "Diamond Dust no Shireikan",
+    "name_en": "Diamond Dust Commander",
+    "team_origin": "Diamond Dust",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 4,
+    "stats": {
+      "kick": 87,
+      "pass": 94,
+      "defense": 76,
+      "speed": 94,
+      "technique": 94
+    },
+    "signature_technique": "illusion_ball",
+    "flavor": "Un stratège discret de Diamond Dust, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 5620
+  },
+  {
+    "id": "diamond_dust_fw_ace",
+    "name": "Diamond Dust no Ace",
+    "name_en": "Diamond Dust Ace",
+    "team_origin": "Diamond Dust",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 70,
+      "pass": 54,
+      "defense": 56,
+      "speed": 74,
+      "technique": 61
+    },
+    "signature_technique": "bakunetsu_bakushinsei",
+    "flavor": "Une pointe rapide de Diamond Dust, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 1740
+  },
+  {
+    "id": "prominence_gk_mamorite",
+    "name": "Prominence no Mamorite",
+    "name_en": "Prominence Guardian",
+    "team_origin": "Prominence",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 45,
+      "pass": 55,
+      "defense": 73,
+      "speed": 63,
+      "technique": 67
+    },
+    "signature_technique": "guardian_angel_catch",
+    "flavor": "Un gardien solide de Prominence, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 1700
+  },
+  {
+    "id": "prominence_df_gouheki",
+    "name": "Prominence no Gouheki",
+    "name_en": "Prominence Iron Wall",
+    "team_origin": "Prominence",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 62,
+      "pass": 63,
+      "defense": 88,
+      "speed": 71,
+      "technique": 70
+    },
+    "signature_technique": "perfect_barrier",
+    "flavor": "Un joueur de Prominence dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 3040
+  },
+  {
+    "id": "prominence_mf_shireikan",
+    "name": "Prominence no Shireikan",
+    "name_en": "Prominence Commander",
+    "team_origin": "Prominence",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 53,
+      "pass": 66,
+      "defense": 54,
+      "speed": 53,
+      "technique": 67
+    },
+    "signature_technique": "tornado_spark",
+    "flavor": "Un joueur polyvalent de Prominence, capable de faire basculer une rencontre en une passe.",
+    "base_price": 1660
+  },
+  {
+    "id": "prominence_mf_shihaisha",
+    "name": "Prominence no Shihaisha",
+    "name_en": "Prominence Controller",
+    "team_origin": "Prominence",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 54,
+      "pass": 67,
+      "defense": 47,
+      "speed": 49,
+      "technique": 64
+    },
+    "signature_technique": "rock_crusher",
+    "flavor": "Un stratège discret de Prominence, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1180
+  },
+  {
+    "id": "prominence_fw_ace",
+    "name": "Prominence no Ace",
+    "name_en": "Prominence Ace",
+    "team_origin": "Prominence",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 93,
+      "pass": 77,
+      "defense": 61,
+      "speed": 87,
+      "technique": 75
+    },
+    "signature_technique": "death_drop",
+    "flavor": "Une pointe rapide de Prominence, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 3200
+  },
+  {
+    "id": "genesis_gk_mamorigami",
+    "name": "Genesis no Mamorigami",
+    "name_en": "Genesis Guardian Deity",
+    "team_origin": "Genesis",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 57,
+      "pass": 56,
+      "defense": 74,
+      "speed": 56,
+      "technique": 60
+    },
+    "signature_technique": "dark_gaia_catch",
+    "flavor": "Un gardien solide de Genesis, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 2840
+  },
+  {
+    "id": "genesis_df_senshi",
+    "name": "Genesis no Senshi",
+    "name_en": "Genesis Warrior",
+    "team_origin": "Genesis",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 3,
+    "stats": {
+      "kick": 65,
+      "pass": 74,
+      "defense": 86,
+      "speed": 71,
+      "technique": 65
+    },
+    "signature_technique": "wolf_legend_block",
+    "flavor": "Un joueur de Genesis dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 3060
+  },
+  {
+    "id": "genesis_mf_shihaisha",
+    "name": "Genesis no Shihaisha",
+    "name_en": "Genesis Controller",
+    "team_origin": "Genesis",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 55,
+      "pass": 68,
+      "defense": 51,
+      "speed": 50,
+      "technique": 58
+    },
+    "signature_technique": "explode_fang",
+    "flavor": "Un milieu de terrain de Genesis, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 1600
+  },
+  {
+    "id": "genesis_fw_kirisaki",
+    "name": "Genesis no Kirisaki",
+    "name_en": "Genesis Spearhead",
+    "team_origin": "Genesis",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 77,
+      "pass": 56,
+      "defense": 49,
+      "speed": 61,
+      "technique": 62
+    },
+    "signature_technique": "panther_slip",
+    "flavor": "Une pointe rapide de Genesis, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 1700
+  },
+  {
+    "id": "genesis_fw_senkou",
+    "name": "Genesis no Senkou",
+    "name_en": "Genesis Vanguard",
+    "team_origin": "Genesis",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 63,
+      "pass": 49,
+      "defense": 42,
+      "speed": 52,
+      "technique": 53
+    },
+    "signature_technique": "blitz_turn",
+    "flavor": "Un attaquant prometteur de Genesis, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1520
+  },
+  {
+    "id": "epsilon_gk_mamorigami",
+    "name": "Epsilon no Mamorigami",
+    "name_en": "Epsilon Guardian Deity",
+    "team_origin": "Epsilon",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 76,
+      "pass": 83,
+      "defense": 99,
+      "speed": 78,
+      "technique": 87
+    },
+    "signature_technique": "chaos_break_catch",
+    "flavor": "Le dernier rempart de Epsilon, déterminé à garder sa cage inviolée coûte que coûte.",
+    "base_price": 5540
+  },
+  {
+    "id": "epsilon_df_gouheki",
+    "name": "Epsilon no Gouheki",
+    "name_en": "Epsilon Iron Wall",
+    "team_origin": "Epsilon",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 60,
+      "pass": 62,
+      "defense": 80,
+      "speed": 76,
+      "technique": 62
+    },
+    "signature_technique": "aurora_shield",
+    "flavor": "Un roc défensif de Epsilon, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 2980
+  },
+  {
+    "id": "epsilon_df_bouheki",
+    "name": "Epsilon no Bouheki",
+    "name_en": "Epsilon Defender",
+    "team_origin": "Epsilon",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 64,
+      "pass": 69,
+      "defense": 91,
+      "speed": 85,
+      "technique": 72
+    },
+    "signature_technique": "perfect_barrier",
+    "flavor": "Un joueur de Epsilon dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 3140
+  },
+  {
+    "id": "epsilon_mf_shihaisha",
+    "name": "Epsilon no Shihaisha",
+    "name_en": "Epsilon Controller",
+    "team_origin": "Epsilon",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 66,
+      "pass": 74,
+      "defense": 55,
+      "speed": 68,
+      "technique": 65
+    },
+    "signature_technique": "tornado_spark",
+    "flavor": "Un stratège discret de Epsilon, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1800
+  },
+  {
+    "id": "epsilon_fw_housha",
+    "name": "Epsilon no Housha",
+    "name_en": "Epsilon Striker",
+    "team_origin": "Epsilon",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 71,
+      "pass": 55,
+      "defense": 55,
+      "speed": 72,
+      "technique": 58
+    },
+    "signature_technique": "bakunetsu_step",
+    "flavor": "Un buteur de Epsilon dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 1720
+  },
+  {
+    "id": "gemini_storm_df_kishi",
+    "name": "Gemini Storm no Kishi",
+    "name_en": "Gemini Storm Knight",
+    "team_origin": "Gemini Storm",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 1,
+    "stats": {
+      "kick": 42,
+      "pass": 40,
+      "defense": 63,
+      "speed": 52,
+      "technique": 48
+    },
+    "signature_technique": "silent_defense",
+    "flavor": "Un roc défensif de Gemini Storm, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 1040
+  },
+  {
+    "id": "gemini_storm_mf_sente",
+    "name": "Gemini Storm no Sente",
+    "name_en": "Gemini Storm Playmaker",
+    "team_origin": "Gemini Storm",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 4,
+    "stats": {
+      "kick": 80,
+      "pass": 86,
+      "defense": 75,
+      "speed": 79,
+      "technique": 86
+    },
+    "signature_technique": "fire_tornado",
+    "flavor": "Un milieu de terrain de Gemini Storm, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 5460
+  },
+  {
+    "id": "gemini_storm_fw_housha",
+    "name": "Gemini Storm no Housha",
+    "name_en": "Gemini Storm Striker",
+    "team_origin": "Gemini Storm",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 1,
+    "stats": {
+      "kick": 62,
+      "pass": 41,
+      "defense": 40,
+      "speed": 48,
+      "technique": 47
+    },
+    "signature_technique": "genei_kick",
+    "flavor": "Un attaquant prometteur de Gemini Storm, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1020
+  },
+  {
+    "id": "gemini_storm_fw_ace",
+    "name": "Gemini Storm no Ace",
+    "name_en": "Gemini Storm Ace",
+    "team_origin": "Gemini Storm",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 94,
+      "pass": 79,
+      "defense": 61,
+      "speed": 83,
+      "technique": 75
+    },
+    "signature_technique": "odin_sword",
+    "flavor": "Une pointe rapide de Gemini Storm, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 3180
+  },
+  {
+    "id": "kirkwood_df_kishi",
+    "name": "Kirkwood no Kishi",
+    "name_en": "Kirkwood Knight",
+    "team_origin": "Kirkwood",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 4,
+    "stats": {
+      "kick": 84,
+      "pass": 87,
+      "defense": 99,
+      "speed": 98,
+      "technique": 91
+    },
+    "signature_technique": "gaia_wall",
+    "flavor": "Un roc défensif de Kirkwood, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 5680
+  },
+  {
+    "id": "kirkwood_mf_shireikan",
+    "name": "Kirkwood no Shireikan",
+    "name_en": "Kirkwood Commander",
+    "team_origin": "Kirkwood",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 61,
+      "pass": 71,
+      "defense": 52,
+      "speed": 61,
+      "technique": 64
+    },
+    "signature_technique": "byakuya_no_hime",
+    "flavor": "Un stratège discret de Kirkwood, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1720
+  },
+  {
+    "id": "kirkwood_fw_kirisaki",
+    "name": "Kirkwood no Kirisaki",
+    "name_en": "Kirkwood Spearhead",
+    "team_origin": "Kirkwood",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 62,
+      "pass": 40,
+      "defense": 40,
+      "speed": 53,
+      "technique": 48
+    },
+    "signature_technique": "genei_kick",
+    "flavor": "Une pointe rapide de Kirkwood, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 1040
+  },
+  {
+    "id": "raimon_go_gk_mamorigami",
+    "name": "Raimon (GO) no Mamorigami",
+    "name_en": "Raimon (GO) Guardian Deity",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "GK",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 56,
+      "pass": 64,
+      "defense": 89,
+      "speed": 73,
+      "technique": 76
+    },
+    "signature_technique": "phoenix_catch",
+    "flavor": "Un gardien solide de Raimon (GO), dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 3060
+  },
+  {
+    "id": "raimon_go_df_senshi",
+    "name": "Raimon (GO) no Senshi",
+    "name_en": "Raimon (GO) Warrior",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 41,
+      "pass": 40,
+      "defense": 59,
+      "speed": 45,
+      "technique": 48
+    },
+    "signature_technique": "guardian_stone",
+    "flavor": "Un roc défensif de Raimon (GO), toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 1000
+  },
+  {
+    "id": "raimon_go_df_bouheki",
+    "name": "Raimon (GO) no Bouheki",
+    "name_en": "Raimon (GO) Defender",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 47,
+      "pass": 49,
+      "defense": 70,
+      "speed": 58,
+      "technique": 55
+    },
+    "signature_technique": "bear_trap_block",
+    "flavor": "Un roc défensif de Raimon (GO), toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 1600
+  },
+  {
+    "id": "raimon_go_mf_enjin",
+    "name": "Raimon (GO) no Enjin",
+    "name_en": "Raimon (GO) Engine",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 74,
+      "pass": 80,
+      "defense": 69,
+      "speed": 71,
+      "technique": 84
+    },
+    "signature_technique": "phoenix_step",
+    "flavor": "Un joueur polyvalent de Raimon (GO), capable de faire basculer une rencontre en une passe.",
+    "base_price": 3140
+  },
+  {
+    "id": "raimon_go_mf_enjin_2",
+    "name": "Raimon (GO) no Enjin",
+    "name_en": "Raimon (GO) Engine",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 84,
+      "pass": 98,
+      "defense": 80,
+      "speed": 87,
+      "technique": 91
+    },
+    "signature_technique": "dark_flare",
+    "flavor": "Un milieu de terrain de Raimon (GO), véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 5600
+  },
+  {
+    "id": "raimon_go_fw_kirisaki",
+    "name": "Raimon (GO) no Kirisaki",
+    "name_en": "Raimon (GO) Spearhead",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 5,
+    "stats": {
+      "kick": 99,
+      "pass": 80,
+      "defense": 75,
+      "speed": 93,
+      "technique": 86
+    },
+    "signature_technique": "god_break",
+    "flavor": "Un buteur de Raimon (GO) dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 9240
+  },
+  {
+    "id": "raimon_go_fw_housha",
+    "name": "Raimon (GO) no Housha",
+    "name_en": "Raimon (GO) Striker",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 60,
+      "pass": 41,
+      "defense": 43,
+      "speed": 54,
+      "technique": 55
+    },
+    "signature_technique": "shippu_no_yaiba",
+    "flavor": "Un attaquant prometteur de Raimon (GO), toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1500
+  },
+  {
+    "id": "fifth_sector_df_senshi",
+    "name": "Fifth Sector no Senshi",
+    "name_en": "Fifth Sector Warrior",
+    "team_origin": "Fifth Sector",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 72,
+      "pass": 77,
+      "defense": 93,
+      "speed": 77,
+      "technique": 78
+    },
+    "signature_technique": "emperor_penguin_no2",
+    "flavor": "Un défenseur robuste de Fifth Sector, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 5420
+  },
+  {
+    "id": "fifth_sector_mf_shihaisha",
+    "name": "Fifth Sector no Shihaisha",
+    "name_en": "Fifth Sector Controller",
+    "team_origin": "Fifth Sector",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 5,
+    "stats": {
+      "kick": 88,
+      "pass": 99,
+      "defense": 86,
+      "speed": 89,
+      "technique": 92
+    },
+    "signature_technique": "flame_geist",
+    "flavor": "Un stratège discret de Fifth Sector, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 9320
+  },
+  {
+    "id": "fifth_sector_fw_kirisaki",
+    "name": "Fifth Sector no Kirisaki",
+    "name_en": "Fifth Sector Spearhead",
+    "team_origin": "Fifth Sector",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 82,
+      "pass": 68,
+      "defense": 65,
+      "speed": 82,
+      "technique": 77
+    },
+    "signature_technique": "kaze_no_tairyuu",
+    "flavor": "Un attaquant prometteur de Fifth Sector, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 3120
+  },
+  {
+    "id": "kidoukan_gk_mamorite",
+    "name": "Kidoukan no Mamorite",
+    "name_en": "Kidoukan Guardian",
+    "team_origin": "Kidoukan",
+    "series": "Inazuma Eleven GO",
+    "position": "GK",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 65,
+      "pass": 64,
+      "defense": 90,
+      "speed": 65,
+      "technique": 75
+    },
+    "signature_technique": "meteor_catch",
+    "flavor": "Un gardien solide de Kidoukan, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 3060
+  },
+  {
+    "id": "kidoukan_df_gouheki",
+    "name": "Kidoukan no Gouheki",
+    "name_en": "Kidoukan Iron Wall",
+    "team_origin": "Kidoukan",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 4,
+    "stats": {
+      "kick": 72,
+      "pass": 71,
+      "defense": 86,
+      "speed": 74,
+      "technique": 69
+    },
+    "signature_technique": "hell_tower",
+    "flavor": "Un roc défensif de Kidoukan, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 5320
+  },
+  {
+    "id": "kidoukan_mf_shihaisha",
+    "name": "Kidoukan no Shihaisha",
+    "name_en": "Kidoukan Controller",
+    "team_origin": "Kidoukan",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 50,
+      "pass": 58,
+      "defense": 49,
+      "speed": 46,
+      "technique": 55
+    },
+    "signature_technique": "gale_spin",
+    "flavor": "Un milieu de terrain de Kidoukan, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 1100
+  },
+  {
+    "id": "kidoukan_fw_housha",
+    "name": "Kidoukan no Housha",
+    "name_en": "Kidoukan Striker",
+    "team_origin": "Kidoukan",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 80,
+      "pass": 64,
+      "defense": 52,
+      "speed": 63,
+      "technique": 67
+    },
+    "signature_technique": "falcon_claw_dribble",
+    "flavor": "Une pointe rapide de Kidoukan, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 2920
+  },
+  {
+    "id": "dragon_link_gk_mamorite",
+    "name": "Dragon Link no Mamorite",
+    "name_en": "Dragon Link Guardian",
+    "team_origin": "Dragon Link",
+    "series": "Inazuma Eleven GO",
+    "position": "GK",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 42,
+      "pass": 60,
+      "defense": 66,
+      "speed": 59,
+      "technique": 54
+    },
+    "signature_technique": "ice_wall_catch",
+    "flavor": "Un gardien solide de Dragon Link, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 1600
+  },
+  {
+    "id": "dragon_link_df_bouheki",
+    "name": "Dragon Link no Bouheki",
+    "name_en": "Dragon Link Defender",
+    "team_origin": "Dragon Link",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 52,
+      "pass": 56,
+      "defense": 72,
+      "speed": 65,
+      "technique": 59
+    },
+    "signature_technique": "wolf_legend_block",
+    "flavor": "Un joueur de Dragon Link dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 2840
+  },
+  {
+    "id": "dragon_link_mf_enjin",
+    "name": "Dragon Link no Enjin",
+    "name_en": "Dragon Link Engine",
+    "team_origin": "Dragon Link",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 69,
+      "pass": 92,
+      "defense": 75,
+      "speed": 72,
+      "technique": 89
+    },
+    "signature_technique": "fenrir_fang",
+    "flavor": "Un stratège discret de Dragon Link, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 3200
+  },
+  {
+    "id": "dragon_link_fw_kirisaki",
+    "name": "Dragon Link no Kirisaki",
+    "name_en": "Dragon Link Spearhead",
+    "team_origin": "Dragon Link",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 66,
+      "pass": 52,
+      "defense": 40,
+      "speed": 58,
+      "technique": 53
+    },
+    "signature_technique": "gale_spin",
+    "flavor": "Une pointe rapide de Dragon Link, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 1140
+  },
+  {
+    "id": "white_knights_gk_mamorigami",
+    "name": "White Knights no Mamorigami",
+    "name_en": "White Knights Guardian Deity",
+    "team_origin": "White Knights",
+    "series": "Inazuma Eleven GO",
+    "position": "GK",
+    "element": "Wood",
+    "rarity": 3,
+    "stats": {
+      "kick": 67,
+      "pass": 80,
+      "defense": 96,
+      "speed": 70,
+      "technique": 79
+    },
+    "signature_technique": "fist_of_justice",
+    "flavor": "Le dernier rempart de White Knights, déterminé à garder sa cage inviolée coûte que coûte.",
+    "base_price": 3180
+  },
+  {
+    "id": "white_knights_df_senshi",
+    "name": "White Knights no Senshi",
+    "name_en": "White Knights Warrior",
+    "team_origin": "White Knights",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 3,
+    "stats": {
+      "kick": 55,
+      "pass": 65,
+      "defense": 77,
+      "speed": 66,
+      "technique": 59
+    },
+    "signature_technique": "volcanic_barrier",
+    "flavor": "Un défenseur robuste de White Knights, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 2900
+  },
+  {
+    "id": "white_knights_mf_enjin",
+    "name": "White Knights no Enjin",
+    "name_en": "White Knights Engine",
+    "team_origin": "White Knights",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 4,
+    "stats": {
+      "kick": 82,
+      "pass": 87,
+      "defense": 75,
+      "speed": 80,
+      "technique": 94
+    },
+    "signature_technique": "kaleidoscope",
+    "flavor": "Un stratège discret de White Knights, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 5520
+  },
+  {
+    "id": "white_knights_fw_senkou",
+    "name": "White Knights no Senkou",
+    "name_en": "White Knights Vanguard",
+    "team_origin": "White Knights",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 64,
+      "pass": 52,
+      "defense": 44,
+      "speed": 58,
+      "technique": 63
+    },
+    "signature_technique": "ice_ground",
+    "flavor": "Un attaquant prometteur de White Knights, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1600
+  },
+  {
+    "id": "arakumo_gk_yousai",
+    "name": "Arakumo no Yousai",
+    "name_en": "Arakumo Fortress",
+    "team_origin": "Arakumo",
+    "series": "Inazuma Eleven GO",
+    "position": "GK",
+    "element": "Earth",
+    "rarity": 1,
+    "stats": {
+      "kick": 40,
+      "pass": 40,
+      "defense": 60,
+      "speed": 45,
+      "technique": 43
+    },
+    "signature_technique": "titan_grip",
+    "flavor": "Un gardien solide de Arakumo, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 980
+  },
+  {
+    "id": "arakumo_df_senshi",
+    "name": "Arakumo no Senshi",
+    "name_en": "Arakumo Warrior",
+    "team_origin": "Arakumo",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 67,
+      "pass": 64,
+      "defense": 87,
+      "speed": 78,
+      "technique": 62
+    },
+    "signature_technique": "shadow_step",
+    "flavor": "Un joueur de Arakumo dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 3060
+  },
+  {
+    "id": "arakumo_mf_sente",
+    "name": "Arakumo no Sente",
+    "name_en": "Arakumo Playmaker",
+    "team_origin": "Arakumo",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 85,
+      "pass": 99,
+      "defense": 83,
+      "speed": 88,
+      "technique": 99
+    },
+    "signature_technique": "field_master",
+    "flavor": "Un milieu de terrain de Arakumo, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 5660
+  },
+  {
+    "id": "arakumo_fw_kirisaki",
+    "name": "Arakumo no Kirisaki",
+    "name_en": "Arakumo Spearhead",
+    "team_origin": "Arakumo",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 97,
+      "pass": 77,
+      "defense": 81,
+      "speed": 96,
+      "technique": 89
+    },
+    "signature_technique": "dark_flare",
+    "flavor": "Un attaquant prometteur de Arakumo, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 5600
+  },
+  {
+    "id": "seidouzan_gk_yousai",
+    "name": "Seidouzan no Yousai",
+    "name_en": "Seidouzan Fortress",
+    "team_origin": "Seidouzan",
+    "series": "Inazuma Eleven GO",
+    "position": "GK",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 76,
+      "pass": 78,
+      "defense": 99,
+      "speed": 75,
+      "technique": 79
+    },
+    "signature_technique": "dragon_fist_catch",
+    "flavor": "Un gardien solide de Seidouzan, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 5460
+  },
+  {
+    "id": "seidouzan_df_kishi",
+    "name": "Seidouzan no Kishi",
+    "name_en": "Seidouzan Knight",
+    "team_origin": "Seidouzan",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 73,
+      "pass": 78,
+      "defense": 92,
+      "speed": 83,
+      "technique": 74
+    },
+    "signature_technique": "odin_sword",
+    "flavor": "Un roc défensif de Seidouzan, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 3220
+  },
+  {
+    "id": "seidouzan_mf_sente",
+    "name": "Seidouzan no Sente",
+    "name_en": "Seidouzan Playmaker",
+    "team_origin": "Seidouzan",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 1,
+    "stats": {
+      "kick": 49,
+      "pass": 58,
+      "defense": 51,
+      "speed": 48,
+      "technique": 59
+    },
+    "signature_technique": "snake_dribble",
+    "flavor": "Un joueur polyvalent de Seidouzan, capable de faire basculer une rencontre en une passe.",
+    "base_price": 1120
+  },
+  {
+    "id": "seidouzan_fw_housha",
+    "name": "Seidouzan no Housha",
+    "name_en": "Seidouzan Striker",
+    "team_origin": "Seidouzan",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 95,
+      "pass": 75,
+      "defense": 67,
+      "speed": 76,
+      "technique": 82
+    },
+    "signature_technique": "quick_turn_delta",
+    "flavor": "Un buteur de Seidouzan dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 3200
+  },
+  {
+    "id": "shin_teikoku_gk_yousai",
+    "name": "Shin Teikoku no Yousai",
+    "name_en": "Shin Teikoku Fortress",
+    "team_origin": "Shin Teikoku",
+    "series": "Inazuma Eleven GO",
+    "position": "GK",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 67,
+      "pass": 70,
+      "defense": 96,
+      "speed": 80,
+      "technique": 83
+    },
+    "signature_technique": "falcon_dive",
+    "flavor": "Le dernier rempart de Shin Teikoku, déterminé à garder sa cage inviolée coûte que coûte.",
+    "base_price": 3200
+  },
+  {
+    "id": "shin_teikoku_df_senshi",
+    "name": "Shin Teikoku no Senshi",
+    "name_en": "Shin Teikoku Warrior",
+    "team_origin": "Shin Teikoku",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 64,
+      "pass": 68,
+      "defense": 74,
+      "speed": 66,
+      "technique": 62
+    },
+    "signature_technique": "phoenix_step",
+    "flavor": "Un défenseur robuste de Shin Teikoku, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 2960
+  },
+  {
+    "id": "shin_teikoku_mf_sente",
+    "name": "Shin Teikoku no Sente",
+    "name_en": "Shin Teikoku Playmaker",
+    "team_origin": "Shin Teikoku",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 1,
+    "stats": {
+      "kick": 53,
+      "pass": 64,
+      "defense": 46,
+      "speed": 46,
+      "technique": 53
+    },
+    "signature_technique": "rock_crusher",
+    "flavor": "Un stratège discret de Shin Teikoku, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1100
+  },
+  {
+    "id": "shin_teikoku_fw_senkou",
+    "name": "Shin Teikoku no Senkou",
+    "name_en": "Shin Teikoku Vanguard",
+    "team_origin": "Shin Teikoku",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 66,
+      "pass": 45,
+      "defense": 40,
+      "speed": 55,
+      "technique": 49
+    },
+    "signature_technique": "koku_shippuu_ken",
+    "flavor": "Un attaquant prometteur de Shin Teikoku, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1500
+  },
+  {
+    "id": "raimon_cs_gk_mamorite",
+    "name": "Raimon (CS) no Mamorite",
+    "name_en": "Raimon (CS) Guardian",
+    "team_origin": "Raimon (CS)",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "GK",
+    "element": "Wood",
+    "rarity": 4,
+    "stats": {
+      "kick": 73,
+      "pass": 72,
+      "defense": 96,
+      "speed": 80,
+      "technique": 79
+    },
+    "signature_technique": "genbu_catch",
+    "flavor": "Un gardien solide de Raimon (CS), dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 5440
+  },
+  {
+    "id": "raimon_cs_df_gouheki",
+    "name": "Raimon (CS) no Gouheki",
+    "name_en": "Raimon (CS) Iron Wall",
+    "team_origin": "Raimon (CS)",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 71,
+      "pass": 64,
+      "defense": 90,
+      "speed": 72,
+      "technique": 65
+    },
+    "signature_technique": "kaleidoscope",
+    "flavor": "Un défenseur robuste de Raimon (CS), pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 5280
+  },
+  {
+    "id": "raimon_cs_mf_shihaisha",
+    "name": "Raimon (CS) no Shihaisha",
+    "name_en": "Raimon (CS) Controller",
+    "team_origin": "Raimon (CS)",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 44,
+      "pass": 55,
+      "defense": 42,
+      "speed": 49,
+      "technique": 49
+    },
+    "signature_technique": "cyclone_step",
+    "flavor": "Un joueur polyvalent de Raimon (CS), capable de faire basculer une rencontre en une passe.",
+    "base_price": 1020
+  },
+  {
+    "id": "raimon_cs_fw_kirisaki",
+    "name": "Raimon (CS) no Kirisaki",
+    "name_en": "Raimon (CS) Spearhead",
+    "team_origin": "Raimon (CS)",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 68,
+      "pass": 50,
+      "defense": 50,
+      "speed": 67,
+      "technique": 51
+    },
+    "signature_technique": "snake_dribble",
+    "flavor": "Une pointe rapide de Raimon (CS), redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 1200
+  },
+  {
+    "id": "el_dorado_df_senshi",
+    "name": "El Dorado no Senshi",
+    "name_en": "El Dorado Warrior",
+    "team_origin": "El Dorado",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 66,
+      "pass": 64,
+      "defense": 85,
+      "speed": 77,
+      "technique": 65
+    },
+    "signature_technique": "wolf_legend_block",
+    "flavor": "Un roc défensif de El Dorado, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 3040
+  },
+  {
+    "id": "el_dorado_mf_enjin",
+    "name": "El Dorado no Enjin",
+    "name_en": "El Dorado Engine",
+    "team_origin": "El Dorado",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 59,
+      "pass": 74,
+      "defense": 62,
+      "speed": 62,
+      "technique": 68
+    },
+    "signature_technique": "shadow_step",
+    "flavor": "Un stratège discret de El Dorado, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 2920
+  },
+  {
+    "id": "el_dorado_fw_housha",
+    "name": "El Dorado no Housha",
+    "name_en": "El Dorado Striker",
+    "team_origin": "El Dorado",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 1,
+    "stats": {
+      "kick": 57,
+      "pass": 40,
+      "defense": 40,
+      "speed": 49,
+      "technique": 48
+    },
+    "signature_technique": "gale_spin",
+    "flavor": "Une pointe rapide de El Dorado, redoutée pour ses accélérations soudaines devant le but.",
+    "base_price": 1000
+  },
+  {
+    "id": "protocol_omega_gk_mamorigami",
+    "name": "Protocol Omega no Mamorigami",
+    "name_en": "Protocol Omega Guardian Deity",
+    "team_origin": "Protocol Omega",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "GK",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 40,
+      "pass": 56,
+      "defense": 71,
+      "speed": 55,
+      "technique": 52
+    },
+    "signature_technique": "hawk_eye_catch",
+    "flavor": "Un gardien solide de Protocol Omega, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 1580
+  },
+  {
+    "id": "protocol_omega_df_senshi",
+    "name": "Protocol Omega no Senshi",
+    "name_en": "Protocol Omega Warrior",
+    "team_origin": "Protocol Omega",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 53,
+      "pass": 62,
+      "defense": 70,
+      "speed": 64,
+      "technique": 54
+    },
+    "signature_technique": "rock_fortress",
+    "flavor": "Un joueur de Protocol Omega dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 1700
+  },
+  {
+    "id": "protocol_omega_mf_enjin",
+    "name": "Protocol Omega no Enjin",
+    "name_en": "Protocol Omega Engine",
+    "team_origin": "Protocol Omega",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 70,
+      "pass": 80,
+      "defense": 64,
+      "speed": 65,
+      "technique": 78
+    },
+    "signature_technique": "inferno_shot",
+    "flavor": "Un stratège discret de Protocol Omega, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 3040
+  },
+  {
+    "id": "protocol_omega_fw_senkou",
+    "name": "Protocol Omega no Senkou",
+    "name_en": "Protocol Omega Vanguard",
+    "team_origin": "Protocol Omega",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 1,
+    "stats": {
+      "kick": 68,
+      "pass": 44,
+      "defense": 40,
+      "speed": 56,
+      "technique": 48
+    },
+    "signature_technique": "wind_dash",
+    "flavor": "Un buteur de Protocol Omega dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 1080
+  },
+  {
+    "id": "earth_eleven_gk_mamorite",
+    "name": "Earth Eleven no Mamorite",
+    "name_en": "Earth Eleven Guardian",
+    "team_origin": "Earth Eleven",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "GK",
+    "element": "Fire",
+    "rarity": 5,
+    "stats": {
+      "kick": 83,
+      "pass": 95,
+      "defense": 99,
+      "speed": 92,
+      "technique": 99
+    },
+    "signature_technique": "absolute_catch",
+    "flavor": "Le dernier rempart de Earth Eleven, déterminé à garder sa cage inviolée coûte que coûte.",
+    "base_price": 9380
+  },
+  {
+    "id": "earth_eleven_df_senshi",
+    "name": "Earth Eleven no Senshi",
+    "name_en": "Earth Eleven Warrior",
+    "team_origin": "Earth Eleven",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 40,
+      "pass": 40,
+      "defense": 57,
+      "speed": 49,
+      "technique": 46
+    },
+    "signature_technique": "wind_dash",
+    "flavor": "Un joueur de Earth Eleven dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 980
+  },
+  {
+    "id": "earth_eleven_mf_sente",
+    "name": "Earth Eleven no Sente",
+    "name_en": "Earth Eleven Playmaker",
+    "team_origin": "Earth Eleven",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 1,
+    "stats": {
+      "kick": 51,
+      "pass": 69,
+      "defense": 44,
+      "speed": 48,
+      "technique": 60
+    },
+    "signature_technique": "wind_dash",
+    "flavor": "Un stratège discret de Earth Eleven, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1140
+  },
+  {
+    "id": "earth_eleven_mf_enjin",
+    "name": "Earth Eleven no Enjin",
+    "name_en": "Earth Eleven Engine",
+    "team_origin": "Earth Eleven",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 60,
+      "pass": 78,
+      "defense": 58,
+      "speed": 57,
+      "technique": 66
+    },
+    "signature_technique": "blitz_turn",
+    "flavor": "Un stratège discret de Earth Eleven, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1760
+  },
+  {
+    "id": "earth_eleven_fw_ace",
+    "name": "Earth Eleven no Ace",
+    "name_en": "Earth Eleven Ace",
+    "team_origin": "Earth Eleven",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 4,
+    "stats": {
+      "kick": 99,
+      "pass": 82,
+      "defense": 74,
+      "speed": 98,
+      "technique": 89
+    },
+    "signature_technique": "fire_tornado",
+    "flavor": "Un buteur de Earth Eleven dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 5600
+  },
+  {
+    "id": "big_waves_gk_yousai",
+    "name": "Big Waves no Yousai",
+    "name_en": "Big Waves Fortress",
+    "team_origin": "Big Waves",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "GK",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 52,
+      "pass": 59,
+      "defense": 83,
+      "speed": 68,
+      "technique": 69
+    },
+    "signature_technique": "emperor_penguin_no_3",
+    "flavor": "Un gardien solide de Big Waves, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 2940
+  },
+  {
+    "id": "big_waves_df_gouheki",
+    "name": "Big Waves no Gouheki",
+    "name_en": "Big Waves Iron Wall",
+    "team_origin": "Big Waves",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 1,
+    "stats": {
+      "kick": 44,
+      "pass": 51,
+      "defense": 63,
+      "speed": 52,
+      "technique": 51
+    },
+    "signature_technique": "iron_guard",
+    "flavor": "Un roc défensif de Big Waves, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 1100
+  },
+  {
+    "id": "big_waves_mf_shihaisha",
+    "name": "Big Waves no Shihaisha",
+    "name_en": "Big Waves Controller",
+    "team_origin": "Big Waves",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 57,
+      "pass": 71,
+      "defense": 49,
+      "speed": 55,
+      "technique": 62
+    },
+    "signature_technique": "bakunetsu_dash",
+    "flavor": "Un stratège discret de Big Waves, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1660
+  },
+  {
+    "id": "big_waves_mf_sente",
+    "name": "Big Waves no Sente",
+    "name_en": "Big Waves Playmaker",
+    "team_origin": "Big Waves",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 55,
+      "pass": 67,
+      "defense": 50,
+      "speed": 63,
+      "technique": 71
+    },
+    "signature_technique": "falcon_claw_dribble",
+    "flavor": "Un joueur polyvalent de Big Waves, capable de faire basculer une rencontre en une passe.",
+    "base_price": 2840
+  },
+  {
+    "id": "big_waves_fw_ace",
+    "name": "Big Waves no Ace",
+    "name_en": "Big Waves Ace",
+    "team_origin": "Big Waves",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 4,
+    "stats": {
+      "kick": 99,
+      "pass": 78,
+      "defense": 82,
+      "speed": 93,
+      "technique": 94
+    },
+    "signature_technique": "field_master",
+    "flavor": "Un buteur de Big Waves dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 5620
+  },
+  {
+    "id": "shinsei_inazuma_japan_gk_mamorite",
+    "name": "Shinsei Inazuma Japan no Mamorite",
+    "name_en": "Shinsei Inazuma Japan Guardian",
+    "team_origin": "Shinsei Inazuma Japan",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "GK",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 58,
+      "pass": 67,
+      "defense": 83,
+      "speed": 69,
+      "technique": 71
+    },
+    "signature_technique": "dark_gaia_catch",
+    "flavor": "Un gardien solide de Shinsei Inazuma Japan, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 3020
+  },
+  {
+    "id": "shinsei_inazuma_japan_df_senshi",
+    "name": "Shinsei Inazuma Japan no Senshi",
+    "name_en": "Shinsei Inazuma Japan Warrior",
+    "team_origin": "Shinsei Inazuma Japan",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 1,
+    "stats": {
+      "kick": 49,
+      "pass": 46,
+      "defense": 58,
+      "speed": 48,
+      "technique": 49
+    },
+    "signature_technique": "silent_defense",
+    "flavor": "Un roc défensif de Shinsei Inazuma Japan, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 1060
+  },
+  {
+    "id": "shinsei_inazuma_japan_mf_shireikan",
+    "name": "Shinsei Inazuma Japan no Shireikan",
+    "name_en": "Shinsei Inazuma Japan Commander",
+    "team_origin": "Shinsei Inazuma Japan",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 55,
+      "pass": 71,
+      "defense": 60,
+      "speed": 66,
+      "technique": 74
+    },
+    "signature_technique": "hurricane_shoot",
+    "flavor": "Un stratège discret de Shinsei Inazuma Japan, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1780
+  },
+  {
+    "id": "shinsei_inazuma_japan_fw_senkou",
+    "name": "Shinsei Inazuma Japan no Senkou",
+    "name_en": "Shinsei Inazuma Japan Vanguard",
+    "team_origin": "Shinsei Inazuma Japan",
+    "series": "Inazuma Eleven GO: Galaxy",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 73,
+      "pass": 48,
+      "defense": 50,
+      "speed": 55,
+      "technique": 52
+    },
+    "signature_technique": "ice_ground",
+    "flavor": "Un buteur de Shinsei Inazuma Japan dont la détermination sur le terrain forcé le respect des adversaires.",
+    "base_price": 1600
+  },
+  {
+    "id": "raimon_ares_gk_mamorigami",
+    "name": "Raimon (Ares) no Mamorigami",
+    "name_en": "Raimon (Ares) Guardian Deity",
+    "team_origin": "Raimon (Ares)",
+    "series": "Inazuma Eleven Ares",
+    "position": "GK",
+    "element": "Fire",
+    "rarity": 5,
+    "stats": {
+      "kick": 79,
+      "pass": 82,
+      "defense": 99,
+      "speed": 85,
+      "technique": 85
+    },
+    "signature_technique": "absolute_catch",
+    "flavor": "Le dernier rempart de Raimon (Ares), déterminé à garder sa cage inviolée coûte que coûte.",
+    "base_price": 9220
+  },
+  {
+    "id": "raimon_ares_df_kishi",
+    "name": "Raimon (Ares) no Kishi",
+    "name_en": "Raimon (Ares) Knight",
+    "team_origin": "Raimon (Ares)",
+    "series": "Inazuma Eleven Ares",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 51,
+      "pass": 59,
+      "defense": 81,
+      "speed": 62,
+      "technique": 64
+    },
+    "signature_technique": "odin_sword",
+    "flavor": "Un joueur de Raimon (Ares) dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 2880
+  },
+  {
+    "id": "raimon_ares_mf_shihaisha",
+    "name": "Raimon (Ares) no Shihaisha",
+    "name_en": "Raimon (Ares) Controller",
+    "team_origin": "Raimon (Ares)",
+    "series": "Inazuma Eleven Ares",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 49,
+      "pass": 67,
+      "defense": 50,
+      "speed": 57,
+      "technique": 64
+    },
+    "signature_technique": "ice_slide_dribble",
+    "flavor": "Un stratège discret de Raimon (Ares), dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1620
+  },
+  {
+    "id": "raimon_ares_mf_shihaisha_2",
+    "name": "Raimon (Ares) no Shihaisha",
+    "name_en": "Raimon (Ares) Controller",
+    "team_origin": "Raimon (Ares)",
+    "series": "Inazuma Eleven Ares",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 5,
+    "stats": {
+      "kick": 79,
+      "pass": 95,
+      "defense": 75,
+      "speed": 84,
+      "technique": 94
+    },
+    "signature_technique": "dragon_weave",
+    "flavor": "Un stratège discret de Raimon (Ares), dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 9200
+  },
+  {
+    "id": "raimon_ares_fw_ace",
+    "name": "Raimon (Ares) no Ace",
+    "name_en": "Raimon (Ares) Ace",
+    "team_origin": "Raimon (Ares)",
+    "series": "Inazuma Eleven Ares",
+    "position": "FW",
+    "element": "Fire",
+    "rarity": 5,
+    "stats": {
+      "kick": 99,
+      "pass": 87,
+      "defense": 88,
+      "speed": 99,
+      "technique": 89
+    },
+    "signature_technique": "god_break",
+    "flavor": "Un attaquant prometteur de Raimon (Ares), toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 9340
+  },
+  {
+    "id": "ares_gk_mamorite",
+    "name": "Ares no Mamorite",
+    "name_en": "Ares Guardian",
+    "team_origin": "Ares",
+    "series": "Inazuma Eleven Ares",
+    "position": "GK",
+    "element": "Earth",
+    "rarity": 1,
+    "stats": {
+      "kick": 40,
+      "pass": 46,
+      "defense": 66,
+      "speed": 40,
+      "technique": 43
+    },
+    "signature_technique": "titan_grip",
+    "flavor": "Un gardien solide de Ares, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 1000
+  },
+  {
+    "id": "ares_df_bouheki",
+    "name": "Ares no Bouheki",
+    "name_en": "Ares Defender",
+    "team_origin": "Ares",
+    "series": "Inazuma Eleven Ares",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 69,
+      "pass": 79,
+      "defense": 86,
+      "speed": 79,
+      "technique": 72
+    },
+    "signature_technique": "gale_barrier",
+    "flavor": "Un roc défensif de Ares, toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 3160
+  },
+  {
+    "id": "ares_mf_sente",
+    "name": "Ares no Sente",
+    "name_en": "Ares Playmaker",
+    "team_origin": "Ares",
+    "series": "Inazuma Eleven Ares",
+    "position": "MF",
+    "element": "Fire",
+    "rarity": 1,
+    "stats": {
+      "kick": 47,
+      "pass": 64,
+      "defense": 40,
+      "speed": 51,
+      "technique": 53
+    },
+    "signature_technique": "snake_dribble",
+    "flavor": "Un stratège discret de Ares, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 1080
+  },
+  {
+    "id": "ares_fw_kirisaki",
+    "name": "Ares no Kirisaki",
+    "name_en": "Ares Spearhead",
+    "team_origin": "Ares",
+    "series": "Inazuma Eleven Ares",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 74,
+      "pass": 46,
+      "defense": 47,
+      "speed": 55,
+      "technique": 56
+    },
+    "signature_technique": "phantom_dribble",
+    "flavor": "Un attaquant prometteur de Ares, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1600
+  },
+  {
+    "id": "orion_gk_mamorite",
+    "name": "Orion no Mamorite",
+    "name_en": "Orion Guardian",
+    "team_origin": "Orion",
+    "series": "Inazuma Eleven Orion",
+    "position": "GK",
+    "element": "Wood",
+    "rarity": 1,
+    "stats": {
+      "kick": 40,
+      "pass": 44,
+      "defense": 63,
+      "speed": 46,
+      "technique": 46
+    },
+    "signature_technique": "basic_catch",
+    "flavor": "Un gardien solide de Orion, dont les réflexes surprennent souvent les attaquants adverses.",
+    "base_price": 1020
+  },
+  {
+    "id": "orion_df_senshi",
+    "name": "Orion no Senshi",
+    "name_en": "Orion Warrior",
+    "team_origin": "Orion",
+    "series": "Inazuma Eleven Orion",
+    "position": "DF",
+    "element": "Wood",
+    "rarity": 1,
+    "stats": {
+      "kick": 54,
+      "pass": 57,
+      "defense": 62,
+      "speed": 59,
+      "technique": 56
+    },
+    "signature_technique": "silent_defense",
+    "flavor": "Un défenseur robuste de Orion, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 1220
+  },
+  {
+    "id": "orion_mf_sente",
+    "name": "Orion no Sente",
+    "name_en": "Orion Playmaker",
+    "team_origin": "Orion",
+    "series": "Inazuma Eleven Orion",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 4,
+    "stats": {
+      "kick": 81,
+      "pass": 98,
+      "defense": 83,
+      "speed": 80,
+      "technique": 90
+    },
+    "signature_technique": "devil_step",
+    "flavor": "Un stratège discret de Orion, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 5560
+  },
+  {
+    "id": "orion_fw_housha",
+    "name": "Orion no Housha",
+    "name_en": "Orion Striker",
+    "team_origin": "Orion",
+    "series": "Inazuma Eleven Orion",
+    "position": "FW",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 79,
+      "pass": 53,
+      "defense": 47,
+      "speed": 67,
+      "technique": 61
+    },
+    "signature_technique": "byakuya_no_hime",
+    "flavor": "Un attaquant prometteur de Orion, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 1700
+  },
+  {
+    "id": "raimon_pad0_gk_mamorigami",
+    "name": "Raimon no Mamorigami",
+    "name_en": "Raimon Guardian Deity",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Wood",
+    "rarity": 2,
+    "stats": {
+      "kick": 43,
+      "pass": 59,
+      "defense": 79,
+      "speed": 53,
+      "technique": 64
+    },
+    "signature_technique": "hawk_eye_catch",
+    "flavor": "Un gardien discret de Raimon qui progresse match après match dans l'ombre des titulaires.",
+    "base_price": 1680
+  },
+  {
+    "id": "raimon_go_pad1_df_bouheki",
+    "name": "Raimon (GO) no Bouheki",
+    "name_en": "Raimon (GO) Defender",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "DF",
+    "element": "Earth",
+    "rarity": 2,
+    "stats": {
+      "kick": 50,
+      "pass": 50,
+      "defense": 68,
+      "speed": 63,
+      "technique": 52
+    },
+    "signature_technique": "storm_shield",
+    "flavor": "Un roc défensif de Raimon (GO), toujours prêt à sacrifier son corps pour arrêter l'adversaire.",
+    "base_price": 1620
+  },
+  {
+    "id": "teikoku_gakuen_pad2_mf_shihaisha",
+    "name": "Teikoku Gakuen no Shihaisha",
+    "name_en": "Teikoku Gakuen Controller",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Earth",
+    "rarity": 4,
+    "stats": {
+      "kick": 82,
+      "pass": 97,
+      "defense": 75,
+      "speed": 87,
+      "technique": 99
+    },
+    "signature_technique": "devil_step",
+    "flavor": "Un stratège discret de Teikoku Gakuen, dont la vision du jeu forge les victoires de son équipe.",
+    "base_price": 5600
+  },
+  {
+    "id": "inazuma_japan_pad3_fw_ace",
+    "name": "Inazuma Japan no Ace",
+    "name_en": "Inazuma Japan Ace",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 4,
+    "stats": {
+      "kick": 98,
+      "pass": 84,
+      "defense": 67,
+      "speed": 93,
+      "technique": 83
+    },
+    "signature_technique": "eternal_blizzard",
+    "flavor": "Un attaquant prometteur de Inazuma Japan, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 5540
+  },
+  {
+    "id": "el_dorado_pad4_gk_yousai",
+    "name": "El Dorado no Yousai",
+    "name_en": "El Dorado Fortress",
+    "team_origin": "El Dorado",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "GK",
+    "element": "Wind",
+    "rarity": 4,
+    "stats": {
+      "kick": 59,
+      "pass": 75,
+      "defense": 87,
+      "speed": 69,
+      "technique": 74
+    },
+    "signature_technique": "chaos_break_catch",
+    "flavor": "Un gardien discret de El Dorado qui progresse match après match dans l'ombre des titulaires.",
+    "base_price": 5300
+  },
+  {
+    "id": "raimon_pad5_df_gouheki",
+    "name": "Raimon no Gouheki",
+    "name_en": "Raimon Iron Wall",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 3,
+    "stats": {
+      "kick": 62,
+      "pass": 70,
+      "defense": 81,
+      "speed": 68,
+      "technique": 63
+    },
+    "signature_technique": "killer_slide",
+    "flavor": "Un défenseur robuste de Raimon, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 3000
+  },
+  {
+    "id": "raimon_go_pad6_mf_enjin",
+    "name": "Raimon (GO) no Enjin",
+    "name_en": "Raimon (GO) Engine",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "MF",
+    "element": "Wood",
+    "rarity": 5,
+    "stats": {
+      "kick": 86,
+      "pass": 99,
+      "defense": 82,
+      "speed": 89,
+      "technique": 92
+    },
+    "signature_technique": "maou_no_bumon",
+    "flavor": "Un milieu de terrain de Raimon (GO), véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 9300
+  },
+  {
+    "id": "teikoku_gakuen_pad7_fw_kirisaki",
+    "name": "Teikoku Gakuen no Kirisaki",
+    "name_en": "Teikoku Gakuen Spearhead",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "FW",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 87,
+      "pass": 70,
+      "defense": 62,
+      "speed": 74,
+      "technique": 72
+    },
+    "signature_technique": "fenrir_fang",
+    "flavor": "Un attaquant prometteur de Teikoku Gakuen, toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 3080
+  },
+  {
+    "id": "inazuma_japan_pad8_gk_mamorite",
+    "name": "Inazuma Japan no Mamorite",
+    "name_en": "Inazuma Japan Guardian",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 41,
+      "pass": 46,
+      "defense": 72,
+      "speed": 49,
+      "technique": 57
+    },
+    "signature_technique": "fortress_catch",
+    "flavor": "Le dernier rempart de Inazuma Japan, déterminé à garder sa cage inviolée coûte que coûte.",
+    "base_price": 1540
+  },
+  {
+    "id": "el_dorado_pad9_df_senshi",
+    "name": "El Dorado no Senshi",
+    "name_en": "El Dorado Warrior",
+    "team_origin": "El Dorado",
+    "series": "Inazuma Eleven GO: Chrono Stone",
+    "position": "DF",
+    "element": "Wind",
+    "rarity": 3,
+    "stats": {
+      "kick": 71,
+      "pass": 69,
+      "defense": 85,
+      "speed": 83,
+      "technique": 77
+    },
+    "signature_technique": "gale_barrier",
+    "flavor": "Un défenseur robuste de El Dorado, pilier discret mais essentiel de l'arrière-garde.",
+    "base_price": 3160
+  },
+  {
+    "id": "raimon_pad10_mf_sente",
+    "name": "Raimon no Sente",
+    "name_en": "Raimon Playmaker",
+    "team_origin": "Raimon",
+    "series": "Inazuma Eleven",
+    "position": "MF",
+    "element": "Wind",
+    "rarity": 2,
+    "stats": {
+      "kick": 51,
+      "pass": 65,
+      "defense": 42,
+      "speed": 49,
+      "technique": 63
+    },
+    "signature_technique": "rolling_fake",
+    "flavor": "Un milieu de terrain de Raimon, véritable métronome qui distribue le jeu avec sang-froid.",
+    "base_price": 1560
+  },
+  {
+    "id": "raimon_go_pad11_fw_kirisaki",
+    "name": "Raimon (GO) no Kirisaki",
+    "name_en": "Raimon (GO) Spearhead",
+    "team_origin": "Raimon (GO)",
+    "series": "Inazuma Eleven GO",
+    "position": "FW",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 91,
+      "pass": 67,
+      "defense": 56,
+      "speed": 74,
+      "technique": 69
+    },
+    "signature_technique": "wolf_legend",
+    "flavor": "Un attaquant prometteur de Raimon (GO), toujours à l'affût de la moindre occasion de marquer.",
+    "base_price": 3040
+  },
+  {
+    "id": "teikoku_gakuen_pad12_gk_mamorite",
+    "name": "Teikoku Gakuen no Mamorite",
+    "name_en": "Teikoku Gakuen Guardian",
+    "team_origin": "Teikoku Gakuen",
+    "series": "Inazuma Eleven",
+    "position": "GK",
+    "element": "Earth",
+    "rarity": 3,
+    "stats": {
+      "kick": 70,
+      "pass": 79,
+      "defense": 87,
+      "speed": 73,
+      "technique": 81
+    },
+    "signature_technique": "phoenix_catch",
+    "flavor": "Le dernier rempart de Teikoku Gakuen, déterminé à garder sa cage inviolée coûte que coûte.",
+    "base_price": 3180
+  },
+  {
+    "id": "inazuma_japan_pad13_df_senshi",
+    "name": "Inazuma Japan no Senshi",
+    "name_en": "Inazuma Japan Warrior",
+    "team_origin": "Inazuma Japan",
+    "series": "Inazuma Eleven",
+    "position": "DF",
+    "element": "Fire",
+    "rarity": 2,
+    "stats": {
+      "kick": 52,
+      "pass": 59,
+      "defense": 64,
+      "speed": 56,
+      "technique": 58
+    },
+    "signature_technique": "raging_gale_wall",
+    "flavor": "Un joueur de Inazuma Japan dont la discipline défensive impressionne ses adversaires.",
+    "base_price": 1640
   }
 ]
