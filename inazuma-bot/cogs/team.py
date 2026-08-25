@@ -49,7 +49,7 @@ class TeamCog(commands.Cog):
             label = next((lbl for pos, key, lbl in config.FORMATIONS[team.formation] if key == slot.slot_key), slot.slot_key)
             if slot.card:
                 p = slot.card.player
-                lines.append(f"`{slot.slot_key}` {label} — {POSITION_EMOJI.get(p.position,'')} **{p.name}** (OVR {p.overall}) `#{slot.card.id}`")
+                lines.append(f"`{slot.slot_key}` {label} — {POSITION_EMOJI.get(p.position,'')} **{p.name_en}** (OVR {p.overall})")
                 starter_cards.append(StarterCard(
                     name=p.name, position=p.position, kick=p.kick, pass_=p.pass_,
                     defense=p.defense, speed=p.speed, technique=p.technique,
@@ -61,7 +61,7 @@ class TeamCog(commands.Cog):
         for slot in bench:
             if slot.card:
                 p = slot.card.player
-                bench_lines.append(f"`{slot.slot_key}` {POSITION_EMOJI.get(p.position,'')} **{p.name}** (OVR {p.overall}) `#{slot.card.id}`")
+                bench_lines.append(f"`{slot.slot_key}` {POSITION_EMOJI.get(p.position,'')} **{p.name_en}** (OVR {p.overall})")
             else:
                 bench_lines.append(f"`{slot.slot_key}` — _vide_")
 
@@ -103,6 +103,7 @@ class TeamCog(commands.Cog):
         await interaction.response.send_message(embed=embed)
 
     @team_group.command(name="rename", description="Renomme ton équipe.")
+    @app_commands.rename(name="nom")
     async def rename(self, interaction: discord.Interaction, name: app_commands.Range[str, 1, 40]):
         async with SessionLocal() as session:
             team = await get_active_team(session, interaction.user.id)
@@ -132,6 +133,7 @@ class TeamCog(commands.Cog):
 
     @team_group.command(name="set", description="Place une carte de ta collection dans un slot de ton équipe.")
     @app_commands.describe(slot="Le slot (ex: FW1, DF2, BENCH1 — voir /team view)", card_id="Tape le nom du joueur à placer")
+    @app_commands.rename(slot="emplacement", card_id="joueur")
     @app_commands.autocomplete(slot=_slot_autocomplete, card_id=owned_card_autocomplete)
     async def set_slot(self, interaction: discord.Interaction, slot: str, card_id: int):
         async with SessionLocal() as session:
@@ -153,7 +155,7 @@ class TeamCog(commands.Cog):
                     break
             if required_position and card.player.position != required_position:
                 await interaction.response.send_message(
-                    f"❌ Ce slot demande un **{required_position}**, mais {card.player.name} est **{card.player.position}**.",
+                    f"❌ Ce slot demande un **{required_position}**, mais {card.player.name_en} est **{card.player.position}**.",
                     ephemeral=True,
                 )
                 return
@@ -166,10 +168,11 @@ class TeamCog(commands.Cog):
             target_slot.card_id = card.id
             await session.commit()
 
-        await interaction.response.send_message(f"✅ **{card.player.name}** placé en `{slot}`.")
+        await interaction.response.send_message(f"✅ **{card.player.name_en}** placé en `{slot}`.")
 
     @team_group.command(name="bench", description="Envoie une carte sur le banc (premier slot de banc libre).")
     @app_commands.describe(card_id="Tape le nom du joueur à envoyer sur le banc")
+    @app_commands.rename(card_id="joueur")
     @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def bench(self, interaction: discord.Interaction, card_id: int):
         async with SessionLocal() as session:
@@ -189,9 +192,11 @@ class TeamCog(commands.Cog):
                     s.card_id = None
             free_bench.card_id = card.id
             await session.commit()
-        await interaction.response.send_message(f"✅ **{card.player.name}** envoyé sur le banc (`{free_bench.slot_key}`).")
+        await interaction.response.send_message(f"✅ **{card.player.name_en}** envoyé sur le banc (`{free_bench.slot_key}`).")
 
     @team_group.command(name="remove", description="Retire une carte d'un slot (titulaire ou banc).")
+    @app_commands.describe(slot="Le slot à vider (voir /team view)")
+    @app_commands.rename(slot="emplacement")
     @app_commands.autocomplete(slot=_slot_autocomplete)
     async def remove(self, interaction: discord.Interaction, slot: str):
         async with SessionLocal() as session:
@@ -206,6 +211,7 @@ class TeamCog(commands.Cog):
 
     @team_group.command(name="tactic", description="Équipe une tactique possédée à ton équipe.")
     @app_commands.describe(user_tactic_id="Tape le nom de la tactique que tu possèdes")
+    @app_commands.rename(user_tactic_id="tactique")
     @app_commands.autocomplete(user_tactic_id=owned_tactic_autocomplete)
     async def tactic(self, interaction: discord.Interaction, user_tactic_id: int):
         async with SessionLocal() as session:
@@ -220,6 +226,7 @@ class TeamCog(commands.Cog):
 
     @team_group.command(name="coach", description="Équipe un coach possédé à ton équipe.")
     @app_commands.describe(user_coach_id="Tape le nom du coach que tu possèdes")
+    @app_commands.rename(user_coach_id="coach")
     @app_commands.autocomplete(user_coach_id=owned_coach_autocomplete)
     async def coach(self, interaction: discord.Interaction, user_coach_id: int):
         async with SessionLocal() as session:
@@ -234,6 +241,7 @@ class TeamCog(commands.Cog):
 
     @team_group.command(name="equip", description="Équipe une technique possédée sur une carte de ton équipe.")
     @app_commands.describe(card_id="Tape le nom du joueur", user_technique_id="Tape le nom de la technique que tu possèdes")
+    @app_commands.rename(card_id="joueur", user_technique_id="technique")
     @app_commands.autocomplete(card_id=owned_card_autocomplete, user_technique_id=owned_technique_autocomplete)
     async def equip(self, interaction: discord.Interaction, card_id: int, user_technique_id: int):
         async with SessionLocal() as session:
@@ -247,10 +255,11 @@ class TeamCog(commands.Cog):
                 return
             card.equipped_technique_id = ut.id
             await session.commit()
-        await interaction.response.send_message(f"✅ Technique équipée sur **{card.player.name}**.")
+        await interaction.response.send_message(f"✅ Technique équipée sur **{card.player.name_en}**.")
 
     @team_group.command(name="unequip", description="Retire la technique équipée d'une carte.")
     @app_commands.describe(card_id="Tape le nom du joueur")
+    @app_commands.rename(card_id="joueur")
     @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def unequip(self, interaction: discord.Interaction, card_id: int):
         async with SessionLocal() as session:
@@ -260,7 +269,7 @@ class TeamCog(commands.Cog):
                 return
             card.equipped_technique_id = None
             await session.commit()
-        await interaction.response.send_message(f"✅ Technique retirée de **{card.player.name}**.")
+        await interaction.response.send_message(f"✅ Technique retirée de **{card.player.name_en}**.")
 
 
 async def setup(bot: commands.Bot):

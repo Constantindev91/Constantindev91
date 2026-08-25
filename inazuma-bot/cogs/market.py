@@ -10,7 +10,7 @@ import config
 from db.database import SessionLocal
 from db.models import MarketListing, PlayerTemplate, Team, TeamSlot, User, UserCard
 from db.repository import get_or_create_user
-from utils.autocomplete import owned_card_autocomplete
+from utils.autocomplete import market_listing_autocomplete, own_listing_autocomplete, owned_card_autocomplete
 from utils.pagination import Paginator, chunk
 
 POSITION_EMOJI = {"GK": "🧤", "DF": "🛡️", "MF": "🎯", "FW": "⚡"}
@@ -26,6 +26,7 @@ class MarketCog(commands.Cog):
 
     @market_group.command(name="list", description="Met une carte en vente sur le marché des transferts.")
     @app_commands.describe(card_id="Tape le nom du joueur à vendre", price=f"Prix demandé en {config.CURRENCY_SYMBOL}")
+    @app_commands.rename(card_id="joueur", price="prix")
     @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def list_card(self, interaction: discord.Interaction, card_id: int, price: app_commands.Range[int, config.MARKET_MIN_PRICE, config.MARKET_MAX_PRICE]):
         async with SessionLocal() as session:
@@ -52,31 +53,39 @@ class MarketCog(commands.Cog):
 
             listing = MarketListing(seller_id=interaction.user.id, card_id=card.id, price=price)
             session.add(listing)
+            name = card.player.name_en
             await session.commit()
-            listing_id = listing.id
-            name = card.player.name
 
         await interaction.response.send_message(
-            f"📢 **{name}** mis en vente pour **{price} {config.CURRENCY_SYMBOL}** (annonce `#{listing_id}`)."
+            f"📢 **{name}** mis en vente pour **{price} {config.CURRENCY_SYMBOL}**."
         )
 
     @market_group.command(name="cancel", description="Annule une de tes annonces sur le marché.")
+    @app_commands.describe(listing_id="Tape le nom du joueur dont tu veux annuler la vente")
+    @app_commands.rename(listing_id="annonce")
+    @app_commands.autocomplete(listing_id=own_listing_autocomplete)
     async def cancel(self, interaction: discord.Interaction, listing_id: int):
         async with SessionLocal() as session:
-            listing = await session.get(MarketListing, listing_id)
+            listing = await session.get(MarketListing, listing_id, options=[selectinload(MarketListing.card).selectinload(UserCard.player)])
             if listing is None or not listing.active or listing.seller_id != interaction.user.id:
-                await interaction.response.send_message("❌ Annonce introuvable.", ephemeral=True)
+                await interaction.response.send_message("❌ Annonce introuvable — utilise l'autocomplétion et choisis dans la liste.", ephemeral=True)
                 return
             listing.active = False
+            name = listing.card.player.name_en
             await session.commit()
-        await interaction.response.send_message(f"✅ Annonce `#{listing_id}` annulée, la carte reste dans ta collection.")
+        await interaction.response.send_message(f"✅ Annonce de **{name}** annulée, la carte reste dans ta collection.")
 
     @market_group.command(name="buy", description="Achète une carte listée sur le marché des transferts.")
+    @app_commands.describe(listing_id="Tape le nom du joueur que tu veux acheter")
+    @app_commands.rename(listing_id="annonce")
+    @app_commands.autocomplete(listing_id=market_listing_autocomplete)
     async def buy(self, interaction: discord.Interaction, listing_id: int):
         async with SessionLocal() as session:
             listing = await session.get(MarketListing, listing_id, options=[selectinload(MarketListing.card).selectinload(UserCard.player)])
             if listing is None or not listing.active:
-                await interaction.response.send_message("❌ Annonce introuvable ou déjà vendue.", ephemeral=True)
+                await interaction.response.send_message(
+                    "❌ Annonce introuvable ou déjà vendue — utilise l'autocomplétion et choisis dans la liste.", ephemeral=True
+                )
                 return
             if listing.seller_id == interaction.user.id:
                 await interaction.response.send_message("❌ Tu ne peux pas acheter ta propre carte.", ephemeral=True)
@@ -101,7 +110,7 @@ class MarketCog(commands.Cog):
             listing.active = False
             await session.commit()
 
-            name = card.player.name
+            name = card.player.name_en
             rarity = card.player.rarity
 
         embed = discord.Embed(
@@ -116,6 +125,7 @@ class MarketCog(commands.Cog):
 
     @market_group.command(name="browse", description="Parcourt les annonces actives du marché des transferts.")
     @app_commands.describe(position="Filtrer par poste", max_price="Prix maximum")
+    @app_commands.rename(max_price="prix_max")
     @app_commands.choices(position=[
         app_commands.Choice(name="Gardien", value="GK"),
         app_commands.Choice(name="Défenseur", value="DF"),
@@ -145,12 +155,12 @@ class MarketCog(commands.Cog):
         pages = []
         for group in chunk(listings, 10):
             lines = [
-                f"`#{l.id}` {POSITION_EMOJI.get(l.card.player.position,'')} {config.RARITY_STARS[l.card.player.rarity]} "
-                f"**{l.card.player.name}** (OVR {l.card.player.overall}) — **{l.price} {config.CURRENCY_SYMBOL}** — vendeur <@{l.seller_id}>"
+                f"{POSITION_EMOJI.get(l.card.player.position,'')} {config.RARITY_STARS[l.card.player.rarity]} "
+                f"**{l.card.player.name_en}** (OVR {l.card.player.overall}) — **{l.price} {config.CURRENCY_SYMBOL}** — vendeur <@{l.seller_id}>"
                 for l in group
             ]
             embed = discord.Embed(title="🏦 Marché des transferts", description="\n".join(lines), color=config.rarity_embed_color(4))
-            embed.set_footer(text="Achète avec /market buy <id>")
+            embed.set_footer(text="Achète avec /market buy (tape le nom du joueur)")
             pages.append(embed)
         await interaction.response.send_message(embed=pages[0], view=Paginator(interaction.user.id, pages))
 
@@ -168,7 +178,7 @@ class MarketCog(commands.Cog):
             await interaction.response.send_message("Tu n'as aucune annonce active.", ephemeral=True)
             return
 
-        lines = [f"`#{l.id}` **{l.card.player.name}** — {l.price} {config.CURRENCY_SYMBOL}" for l in listings]
+        lines = [f"**{l.card.player.name_en}** — {l.price} {config.CURRENCY_SYMBOL}" for l in listings]
         embed = discord.Embed(title="📋 Mes annonces", description="\n".join(lines), color=config.rarity_embed_color(3))
         await interaction.response.send_message(embed=embed, ephemeral=True)
 

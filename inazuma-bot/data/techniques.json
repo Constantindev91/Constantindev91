@@ -127,7 +127,7 @@
   },
   {
     "id": "koku_shippuu_ken",
-    "name": "Kokushippuu Ken",
+    "name": "Épée du Vent Noir",
     "type": "shoot",
     "element": "Wind",
     "power": 72,
@@ -154,7 +154,7 @@
   },
   {
     "id": "kazan_no_hoou",
-    "name": "Kazan no Hoou",
+    "name": "Phénix du Volcan",
     "type": "shoot",
     "element": "Fire",
     "power": 68,
@@ -172,7 +172,7 @@
   },
   {
     "id": "daichi_no_ikari",
-    "name": "Daichi no Ikari",
+    "name": "Colère de la Terre",
     "type": "shoot",
     "element": "Earth",
     "power": 74,
@@ -190,7 +190,7 @@
   },
   {
     "id": "shippuu_dash_shoot",
-    "name": "Shippuu Dash Shoot",
+    "name": "Tir Rafale Fulgurante",
     "type": "shoot",
     "element": "Wind",
     "power": 60,
@@ -208,7 +208,7 @@
   },
   {
     "id": "kaze_no_tairyuu",
-    "name": "Kaze no Tairyuu",
+    "name": "Grand Dragon du Vent",
     "type": "dribble",
     "element": "Wind",
     "power": 78,
@@ -217,7 +217,7 @@
   },
   {
     "id": "mugen_no_kanata",
-    "name": "Mugen no Kanata",
+    "name": "Au-delà de l'Infini",
     "type": "dribble",
     "element": "Wind",
     "power": 90,
@@ -253,7 +253,7 @@
   },
   {
     "id": "byakuya_no_hime",
-    "name": "Byakuya no Hime",
+    "name": "Princesse de la Nuit Blanche",
     "type": "dribble",
     "element": "Wood",
     "power": 70,
@@ -298,7 +298,7 @@
   },
   {
     "id": "maou_no_bumon",
-    "name": "Maou no Bumon",
+    "name": "Portail du Roi Démon",
     "type": "dribble",
     "element": "Earth",
     "power": 91,
@@ -577,7 +577,7 @@
   },
   {
     "id": "ryuusei_blade",
-    "name": "Ryuusei Blade",
+    "name": "Lame Étoile Filante",
     "type": "shoot",
     "element": "Earth",
     "power": 89,
@@ -586,7 +586,7 @@
   },
   {
     "id": "tenchi_no_hasha",
-    "name": "Tenchi no Hasha",
+    "name": "Suprématie Ciel et Terre",
     "type": "shoot",
     "element": "Earth",
     "power": 90,
@@ -613,7 +613,7 @@
   },
   {
     "id": "hyousetsu_no_ken",
-    "name": "Hyousetsu no Ken",
+    "name": "Lame de Glace et Neige",
     "type": "shoot",
     "element": "Wood",
     "power": 87,
@@ -622,7 +622,7 @@
   },
   {
     "id": "kaen_musou",
-    "name": "Kaen Musou",
+    "name": "Flamme Sans Égale",
     "type": "shoot",
     "element": "Fire",
     "power": 69,
@@ -640,7 +640,7 @@
   },
   {
     "id": "shippu_no_yaiba",
-    "name": "Shippu no Yaiba",
+    "name": "Lame de la Tempête",
     "type": "shoot",
     "element": "Wind",
     "power": 65,
@@ -649,7 +649,7 @@
   },
   {
     "id": "genei_kick",
-    "name": "Genei Kick",
+    "name": "Frappe Fantôme",
     "type": "shoot",
     "element": "Wood",
     "power": 61,
@@ -703,7 +703,7 @@
   },
   {
     "id": "zangetsu_axel",
-    "name": "Zangetsu Axel",
+    "name": "Lune Tranchante",
     "type": "shoot",
     "element": "Earth",
     "power": 87,

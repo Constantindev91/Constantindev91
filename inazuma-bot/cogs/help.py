@@ -42,7 +42,7 @@ CATEGORIES: list[tuple[str, str, list[tuple[str, str]]]] = [
         ("/shop buy technique <nom>", "Achète une technique."),
         ("/shop buy tactic <nom>", "Achète une tactique."),
         ("/shop buy coach <nom>", "Achète un coach."),
-        ("/inventory", "Liste tes techniques/tactiques/coachs possédés avec leurs IDs."),
+        ("/inventory", "Liste tes techniques/tactiques/coachs possédés."),
     ]),
     ("🏦 Marché des Transferts", "Achète et vends des joueurs entre membres du serveur.", [
         ("/market list <nom> <prix>", "Met une de tes cartes en vente."),

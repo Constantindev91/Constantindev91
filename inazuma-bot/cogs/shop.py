@@ -33,7 +33,7 @@ class ShopCog(commands.Cog):
         pages = []
         for group in chunk(rows, 10):
             lines = [
-                f"`{t.id}` {TYPE_EMOJI.get(t.type,'')} {config.RARITY_STARS[t.rarity]} **{t.name}** "
+                f"{TYPE_EMOJI.get(t.type,'')} {config.RARITY_STARS[t.rarity]} **{t.name}** "
                 f"({t.type}, {t.element}, PUI {t.power}) — {config.shop_price(t.rarity)} {config.CURRENCY_SYMBOL}"
                 for t in group
             ]
@@ -50,7 +50,7 @@ class ShopCog(commands.Cog):
         pages = []
         for group in chunk(rows, 10):
             lines = [
-                f"`{t.id}` {config.RARITY_STARS[t.rarity]} **{t.name}** — {t.effect} — {config.shop_price(t.rarity)} {config.CURRENCY_SYMBOL}"
+                f"{config.RARITY_STARS[t.rarity]} **{t.name}** — {t.effect} — {config.shop_price(t.rarity)} {config.CURRENCY_SYMBOL}"
                 for t in group
             ]
             embed = discord.Embed(title="🧠 Boutique — Tactiques", description="\n".join(lines), color=config.rarity_embed_color(4))
@@ -66,7 +66,7 @@ class ShopCog(commands.Cog):
         pages = []
         for group in chunk(rows, 10):
             lines = [
-                f"`{c.id}` {config.RARITY_STARS[c.rarity]} **{c.name}** ({c.team_origin}) — {c.bonus} — {config.shop_price(c.rarity)} {config.CURRENCY_SYMBOL}"
+                f"{config.RARITY_STARS[c.rarity]} **{c.name}** ({c.team_origin}) — {c.bonus} — {config.shop_price(c.rarity)} {config.CURRENCY_SYMBOL}"
                 for c in group
             ]
             embed = discord.Embed(title="🧑‍💼 Boutique — Coachs", description="\n".join(lines), color=config.rarity_embed_color(4))
@@ -75,42 +75,52 @@ class ShopCog(commands.Cog):
         await interaction.response.send_message(embed=pages[0], view=Paginator(interaction.user.id, pages))
 
     @app_commands.command(name="technique", description="Affiche la carte détaillée (avec image) d'une technique.")
-    @app_commands.describe(technique_id="Tape le nom de la technique")
-    @app_commands.autocomplete(technique_id=technique_autocomplete)
-    async def technique_view(self, interaction: discord.Interaction, technique_id: str):
+    @app_commands.describe(technique="Tape le nom de la technique")
+    @app_commands.autocomplete(technique=technique_autocomplete)
+    async def technique_view(self, interaction: discord.Interaction, technique: str):
         async with SessionLocal() as session:
-            t = await session.get(TechniqueTemplate, technique_id)
+            t = await session.get(TechniqueTemplate, technique)
         if t is None:
-            await interaction.response.send_message("❌ Technique introuvable (voir `/shop techniques` pour les IDs).", ephemeral=True)
+            await interaction.response.send_message("❌ Technique introuvable — tape un bout de son nom et choisis une suggestion.", ephemeral=True)
             return
-        buf = render_technique_card(TechniqueData(id=t.id, name=t.name, type=t.type, element=t.element, power=t.power, rarity=t.rarity, description=t.description))
-        file = discord.File(buf, filename="technique.png")
+
         embed = discord.Embed(
             title=f"{TYPE_EMOJI.get(t.type,'')} {t.name}",
-            description=f"{config.RARITY_STARS[t.rarity]} ({t.rarity}/5) — prix boutique : {config.shop_price(t.rarity)} {config.CURRENCY_SYMBOL}",
+            description=f"{config.RARITY_STARS[t.rarity]} ({t.rarity}/5) — prix boutique : {config.shop_price(t.rarity)} {config.CURRENCY_SYMBOL}\n_{t.description}_",
             color=config.rarity_embed_color(t.rarity),
         )
-        embed.set_image(url="attachment://technique.png")
-        await interaction.response.send_message(embed=embed, file=file)
+        if t.image_url:
+            embed.set_image(url=t.image_url)
+            await interaction.response.send_message(embed=embed)
+        else:
+            buf = render_technique_card(TechniqueData(id=t.id, name=t.name, type=t.type, element=t.element, power=t.power, rarity=t.rarity, description=t.description))
+            file = discord.File(buf, filename="technique.png")
+            embed.set_image(url="attachment://technique.png")
+            await interaction.response.send_message(embed=embed, file=file)
 
     @app_commands.command(name="coach", description="Affiche la carte détaillée (avec image) d'un coach.")
-    @app_commands.describe(coach_id="Tape le nom du coach")
-    @app_commands.autocomplete(coach_id=coach_autocomplete)
-    async def coach_view(self, interaction: discord.Interaction, coach_id: str):
+    @app_commands.describe(coach="Tape le nom du coach")
+    @app_commands.autocomplete(coach=coach_autocomplete)
+    async def coach_view(self, interaction: discord.Interaction, coach: str):
         async with SessionLocal() as session:
-            c = await session.get(CoachTemplate, coach_id)
+            c = await session.get(CoachTemplate, coach)
         if c is None:
-            await interaction.response.send_message("❌ Coach introuvable (voir `/shop coaches` pour les IDs).", ephemeral=True)
+            await interaction.response.send_message("❌ Coach introuvable — tape un bout de son nom et choisis une suggestion.", ephemeral=True)
             return
-        buf = render_coach_card(CoachData(id=c.id, name=c.name, team_origin=c.team_origin, bonus=c.bonus, rarity=c.rarity, description=c.description))
-        file = discord.File(buf, filename="coach.png")
+
         embed = discord.Embed(
             title=f"🧑‍💼 {c.name}",
-            description=f"{config.RARITY_STARS[c.rarity]} ({c.rarity}/5) — prix boutique : {config.shop_price(c.rarity)} {config.CURRENCY_SYMBOL}",
+            description=f"{config.RARITY_STARS[c.rarity]} ({c.rarity}/5) — prix boutique : {config.shop_price(c.rarity)} {config.CURRENCY_SYMBOL}\n_{c.description}_",
             color=config.rarity_embed_color(c.rarity),
         )
-        embed.set_image(url="attachment://coach.png")
-        await interaction.response.send_message(embed=embed, file=file)
+        if c.image_url:
+            embed.set_image(url=c.image_url)
+            await interaction.response.send_message(embed=embed)
+        else:
+            buf = render_coach_card(CoachData(id=c.id, name=c.name, team_origin=c.team_origin, bonus=c.bonus, rarity=c.rarity, description=c.description))
+            file = discord.File(buf, filename="coach.png")
+            embed.set_image(url="attachment://coach.png")
+            await interaction.response.send_message(embed=embed, file=file)
 
     async def _charge(self, session, user_id: int, price: int) -> User | None:
         user = await session.get(User, user_id)
@@ -120,12 +130,12 @@ class ShopCog(commands.Cog):
         return user
 
     @buy_group.command(name="technique", description="Achète une technique de la boutique.")
-    @app_commands.describe(technique_id="Tape le nom de la technique")
-    @app_commands.autocomplete(technique_id=technique_autocomplete)
-    async def buy_technique(self, interaction: discord.Interaction, technique_id: str):
+    @app_commands.describe(technique="Tape le nom de la technique")
+    @app_commands.autocomplete(technique=technique_autocomplete)
+    async def buy_technique(self, interaction: discord.Interaction, technique: str):
         async with SessionLocal() as session:
             await get_or_create_user(session, interaction.user.id)
-            template = await session.get(TechniqueTemplate, technique_id)
+            template = await session.get(TechniqueTemplate, technique)
             if template is None:
                 await interaction.response.send_message("❌ Technique introuvable.", ephemeral=True)
                 return
@@ -139,12 +149,12 @@ class ShopCog(commands.Cog):
         await interaction.response.send_message(f"✅ Tu as acheté **{template.name}** pour {price} {config.CURRENCY_SYMBOL} !")
 
     @buy_group.command(name="tactic", description="Achète une tactique de la boutique.")
-    @app_commands.describe(tactic_id="Tape le nom de la tactique")
-    @app_commands.autocomplete(tactic_id=tactic_autocomplete)
-    async def buy_tactic(self, interaction: discord.Interaction, tactic_id: str):
+    @app_commands.describe(tactique="Tape le nom de la tactique")
+    @app_commands.autocomplete(tactique=tactic_autocomplete)
+    async def buy_tactic(self, interaction: discord.Interaction, tactique: str):
         async with SessionLocal() as session:
             await get_or_create_user(session, interaction.user.id)
-            template = await session.get(TacticTemplate, tactic_id)
+            template = await session.get(TacticTemplate, tactique)
             if template is None:
                 await interaction.response.send_message("❌ Tactique introuvable.", ephemeral=True)
                 return
@@ -158,12 +168,12 @@ class ShopCog(commands.Cog):
         await interaction.response.send_message(f"✅ Tu as acheté **{template.name}** pour {price} {config.CURRENCY_SYMBOL} !")
 
     @buy_group.command(name="coach", description="Achète un coach de la boutique.")
-    @app_commands.describe(coach_id="Tape le nom du coach")
-    @app_commands.autocomplete(coach_id=coach_autocomplete)
-    async def buy_coach(self, interaction: discord.Interaction, coach_id: str):
+    @app_commands.describe(coach="Tape le nom du coach")
+    @app_commands.autocomplete(coach=coach_autocomplete)
+    async def buy_coach(self, interaction: discord.Interaction, coach: str):
         async with SessionLocal() as session:
             await get_or_create_user(session, interaction.user.id)
-            template = await session.get(CoachTemplate, coach_id)
+            template = await session.get(CoachTemplate, coach)
             if template is None:
                 await interaction.response.send_message("❌ Coach introuvable.", ephemeral=True)
                 return
@@ -176,7 +186,7 @@ class ShopCog(commands.Cog):
             await session.commit()
         await interaction.response.send_message(f"✅ Tu as recruté le coach **{template.name}** pour {price} {config.CURRENCY_SYMBOL} !")
 
-    @app_commands.command(name="inventory", description="Liste tes techniques, tactiques et coachs possédés (avec leurs IDs pour /team).")
+    @app_commands.command(name="inventory", description="Liste tes techniques, tactiques et coachs possédés.")
     async def inventory(self, interaction: discord.Interaction):
         async with SessionLocal() as session:
             techs = list((await session.execute(select(UserTechnique).where(UserTechnique.owner_id == interaction.user.id))).scalars().all())
@@ -186,15 +196,15 @@ class ShopCog(commands.Cog):
             tech_lines = []
             for t in techs:
                 tpl = await session.get(TechniqueTemplate, t.technique_id)
-                tech_lines.append(f"`{t.id}` {config.RARITY_STARS[tpl.rarity]} {tpl.name}")
+                tech_lines.append(f"{config.RARITY_STARS[tpl.rarity]} {tpl.name}")
             tactic_lines = []
             for t in tactics:
                 tpl = await session.get(TacticTemplate, t.tactic_id)
-                tactic_lines.append(f"`{t.id}` {config.RARITY_STARS[tpl.rarity]} {tpl.name}")
+                tactic_lines.append(f"{config.RARITY_STARS[tpl.rarity]} {tpl.name}")
             coach_lines = []
             for c in coaches:
                 tpl = await session.get(CoachTemplate, c.coach_id)
-                coach_lines.append(f"`{c.id}` {config.RARITY_STARS[tpl.rarity]} {tpl.name}")
+                coach_lines.append(f"{config.RARITY_STARS[tpl.rarity]} {tpl.name}")
 
         embed = discord.Embed(title=f"🎒 Inventaire de {interaction.user.display_name}", color=config.rarity_embed_color(3))
         embed.add_field(name="🎴 Techniques", value="\n".join(tech_lines) or "Aucune — `/shop techniques`", inline=False)

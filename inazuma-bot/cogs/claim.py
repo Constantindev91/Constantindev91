@@ -143,24 +143,30 @@ class ClaimCog(commands.Cog):
             )
             await session.commit()
 
-        buf = render_player_card(card_data)
-        file = discord.File(buf, filename="card.png")
         resale = config.player_sell_value(player.base_price)
         embed = discord.Embed(
             title=f"{config.RARITY_STARS[player.rarity]} Nouveau joueur ! ({player.rarity}/5)",
             description=(
-                f"**{player.name}** ({player.name_en}) rejoint ta collection !\n"
+                f"**{player.name_en}** ({player.name}) rejoint ta collection !\n"
                 f"_{player.flavor}_\n\n"
                 f"💰 Valeur : **{player.base_price} {config.CURRENCY_SYMBOL}** "
                 f"(revente : {resale} {config.CURRENCY_SYMBOL})"
             ),
             color=config.rarity_embed_color(player.rarity),
         )
-        embed.set_image(url="attachment://card.png")
-        embed.set_footer(text=f"ID de carte : #{card_id} — décide vite, tu as 90 secondes !")
+        embed.set_footer(text="Décide vite, tu as 90 secondes !")
 
-        view = KeepSellView(interaction.user.id, card_id, player.name, player.base_price)
-        await interaction.followup.send(embed=embed, file=file, view=view)
+        file = None
+        if player.image_url:
+            embed.set_image(url=player.image_url)
+        else:
+            buf = render_player_card(card_data)
+            file = discord.File(buf, filename="card.png")
+            embed.set_image(url="attachment://card.png")
+
+        view = KeepSellView(interaction.user.id, card_id, player.name_en, player.base_price)
+        kwargs = {"file": file} if file is not None else {}
+        await interaction.followup.send(embed=embed, view=view, **kwargs)
 
 
 async def setup(bot: commands.Bot):

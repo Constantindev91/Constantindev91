@@ -44,6 +44,10 @@ class PlayerTemplate(Base):
     signature_technique: Mapped[str | None] = mapped_column(String, nullable=True)
     flavor: Mapped[str] = mapped_column(String)
     base_price: Mapped[int] = mapped_column(Integer, default=0)
+    # Optional override: a real picture URL supplied by the server admin. When set, the
+    # bot shows this image instead of the generated portrait card. Never auto-filled by
+    # the bot itself — see data/players.json / README for how to set it.
+    image_url: Mapped[str | None] = mapped_column(String, nullable=True)
 
     @property
     def overall(self) -> int:
@@ -60,6 +64,7 @@ class TechniqueTemplate(Base):
     power: Mapped[int] = mapped_column(Integer)
     rarity: Mapped[int] = mapped_column(Integer)
     description: Mapped[str] = mapped_column(String)
+    image_url: Mapped[str | None] = mapped_column(String, nullable=True)
 
 
 class TacticTemplate(Base):
@@ -81,6 +86,7 @@ class CoachTemplate(Base):
     bonus: Mapped[dict] = mapped_column(JSON)
     rarity: Mapped[int] = mapped_column(Integer)
     description: Mapped[str] = mapped_column(String)
+    image_url: Mapped[str | None] = mapped_column(String, nullable=True)
 
 
 # ---------------------------------------------------------------------------

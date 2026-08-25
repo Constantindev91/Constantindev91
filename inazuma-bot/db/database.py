@@ -65,6 +65,7 @@ async def _seed_players(session: AsyncSession) -> None:
         obj.signature_technique = row.get("signature_technique")
         obj.flavor = row["flavor"]
         obj.base_price = row.get("base_price", 0)
+        obj.image_url = row.get("image_url") or None
 
 
 async def _seed_techniques(session: AsyncSession) -> None:
@@ -80,6 +81,7 @@ async def _seed_techniques(session: AsyncSession) -> None:
         obj.power = row["power"]
         obj.rarity = row["rarity"]
         obj.description = row["description"]
+        obj.image_url = row.get("image_url") or None
 
 
 async def _seed_tactics(session: AsyncSession) -> None:
@@ -107,3 +109,4 @@ async def _seed_coaches(session: AsyncSession) -> None:
         obj.bonus = row["bonus"]
         obj.rarity = row["rarity"]
         obj.description = row["description"]
+        obj.image_url = row.get("image_url") or None

@@ -10,20 +10,31 @@ import config
 from db.database import SessionLocal
 from db.models import Team, TeamSlot, TradeOffer, User, UserCard
 from db.repository import get_or_create_user
+from utils.autocomplete import own_pending_trade_autocomplete
 
 
-def _parse_ids(raw: str | None) -> list[int]:
+async def _resolve_owned_cards_by_name(session, owner_id: int, raw: str | None) -> tuple[list[UserCard], str | None]:
+    """Parses a comma-separated list of player-name fragments into that owner's cards.
+
+    Returns (cards, error_message) — error_message is set (and cards is []) if any
+    token doesn't match exactly one owned card.
+    """
     if not raw:
-        return []
-    out = []
-    for part in raw.split(","):
-        part = part.strip()
-        if part:
-            try:
-                out.append(int(part))
-            except ValueError:
-                pass
-    return out
+        return [], None
+    stmt = select(UserCard).where(UserCard.owner_id == owner_id).options(selectinload(UserCard.player))
+    owned = list((await session.execute(stmt)).scalars().all())
+
+    resolved: list[UserCard] = []
+    for token in [t.strip() for t in raw.split(",") if t.strip()]:
+        needle = token.lower()
+        matches = [c for c in owned if needle in c.player.name.lower() or needle in c.player.name_en.lower()]
+        if not matches:
+            return [], f"❌ Aucune carte correspondant à **{token}** n'a été trouvée."
+        if len(matches) > 1:
+            options = ", ".join(f"{m.player.name_en} (OVR {m.player.overall})" for m in matches[:5])
+            return [], f"❌ Plusieurs cartes correspondent à **{token}** : {options}. Précise davantage le nom."
+        resolved.append(matches[0])
+    return resolved, None
 
 
 async def _unslot_card(session, card: UserCard) -> None:
@@ -137,11 +148,12 @@ class TradeCog(commands.Cog):
     @trade_group.command(name="propose", description="Propose un échange de cartes/KP à un autre membre.")
     @app_commands.describe(
         member="Le membre à qui proposer l'échange",
-        give_cards="Tes cartes offertes, IDs séparés par des virgules (ex: 12,15)",
+        give_cards="Tes cartes offertes : noms séparés par des virgules (ex: mark, gouenji)",
         give_currency=f"Les {config.CURRENCY_SYMBOL} que tu offres en plus",
-        want_cards="Les cartes que tu demandes en retour, IDs séparés par des virgules",
+        want_cards="Les cartes que tu demandes en retour : noms séparés par des virgules",
         want_currency=f"Les {config.CURRENCY_SYMBOL} que tu demandes en retour",
     )
+    @app_commands.rename(give_cards="tes_joueurs", give_currency="tes_kp", want_cards="joueurs_demandés", want_currency="kp_demandés")
     async def propose(
         self,
         interaction: discord.Interaction,
@@ -158,29 +170,32 @@ class TradeCog(commands.Cog):
             await interaction.response.send_message("❌ Impossible d'échanger avec un bot.", ephemeral=True)
             return
 
-        give_ids = _parse_ids(give_cards)
-        want_ids = _parse_ids(want_cards)
-        if not give_ids and not give_currency:
-            await interaction.response.send_message("❌ Tu dois offrir au moins une carte ou des KP.", ephemeral=True)
-            return
-
         async with SessionLocal() as session:
             await get_or_create_user(session, interaction.user.id)
             await get_or_create_user(session, member.id)
 
-            for cid in give_ids:
-                card = await session.get(UserCard, cid)
-                if card is None or card.owner_id != interaction.user.id:
-                    await interaction.response.send_message(f"❌ La carte `#{cid}` ne t'appartient pas.", ephemeral=True)
-                    return
-                if card.locked:
-                    await interaction.response.send_message(f"❌ La carte `#{cid}` est verrouillée.", ephemeral=True)
-                    return
-            for cid in want_ids:
-                card = await session.get(UserCard, cid)
-                if card is None or card.owner_id != member.id:
-                    await interaction.response.send_message(f"❌ La carte `#{cid}` n'appartient pas à {member.display_name}.", ephemeral=True)
-                    return
+            give_cards_resolved, error = await _resolve_owned_cards_by_name(session, interaction.user.id, give_cards)
+            if error:
+                await interaction.response.send_message(error, ephemeral=True)
+                return
+            locked = [c for c in give_cards_resolved if c.locked]
+            if locked:
+                await interaction.response.send_message(f"🔒 **{locked[0].player.name_en}** est verrouillé — déverrouille-le avec `/unlock`.", ephemeral=True)
+                return
+
+            want_cards_resolved, error = await _resolve_owned_cards_by_name(session, member.id, want_cards)
+            if error:
+                await interaction.response.send_message(error.replace("carte correspondant", f"carte de {member.display_name} correspondant"), ephemeral=True)
+                return
+
+            if not give_cards_resolved and not give_currency:
+                await interaction.response.send_message("❌ Tu dois offrir au moins une carte ou des KP.", ephemeral=True)
+                return
+
+            give_ids = [c.id for c in give_cards_resolved]
+            want_ids = [c.id for c in want_cards_resolved]
+            give_names = [c.player.name_en for c in give_cards_resolved]
+            want_names = [c.player.name_en for c in want_cards_resolved]
 
             trade = TradeOffer(
                 from_user_id=interaction.user.id,
@@ -194,14 +209,6 @@ class TradeCog(commands.Cog):
             await session.commit()
             trade_id = trade.id
 
-            give_names, want_names = [], []
-            for cid in give_ids:
-                card = await session.get(UserCard, cid, options=[selectinload(UserCard.player)])
-                give_names.append(card.player.name)
-            for cid in want_ids:
-                card = await session.get(UserCard, cid, options=[selectinload(UserCard.player)])
-                want_names.append(card.player.name)
-
         embed = discord.Embed(
             title="🔄 Proposition d'échange",
             description=f"{interaction.user.mention} propose un échange à {member.mention} !",
@@ -211,21 +218,24 @@ class TradeCog(commands.Cog):
         request_lines = want_names + ([f"{want_currency} {config.CURRENCY_SYMBOL}"] if want_currency else [])
         embed.add_field(name=f"📤 {interaction.user.display_name} offre", value="\n".join(offer_lines) or "Rien", inline=True)
         embed.add_field(name=f"📥 {member.display_name} donne", value="\n".join(request_lines) or "Rien", inline=True)
-        embed.set_footer(text=f"Échange #{trade_id} — expire dans 10 minutes")
+        embed.set_footer(text="Expire dans 10 minutes")
 
         view = TradeView(trade_id, interaction.user.id, member.id)
         await interaction.response.send_message(content=member.mention, embed=embed, view=view)
 
     @trade_group.command(name="cancel", description="Annule un échange que tu as proposé et qui est encore en attente.")
+    @app_commands.describe(trade_id="Choisis l'échange à annuler (par destinataire)")
+    @app_commands.rename(trade_id="échange")
+    @app_commands.autocomplete(trade_id=own_pending_trade_autocomplete)
     async def cancel(self, interaction: discord.Interaction, trade_id: int):
         async with SessionLocal() as session:
             trade = await session.get(TradeOffer, trade_id)
             if trade is None or trade.from_user_id != interaction.user.id or trade.status != "pending":
-                await interaction.response.send_message("❌ Échange introuvable ou déjà réglé.", ephemeral=True)
+                await interaction.response.send_message("❌ Échange introuvable ou déjà réglé — choisis dans la liste proposée.", ephemeral=True)
                 return
             trade.status = "cancelled"
             await session.commit()
-        await interaction.response.send_message(f"✅ Échange `#{trade_id}` annulé.")
+        await interaction.response.send_message("✅ Échange annulé.")
 
 
 async def setup(bot: commands.Bot):

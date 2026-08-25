@@ -17,6 +17,24 @@ from utils.pagination import Paginator, chunk
 POSITION_EMOJI = {"GK": "🧤", "DF": "🛡️", "MF": "🎯", "FW": "⚡"}
 
 
+def _player_image(embed: discord.Embed, template, technique_name: str | None) -> discord.File | None:
+    """Uses template.image_url if a server admin set one, otherwise renders a card."""
+    if template.image_url:
+        embed.set_image(url=template.image_url)
+        return None
+    card_data = CardData(
+        name=template.name, name_en=template.name_en, position=template.position, team_origin=template.team_origin,
+        series=template.series, element=template.element, rarity=template.rarity, kick=template.kick,
+        pass_=template.pass_, defense=template.defense, speed=template.speed, technique=template.technique,
+        overall=template.overall, base_price=template.base_price, player_id=template.id,
+        technique_name=technique_name,
+    )
+    buf = render_player_card(card_data)
+    file = discord.File(buf, filename="card.png")
+    embed.set_image(url="attachment://card.png")
+    return file
+
+
 class CollectionCog(commands.Cog):
     """Consulter, visualiser et vendre les cartes de ta collection."""
 
@@ -46,7 +64,7 @@ class CollectionCog(commands.Cog):
                 .where(UserCard.owner_id == target.id)
                 .options(selectinload(UserCard.player))
                 .join(PlayerTemplate)
-                .order_by(PlayerTemplate.rarity.desc(), PlayerTemplate.name)
+                .order_by(PlayerTemplate.rarity.desc(), PlayerTemplate.name_en)
             )
             if position:
                 stmt = stmt.where(PlayerTemplate.position == position.value)
@@ -68,8 +86,8 @@ class CollectionCog(commands.Cog):
                 p = c.player
                 lock = "🔒 " if c.locked else ""
                 lines.append(
-                    f"`#{c.id}` {POSITION_EMOJI.get(p.position,'')} {config.RARITY_STARS[p.rarity]} ({p.rarity}/5) "
-                    f"**{p.name}** ({p.position}) — OVR {p.overall} · {p.base_price} {config.CURRENCY_SYMBOL} {lock}"
+                    f"{POSITION_EMOJI.get(p.position,'')} {config.RARITY_STARS[p.rarity]} ({p.rarity}/5) "
+                    f"**{p.name_en}** ({p.position}) — OVR {p.overall} · {p.base_price} {config.CURRENCY_SYMBOL} {lock}"
                 )
             embed = discord.Embed(
                 title=f"🃏 Collection de {target.display_name} ({len(cards)} joueurs)",
@@ -81,11 +99,11 @@ class CollectionCog(commands.Cog):
         await interaction.response.send_message(embed=pages[0], view=Paginator(interaction.user.id, pages))
 
     @app_commands.command(name="buy", description="Achète directement un joueur au prix de base — cherche par nom (ex: mark, gouenji...).")
-    @app_commands.describe(player="Tape un bout du nom du joueur, choisis dans la liste proposée")
-    @app_commands.autocomplete(player=any_player_autocomplete)
-    async def buy(self, interaction: discord.Interaction, player: str):
+    @app_commands.describe(joueur="Tape un bout du nom du joueur, choisis dans la liste proposée")
+    @app_commands.autocomplete(joueur=any_player_autocomplete)
+    async def buy(self, interaction: discord.Interaction, joueur: str):
         async with SessionLocal() as session:
-            template = await session.get(PlayerTemplate, player)
+            template = await session.get(PlayerTemplate, joueur)
             if template is None:
                 await interaction.response.send_message(
                     "❌ Joueur introuvable — tape un bout de son nom et choisis une suggestion dans la liste.",
@@ -96,7 +114,7 @@ class CollectionCog(commands.Cog):
             user = await get_or_create_user(session, interaction.user.id)
             if user.currency < template.base_price:
                 await interaction.response.send_message(
-                    f"❌ Il te faut **{template.base_price} {config.CURRENCY_SYMBOL}** pour recruter **{template.name}** "
+                    f"❌ Il te faut **{template.base_price} {config.CURRENCY_SYMBOL}** pour recruter **{template.name_en}** "
                     f"(tu as {user.currency}).",
                     ephemeral=True,
                 )
@@ -110,31 +128,24 @@ class CollectionCog(commands.Cog):
             card = UserCard(owner_id=user.discord_id, player_id=template.id)
             session.add(card)
             await session.flush()
-            card_id = card.id
 
-            card_data = CardData(
-                name=template.name, name_en=template.name_en, position=template.position, team_origin=template.team_origin,
-                series=template.series, element=template.element, rarity=template.rarity, kick=template.kick,
-                pass_=template.pass_, defense=template.defense, speed=template.speed, technique=template.technique,
-                overall=template.overall, base_price=template.base_price, player_id=template.id,
-                technique_name=technique.name if technique else None,
+            embed = discord.Embed(
+                title=f"✅ Recrutement réussi ! {config.RARITY_STARS[template.rarity]} ({template.rarity}/5)",
+                description=(
+                    f"**{template.name_en}** ({template.name}) rejoint ta collection pour "
+                    f"**{template.base_price} {config.CURRENCY_SYMBOL}** !\n_{template.flavor}_"
+                ),
+                color=config.rarity_embed_color(template.rarity),
             )
-            flavor, rarity, name, base_price = template.flavor, template.rarity, template.name, template.base_price
+            file = _player_image(embed, template, technique.name if technique else None)
             await session.commit()
 
-        buf = render_player_card(card_data)
-        file = discord.File(buf, filename="card.png")
-        embed = discord.Embed(
-            title=f"✅ Recrutement réussi ! {config.RARITY_STARS[rarity]} ({rarity}/5)",
-            description=f"**{name}** rejoint ta collection pour **{base_price} {config.CURRENCY_SYMBOL}** !\n_{flavor}_",
-            color=config.rarity_embed_color(rarity),
-        )
-        embed.set_image(url="attachment://card.png")
-        embed.set_footer(text=f"ID de carte : #{card_id}")
-        await interaction.response.send_message(embed=embed, file=file)
+        kwargs = {"file": file} if file is not None else {}
+        await interaction.response.send_message(embed=embed, **kwargs)
 
     @app_commands.command(name="card", description="Affiche la carte détaillée d'un joueur de ta collection.")
     @app_commands.describe(card_id="Tape le nom du joueur pour retrouver sa carte")
+    @app_commands.rename(card_id="joueur")
     @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def card(self, interaction: discord.Interaction, card_id: int):
         async with SessionLocal() as session:
@@ -151,31 +162,24 @@ class CollectionCog(commands.Cog):
                 technique = await session.get(TechniqueTemplate, card.player.signature_technique)
 
             p = card.player
-            card_data = CardData(
-                name=p.name, name_en=p.name_en, position=p.position, team_origin=p.team_origin,
-                series=p.series, element=p.element, rarity=p.rarity, kick=p.kick, pass_=p.pass_,
-                defense=p.defense, speed=p.speed, technique=p.technique, overall=p.overall,
-                base_price=p.base_price, player_id=p.id,
-                technique_name=technique.name if technique else None,
-            )
             owner_id = card.owner_id
+            resale = config.player_sell_value(p.base_price)
+            embed = discord.Embed(
+                title=f"{config.RARITY_STARS[p.rarity]} {p.name_en} ({p.rarity}/5)",
+                description=(
+                    f"_{p.flavor}_\nPropriétaire : <@{owner_id}>\n"
+                    f"💰 Valeur : **{p.base_price} {config.CURRENCY_SYMBOL}** (revente : {resale} {config.CURRENCY_SYMBOL})"
+                ),
+                color=config.rarity_embed_color(p.rarity),
+            )
+            file = _player_image(embed, p, technique.name if technique else None)
 
-        buf = render_player_card(card_data)
-        file = discord.File(buf, filename="card.png")
-        resale = config.player_sell_value(p.base_price)
-        embed = discord.Embed(
-            title=f"{config.RARITY_STARS[p.rarity]} {p.name} ({p.rarity}/5)",
-            description=(
-                f"_{p.flavor}_\nPropriétaire : <@{owner_id}>\n"
-                f"💰 Valeur : **{p.base_price} {config.CURRENCY_SYMBOL}** (revente : {resale} {config.CURRENCY_SYMBOL})"
-            ),
-            color=config.rarity_embed_color(p.rarity),
-        )
-        embed.set_image(url="attachment://card.png")
-        await interaction.response.send_message(embed=embed, file=file)
+        kwargs = {"file": file} if file is not None else {}
+        await interaction.response.send_message(embed=embed, **kwargs)
 
     @app_commands.command(name="sell", description="Vend définitivement une carte de ta collection contre des KP (40% du prix de base).")
     @app_commands.describe(card_id="Tape le nom du joueur à vendre, choisis dans la liste proposée")
+    @app_commands.rename(card_id="joueur")
     @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def sell(self, interaction: discord.Interaction, card_id: int):
         async with SessionLocal() as session:
@@ -189,7 +193,7 @@ class CollectionCog(commands.Cog):
                 )
                 return
             value = config.player_sell_value(card.player.base_price)
-            name = card.player.name
+            name = card.player.name_en
 
             user = await session.get(User, interaction.user.id)
             user.currency += value
@@ -201,25 +205,30 @@ class CollectionCog(commands.Cog):
         )
 
     @app_commands.command(name="lock", description="Verrouille une carte pour éviter de la vendre/échanger par erreur.")
+    @app_commands.describe(card_id="Tape le nom du joueur")
+    @app_commands.rename(card_id="joueur")
     @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def lock(self, interaction: discord.Interaction, card_id: int):
         await self._set_lock(interaction, card_id, True)
 
     @app_commands.command(name="unlock", description="Déverrouille une carte.")
+    @app_commands.describe(card_id="Tape le nom du joueur")
+    @app_commands.rename(card_id="joueur")
     @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def unlock(self, interaction: discord.Interaction, card_id: int):
         await self._set_lock(interaction, card_id, False)
 
     async def _set_lock(self, interaction: discord.Interaction, card_id: int, locked: bool):
         async with SessionLocal() as session:
-            card = await session.get(UserCard, card_id)
+            card = await session.get(UserCard, card_id, options=[selectinload(UserCard.player)])
             if card is None or card.owner_id != interaction.user.id:
                 await interaction.response.send_message("❌ Cette carte ne t'appartient pas.", ephemeral=True)
                 return
             card.locked = locked
+            name = card.player.name_en
             await session.commit()
         state = "verrouillée 🔒" if locked else "déverrouillée 🔓"
-        await interaction.response.send_message(f"Carte `#{card_id}` {state}.", ephemeral=True)
+        await interaction.response.send_message(f"**{name}** {state}.", ephemeral=True)
 
 
 async def setup(bot: commands.Bot):
