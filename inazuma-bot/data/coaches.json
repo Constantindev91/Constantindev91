@@ -130,5 +130,192 @@
     },
     "rarity": 2,
     "description": "Une jeune manageuse pleine de ressources, dont l'organisation sans faille soutient toute l'équipe."
+  },
+  {
+    "id": "kudou_fuyuka_manager",
+    "name": "Fuyuka Kudou",
+    "team_origin": "Raimon",
+    "bonus": {
+      "pass": 5,
+      "technique": 4
+    },
+    "rarity": 3,
+    "description": "L'infirmière et manageuse dévouée de Raimon, dont le soutien sans faille redonne toujours confiance à l'équipe."
+  },
+  {
+    "id": "kira_seijirou",
+    "name": "Kira Seijirou",
+    "team_origin": "Zeus",
+    "bonus": {
+      "kick": 8,
+      "defense": 5
+    },
+    "rarity": 5,
+    "description": "Le puissant homme d'affaires derrière le projet Zeus, prêt à tout pour dominer le football mondial."
+  },
+  {
+    "id": "kiyama_terumasa",
+    "name": "Kiyama Terumasa",
+    "team_origin": "Aliea Gakuen",
+    "bonus": {
+      "technique": 7,
+      "kick": 3
+    },
+    "rarity": 4,
+    "description": "Le mystérieux directeur d'Aliea Gakuen, qui a recruté les meilleurs jeunes talents extraterrestres et terriens."
+  },
+  {
+    "id": "hitomiko_kira_manager",
+    "name": "Kira Hitomiko (Directrice)",
+    "team_origin": "Aliea Gakuen",
+    "bonus": {
+      "defense": 6,
+      "technique": 4
+    },
+    "rarity": 4,
+    "description": "Une dirigeante glaciale, tiraillée entre son devoir envers le projet Aliea et ses sentiments pour ses joueurs."
+  },
+  {
+    "id": "matatagi_hayato_coach",
+    "name": "Matatagi Hayato (Capitaine-Coach)",
+    "team_origin": "Kidoukan",
+    "bonus": {
+      "speed": 7,
+      "kick": 3
+    },
+    "rarity": 3,
+    "description": "Un jeune capitaine devenu meneur d'hommes, dont la vitesse légendaire continue d'inspirer ses coéquipiers."
+  },
+  {
+    "id": "shindou_takuto_coach",
+    "name": "Shindou Takuto (Chef d'orchestre)",
+    "team_origin": "Raimon (GO)",
+    "bonus": {
+      "pass": 8,
+      "technique": 5
+    },
+    "rarity": 5,
+    "description": "Le pianiste virtuose devenu capitaine de Raimon, dont chaque passe orchestre le jeu comme une symphonie."
+  },
+  {
+    "id": "matsukaze_tenma_coach",
+    "name": "Matsukaze Tenma (Meneur)",
+    "team_origin": "Raimon (GO)",
+    "bonus": {
+      "technique": 6,
+      "speed": 4
+    },
+    "rarity": 4,
+    "description": "Le successeur spirituel d'Endou Mamoru, dont la passion communicative relève toujours les équipes en difficulté."
+  },
+  {
+    "id": "protocol_omega_director",
+    "name": "Directeur du Protocol Omega",
+    "team_origin": "Protocol Omega",
+    "bonus": {
+      "defense": 7,
+      "pass": 2
+    },
+    "rarity": 3,
+    "description": "Un scientifique froid qui considère les joueurs comme de simples pièces d'un plan bien plus vaste que le football."
+  },
+  {
+    "id": "el_dorado_chairman",
+    "name": "Président d'El Dorado",
+    "team_origin": "El Dorado",
+    "bonus": {
+      "technique": 8,
+      "defense": 3
+    },
+    "rarity": 5,
+    "description": "Le dirigeant énigmatique d'El Dorado, dont les manipulations temporelles bouleversent l'histoire du football."
+  },
+  {
+    "id": "kirino_ranmaru_coach",
+    "name": "Kirino Ranmaru (Vice-capitaine)",
+    "team_origin": "Raimon (CS)",
+    "bonus": {
+      "defense": 5,
+      "speed": 3
+    },
+    "rarity": 3,
+    "description": "Un défenseur élégant et loyal, second de Shindou, dont la rigueur structure toute l'arrière-garde."
+  },
+  {
+    "id": "amemiya_taiyou_captain",
+    "name": "Amemiya Taiyou (Capitaine Earth Eleven)",
+    "team_origin": "Earth Eleven",
+    "bonus": {
+      "kick": 7,
+      "speed": 5
+    },
+    "rarity": 4,
+    "description": "Le capitaine solaire d'Earth Eleven, dont la joie de jouer rallie toute une planète autour du ballon."
+  },
+  {
+    "id": "kirika_kaiser",
+    "name": "Kaiser (Big Waves)",
+    "team_origin": "Big Waves",
+    "bonus": {
+      "technique": 6,
+      "kick": 4
+    },
+    "rarity": 3,
+    "description": "Un stratège venu des étoiles, à la tête de Big Waves, déterminé à prouver la supériorité de sa flotte."
+  },
+  {
+    "id": "raimon_ares_coach",
+    "name": "Entraîneur de Raimon (Ares)",
+    "team_origin": "Raimon (Ares)",
+    "bonus": {
+      "pass": 6,
+      "defense": 4
+    },
+    "rarity": 3,
+    "description": "Un entraîneur discret qui reconstruit patiemment un Raimon marqué par les défaites répétées face à Ares."
+  },
+  {
+    "id": "ares_shihaisha_coach",
+    "name": "Le Dirigeant d'Ares",
+    "team_origin": "Ares",
+    "bonus": {
+      "kick": 9,
+      "defense": 6
+    },
+    "rarity": 5,
+    "description": "Une entité obsédée par la victoire absolue, prête à briser l'esprit sportif pour imposer la domination d'Ares."
+  },
+  {
+    "id": "orion_coach",
+    "name": "Entraîneur d'Orion",
+    "team_origin": "Orion",
+    "bonus": {
+      "technique": 5,
+      "speed": 4
+    },
+    "rarity": 3,
+    "description": "Un tacticien discret d'Orion, expert dans l'art de retourner les forces adverses contre elles-mêmes."
+  },
+  {
+    "id": "kabeyama_veteran_coach",
+    "name": "Kabeyama Heigorou (Vétéran)",
+    "team_origin": "Raimon",
+    "bonus": {
+      "defense": 7,
+      "kick": 2
+    },
+    "rarity": 2,
+    "description": "L'ancien pilier défensif de Raimon, devenu entraîneur adjoint bienveillant pour la nouvelle génération."
+  },
+  {
+    "id": "royal_academy_coach",
+    "name": "Directeur de Royal Academy",
+    "team_origin": "Royal Academy",
+    "bonus": {
+      "pass": 6,
+      "technique": 5
+    },
+    "rarity": 3,
+    "description": "Un aristocrate anglais persuadé que la discipline et l'élégance mènent toujours à la victoire."
   }
 ]

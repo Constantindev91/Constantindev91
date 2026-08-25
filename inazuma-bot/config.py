@@ -63,9 +63,12 @@ STARTING_CURRENCY = 1000
 DAILY_REWARD = 300
 DAILY_COOLDOWN_SECONDS = 24 * 60 * 60
 
-def sell_value(rarity: int) -> int:
-    """Base KP earned from selling a card of a given rarity (+/- variance applied by caller)."""
-    return {1: 80, 2: 200, 3: 450, 4: 900, 5: 2000}.get(rarity, 80)
+# A claimed player can always be resold for a fixed 40% of their base_price
+# (base_price is per-player, seeded from data/players.json — see PlayerTemplate.base_price).
+PLAYER_SELL_RATE = 0.40
+
+def player_sell_value(base_price: int) -> int:
+    return max(10, round(base_price * PLAYER_SELL_RATE))
 
 def shop_price(rarity: int) -> int:
     """Base KP price to buy a technique/tactic/coach of a given rarity in the shop."""

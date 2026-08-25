@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import random
-
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -69,8 +67,8 @@ class CollectionCog(commands.Cog):
                 p = c.player
                 lock = "🔒 " if c.locked else ""
                 lines.append(
-                    f"`#{c.id}` {POSITION_EMOJI.get(p.position,'')} {config.RARITY_STARS[p.rarity]} "
-                    f"**{p.name}** ({p.position}) — OVR {p.overall} {lock}"
+                    f"`#{c.id}` {POSITION_EMOJI.get(p.position,'')} {config.RARITY_STARS[p.rarity]} ({p.rarity}/5) "
+                    f"**{p.name}** ({p.position}) — OVR {p.overall} · {p.base_price} {config.CURRENCY_SYMBOL} {lock}"
                 )
             embed = discord.Embed(
                 title=f"🃏 Collection de {target.display_name} ({len(cards)} joueurs)",
@@ -102,15 +100,20 @@ class CollectionCog(commands.Cog):
                 name=p.name, name_en=p.name_en, position=p.position, team_origin=p.team_origin,
                 series=p.series, element=p.element, rarity=p.rarity, kick=p.kick, pass_=p.pass_,
                 defense=p.defense, speed=p.speed, technique=p.technique, overall=p.overall,
+                base_price=p.base_price, player_id=p.id,
                 technique_name=technique.name if technique else None,
             )
             owner_id = card.owner_id
 
         buf = render_player_card(card_data)
         file = discord.File(buf, filename="card.png")
+        resale = config.player_sell_value(p.base_price)
         embed = discord.Embed(
-            title=f"{config.RARITY_STARS[p.rarity]} {p.name}",
-            description=f"_{p.flavor}_\nPropriétaire : <@{owner_id}>",
+            title=f"{config.RARITY_STARS[p.rarity]} {p.name} ({p.rarity}/5)",
+            description=(
+                f"_{p.flavor}_\nPropriétaire : <@{owner_id}>\n"
+                f"💰 Valeur : **{p.base_price} {config.CURRENCY_SYMBOL}** (revente : {resale} {config.CURRENCY_SYMBOL})"
+            ),
             color=config.rarity_embed_color(p.rarity),
         )
         embed.set_image(url="attachment://card.png")
@@ -129,9 +132,7 @@ class CollectionCog(commands.Cog):
                     "🔒 Cette carte est verrouillée. Utilise `/unlock` avant de la vendre.", ephemeral=True
                 )
                 return
-            base = config.sell_value(card.player.rarity)
-            variance = random.randint(-int(base * 0.1), int(base * 0.1))
-            value = max(10, base + variance)
+            value = config.player_sell_value(card.player.base_price)
             name = card.player.name
 
             user = await session.get(User, interaction.user.id)

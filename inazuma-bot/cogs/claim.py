@@ -32,12 +32,12 @@ async def _pick_player_template(session, rarity: int) -> PlayerTemplate:
 
 
 class KeepSellView(discord.ui.View):
-    def __init__(self, author_id: int, card_id: int, player_name: str, rarity: int):
+    def __init__(self, author_id: int, card_id: int, player_name: str, base_price: int):
         super().__init__(timeout=config.CLAIM_VIEW_TIMEOUT)
         self.author_id = author_id
         self.card_id = card_id
         self.player_name = player_name
-        self.rarity = rarity
+        self.base_price = base_price
         self.resolved = False
 
     async def interaction_check(self, interaction: discord.Interaction) -> bool:
@@ -66,9 +66,7 @@ class KeepSellView(discord.ui.View):
         self.resolved = True
         for item in self.children:
             item.disabled = True  # type: ignore[attr-defined]
-        base = config.sell_value(self.rarity)
-        variance = random.randint(-int(base * 0.1), int(base * 0.1))
-        value = max(10, base + variance)
+        value = config.player_sell_value(self.base_price)
 
         async with SessionLocal() as session:
             card = await session.get(UserCard, self.card_id)
@@ -139,24 +137,29 @@ class ClaimCog(commands.Cog):
                 speed=player.speed,
                 technique=player.technique,
                 overall=player.overall,
+                base_price=player.base_price,
+                player_id=player.id,
                 technique_name=technique.name if technique else None,
             )
             await session.commit()
 
         buf = render_player_card(card_data)
         file = discord.File(buf, filename="card.png")
+        resale = config.player_sell_value(player.base_price)
         embed = discord.Embed(
-            title=f"{config.RARITY_STARS[player.rarity]} Nouveau joueur !",
+            title=f"{config.RARITY_STARS[player.rarity]} Nouveau joueur ! ({player.rarity}/5)",
             description=(
                 f"**{player.name}** ({player.name_en}) rejoint ta collection !\n"
-                f"_{player.flavor}_"
+                f"_{player.flavor}_\n\n"
+                f"💰 Valeur : **{player.base_price} {config.CURRENCY_SYMBOL}** "
+                f"(revente : {resale} {config.CURRENCY_SYMBOL})"
             ),
             color=config.rarity_embed_color(player.rarity),
         )
         embed.set_image(url="attachment://card.png")
         embed.set_footer(text=f"ID de carte : #{card_id} — décide vite, tu as 90 secondes !")
 
-        view = KeepSellView(interaction.user.id, card_id, player.name, player.rarity)
+        view = KeepSellView(interaction.user.id, card_id, player.name, player.base_price)
         await interaction.followup.send(embed=embed, file=file, view=view)
 
 

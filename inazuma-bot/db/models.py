@@ -43,6 +43,7 @@ class PlayerTemplate(Base):
     technique: Mapped[int] = mapped_column(Integer)
     signature_technique: Mapped[str | None] = mapped_column(String, nullable=True)
     flavor: Mapped[str] = mapped_column(String)
+    base_price: Mapped[int] = mapped_column(Integer, default=0)
 
     @property
     def overall(self) -> int:

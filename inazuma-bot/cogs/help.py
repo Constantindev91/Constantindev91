@@ -36,6 +36,8 @@ CATEGORIES: list[tuple[str, str, list[tuple[str, str]]]] = [
         ("/shop techniques", "Liste les techniques (hissatsu) à l'achat."),
         ("/shop tactics", "Liste les tactiques d'équipe à l'achat."),
         ("/shop coaches", "Liste les coachs à l'achat."),
+        ("/technique <id>", "Affiche la carte détaillée (avec image générée) d'une technique."),
+        ("/coach <id>", "Affiche la carte détaillée (avec image générée) d'un coach."),
         ("/buy technique <id>", "Achète une technique."),
         ("/buy tactic <id>", "Achète une tactique."),
         ("/buy coach <id>", "Achète un coach."),

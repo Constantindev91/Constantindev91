@@ -49,10 +49,17 @@ class InazumaBot(commands.Bot):
             log.info("Cog chargé : %s", cog)
 
         if config.DEV_GUILD_ID:
+            # Publish to the dev guild instantly, then wipe the global registry so the
+            # same commands don't also show up a second time via the ~1h global sync
+            # (classic discord.py duplicate-slash-command trap when mixing the two).
             guild = discord.Object(id=int(config.DEV_GUILD_ID))
             self.tree.copy_global_to(guild=guild)
             synced = await self.tree.sync(guild=guild)
             log.info("Commandes synchronisées sur le serveur de dev (%s) : %d", config.DEV_GUILD_ID, len(synced))
+
+            self.tree.clear_commands(guild=None)
+            wiped = await self.tree.sync()
+            log.info("Registre global vidé (%d commandes globales restantes) pour éviter les doublons.", len(wiped))
         else:
             synced = await self.tree.sync()
             log.info("Commandes synchronisées globalement : %d (peut prendre jusqu'à 1h à se propager)", len(synced))

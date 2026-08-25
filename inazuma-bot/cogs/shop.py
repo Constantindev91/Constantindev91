@@ -9,6 +9,7 @@ import config
 from db.database import SessionLocal
 from db.models import CoachTemplate, TacticTemplate, TechniqueTemplate, User, UserCoach, UserTactic, UserTechnique
 from db.repository import get_or_create_user
+from utils.icon_render import CoachData, TechniqueData, render_coach_card, render_technique_card
 from utils.pagination import Paginator, chunk
 
 TYPE_EMOJI = {"shoot": "🥅", "dribble": "🏃", "block": "🛑", "catch": "🧤"}
@@ -71,6 +72,40 @@ class ShopCog(commands.Cog):
             embed.set_footer(text="Achète avec /buy coach <id>")
             pages.append(embed)
         await interaction.response.send_message(embed=pages[0], view=Paginator(interaction.user.id, pages))
+
+    @app_commands.command(name="technique", description="Affiche la carte détaillée (avec image) d'une technique.")
+    async def technique_view(self, interaction: discord.Interaction, technique_id: str):
+        async with SessionLocal() as session:
+            t = await session.get(TechniqueTemplate, technique_id)
+        if t is None:
+            await interaction.response.send_message("❌ Technique introuvable (voir `/shop techniques` pour les IDs).", ephemeral=True)
+            return
+        buf = render_technique_card(TechniqueData(id=t.id, name=t.name, type=t.type, element=t.element, power=t.power, rarity=t.rarity, description=t.description))
+        file = discord.File(buf, filename="technique.png")
+        embed = discord.Embed(
+            title=f"{TYPE_EMOJI.get(t.type,'')} {t.name}",
+            description=f"{config.RARITY_STARS[t.rarity]} ({t.rarity}/5) — prix boutique : {config.shop_price(t.rarity)} {config.CURRENCY_SYMBOL}",
+            color=config.rarity_embed_color(t.rarity),
+        )
+        embed.set_image(url="attachment://technique.png")
+        await interaction.response.send_message(embed=embed, file=file)
+
+    @app_commands.command(name="coach", description="Affiche la carte détaillée (avec image) d'un coach.")
+    async def coach_view(self, interaction: discord.Interaction, coach_id: str):
+        async with SessionLocal() as session:
+            c = await session.get(CoachTemplate, coach_id)
+        if c is None:
+            await interaction.response.send_message("❌ Coach introuvable (voir `/shop coaches` pour les IDs).", ephemeral=True)
+            return
+        buf = render_coach_card(CoachData(id=c.id, name=c.name, team_origin=c.team_origin, bonus=c.bonus, rarity=c.rarity, description=c.description))
+        file = discord.File(buf, filename="coach.png")
+        embed = discord.Embed(
+            title=f"🧑‍💼 {c.name}",
+            description=f"{config.RARITY_STARS[c.rarity]} ({c.rarity}/5) — prix boutique : {config.shop_price(c.rarity)} {config.CURRENCY_SYMBOL}",
+            color=config.rarity_embed_color(c.rarity),
+        )
+        embed.set_image(url="attachment://coach.png")
+        await interaction.response.send_message(embed=embed, file=file)
 
     async def _charge(self, session, user_id: int, price: int) -> User | None:
         user = await session.get(User, user_id)

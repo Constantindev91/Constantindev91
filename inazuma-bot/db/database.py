@@ -64,6 +64,7 @@ async def _seed_players(session: AsyncSession) -> None:
         obj.technique = stats["technique"]
         obj.signature_technique = row.get("signature_technique")
         obj.flavor = row["flavor"]
+        obj.base_price = row.get("base_price", 0)
 
 
 async def _seed_techniques(session: AsyncSession) -> None:
