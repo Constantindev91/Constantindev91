@@ -10,6 +10,7 @@ import config
 from db.database import SessionLocal
 from db.models import Team, TeamSlot, UserCard, UserCoach, UserTactic, UserTechnique
 from db.repository import get_active_team, get_or_create_user
+from utils.autocomplete import owned_card_autocomplete, owned_coach_autocomplete, owned_tactic_autocomplete, owned_technique_autocomplete
 from utils.battle_engine import StarterCard, compute_team_power
 
 POSITION_EMOJI = {"GK": "🧤", "DF": "🛡️", "MF": "🎯", "FW": "⚡"}
@@ -130,8 +131,8 @@ class TeamCog(commands.Cog):
         )
 
     @team_group.command(name="set", description="Place une carte de ta collection dans un slot de ton équipe.")
-    @app_commands.describe(slot="Le slot (ex: FW1, DF2, BENCH1 — voir /team view)", card_id="ID de la carte (#...)")
-    @app_commands.autocomplete(slot=_slot_autocomplete)
+    @app_commands.describe(slot="Le slot (ex: FW1, DF2, BENCH1 — voir /team view)", card_id="Tape le nom du joueur à placer")
+    @app_commands.autocomplete(slot=_slot_autocomplete, card_id=owned_card_autocomplete)
     async def set_slot(self, interaction: discord.Interaction, slot: str, card_id: int):
         async with SessionLocal() as session:
             team = await get_active_team(session, interaction.user.id)
@@ -168,6 +169,8 @@ class TeamCog(commands.Cog):
         await interaction.response.send_message(f"✅ **{card.player.name}** placé en `{slot}`.")
 
     @team_group.command(name="bench", description="Envoie une carte sur le banc (premier slot de banc libre).")
+    @app_commands.describe(card_id="Tape le nom du joueur à envoyer sur le banc")
+    @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def bench(self, interaction: discord.Interaction, card_id: int):
         async with SessionLocal() as session:
             team = await get_active_team(session, interaction.user.id)
@@ -202,6 +205,8 @@ class TeamCog(commands.Cog):
         await interaction.response.send_message(f"✅ Slot `{slot}` vidé.")
 
     @team_group.command(name="tactic", description="Équipe une tactique possédée à ton équipe.")
+    @app_commands.describe(user_tactic_id="Tape le nom de la tactique que tu possèdes")
+    @app_commands.autocomplete(user_tactic_id=owned_tactic_autocomplete)
     async def tactic(self, interaction: discord.Interaction, user_tactic_id: int):
         async with SessionLocal() as session:
             ut = await session.get(UserTactic, user_tactic_id)
@@ -214,6 +219,8 @@ class TeamCog(commands.Cog):
         await interaction.response.send_message("✅ Tactique équipée.")
 
     @team_group.command(name="coach", description="Équipe un coach possédé à ton équipe.")
+    @app_commands.describe(user_coach_id="Tape le nom du coach que tu possèdes")
+    @app_commands.autocomplete(user_coach_id=owned_coach_autocomplete)
     async def coach(self, interaction: discord.Interaction, user_coach_id: int):
         async with SessionLocal() as session:
             uc = await session.get(UserCoach, user_coach_id)
@@ -226,6 +233,8 @@ class TeamCog(commands.Cog):
         await interaction.response.send_message("✅ Coach équipé.")
 
     @team_group.command(name="equip", description="Équipe une technique possédée sur une carte de ton équipe.")
+    @app_commands.describe(card_id="Tape le nom du joueur", user_technique_id="Tape le nom de la technique que tu possèdes")
+    @app_commands.autocomplete(card_id=owned_card_autocomplete, user_technique_id=owned_technique_autocomplete)
     async def equip(self, interaction: discord.Interaction, card_id: int, user_technique_id: int):
         async with SessionLocal() as session:
             card = await session.get(UserCard, card_id, options=[selectinload(UserCard.player)])
@@ -241,6 +250,8 @@ class TeamCog(commands.Cog):
         await interaction.response.send_message(f"✅ Technique équipée sur **{card.player.name}**.")
 
     @team_group.command(name="unequip", description="Retire la technique équipée d'une carte.")
+    @app_commands.describe(card_id="Tape le nom du joueur")
+    @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def unequip(self, interaction: discord.Interaction, card_id: int):
         async with SessionLocal() as session:
             card = await session.get(UserCard, card_id, options=[selectinload(UserCard.player)])

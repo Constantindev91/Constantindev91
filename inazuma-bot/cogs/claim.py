@@ -84,12 +84,12 @@ class KeepSellView(discord.ui.View):
 
 
 class ClaimCog(commands.Cog):
-    """Le cœur du bot : réclamer un nouveau joueur toutes les 30 minutes."""
+    """Le cœur du bot : réclamer un nouveau joueur, sans limite."""
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-    @app_commands.command(name="claim", description="Réclame un nouveau joueur Inazuma aléatoire (toutes les 30 min).")
+    @app_commands.command(name="claim", description="Réclame un nouveau joueur Inazuma aléatoire (illimité, aucun cooldown).")
     async def claim(self, interaction: discord.Interaction):
         await interaction.response.defer()
 

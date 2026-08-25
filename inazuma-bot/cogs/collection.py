@@ -10,6 +10,7 @@ import config
 from db.database import SessionLocal
 from db.models import PlayerTemplate, TechniqueTemplate, User, UserCard, UserTechnique
 from db.repository import get_or_create_user
+from utils.autocomplete import any_player_autocomplete, owned_card_autocomplete
 from utils.card_render import CardData, render_player_card
 from utils.pagination import Paginator, chunk
 
@@ -79,8 +80,62 @@ class CollectionCog(commands.Cog):
 
         await interaction.response.send_message(embed=pages[0], view=Paginator(interaction.user.id, pages))
 
+    @app_commands.command(name="buy", description="Achète directement un joueur au prix de base — cherche par nom (ex: mark, gouenji...).")
+    @app_commands.describe(player="Tape un bout du nom du joueur, choisis dans la liste proposée")
+    @app_commands.autocomplete(player=any_player_autocomplete)
+    async def buy(self, interaction: discord.Interaction, player: str):
+        async with SessionLocal() as session:
+            template = await session.get(PlayerTemplate, player)
+            if template is None:
+                await interaction.response.send_message(
+                    "❌ Joueur introuvable — tape un bout de son nom et choisis une suggestion dans la liste.",
+                    ephemeral=True,
+                )
+                return
+
+            user = await get_or_create_user(session, interaction.user.id)
+            if user.currency < template.base_price:
+                await interaction.response.send_message(
+                    f"❌ Il te faut **{template.base_price} {config.CURRENCY_SYMBOL}** pour recruter **{template.name}** "
+                    f"(tu as {user.currency}).",
+                    ephemeral=True,
+                )
+                return
+
+            technique = None
+            if template.signature_technique:
+                technique = await session.get(TechniqueTemplate, template.signature_technique)
+
+            user.currency -= template.base_price
+            card = UserCard(owner_id=user.discord_id, player_id=template.id)
+            session.add(card)
+            await session.flush()
+            card_id = card.id
+
+            card_data = CardData(
+                name=template.name, name_en=template.name_en, position=template.position, team_origin=template.team_origin,
+                series=template.series, element=template.element, rarity=template.rarity, kick=template.kick,
+                pass_=template.pass_, defense=template.defense, speed=template.speed, technique=template.technique,
+                overall=template.overall, base_price=template.base_price, player_id=template.id,
+                technique_name=technique.name if technique else None,
+            )
+            flavor, rarity, name, base_price = template.flavor, template.rarity, template.name, template.base_price
+            await session.commit()
+
+        buf = render_player_card(card_data)
+        file = discord.File(buf, filename="card.png")
+        embed = discord.Embed(
+            title=f"✅ Recrutement réussi ! {config.RARITY_STARS[rarity]} ({rarity}/5)",
+            description=f"**{name}** rejoint ta collection pour **{base_price} {config.CURRENCY_SYMBOL}** !\n_{flavor}_",
+            color=config.rarity_embed_color(rarity),
+        )
+        embed.set_image(url="attachment://card.png")
+        embed.set_footer(text=f"ID de carte : #{card_id}")
+        await interaction.response.send_message(embed=embed, file=file)
+
     @app_commands.command(name="card", description="Affiche la carte détaillée d'un joueur de ta collection.")
-    @app_commands.describe(card_id="L'identifiant #ID de la carte (voir /collection)")
+    @app_commands.describe(card_id="Tape le nom du joueur pour retrouver sa carte")
+    @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def card(self, interaction: discord.Interaction, card_id: int):
         async with SessionLocal() as session:
             card = await session.get(UserCard, card_id, options=[selectinload(UserCard.player)])
@@ -119,8 +174,9 @@ class CollectionCog(commands.Cog):
         embed.set_image(url="attachment://card.png")
         await interaction.response.send_message(embed=embed, file=file)
 
-    @app_commands.command(name="sell", description="Vend définitivement une carte de ta collection contre des KP.")
-    @app_commands.describe(card_id="L'identifiant #ID de la carte à vendre")
+    @app_commands.command(name="sell", description="Vend définitivement une carte de ta collection contre des KP (40% du prix de base).")
+    @app_commands.describe(card_id="Tape le nom du joueur à vendre, choisis dans la liste proposée")
+    @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def sell(self, interaction: discord.Interaction, card_id: int):
         async with SessionLocal() as session:
             card = await session.get(UserCard, card_id, options=[selectinload(UserCard.player)])
@@ -145,10 +201,12 @@ class CollectionCog(commands.Cog):
         )
 
     @app_commands.command(name="lock", description="Verrouille une carte pour éviter de la vendre/échanger par erreur.")
+    @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def lock(self, interaction: discord.Interaction, card_id: int):
         await self._set_lock(interaction, card_id, True)
 
     @app_commands.command(name="unlock", description="Déverrouille une carte.")
+    @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def unlock(self, interaction: discord.Interaction, card_id: int):
         await self._set_lock(interaction, card_id, False)
 

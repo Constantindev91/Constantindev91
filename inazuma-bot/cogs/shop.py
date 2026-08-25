@@ -9,6 +9,7 @@ import config
 from db.database import SessionLocal
 from db.models import CoachTemplate, TacticTemplate, TechniqueTemplate, User, UserCoach, UserTactic, UserTechnique
 from db.repository import get_or_create_user
+from utils.autocomplete import coach_autocomplete, tactic_autocomplete, technique_autocomplete
 from utils.icon_render import CoachData, TechniqueData, render_coach_card, render_technique_card
 from utils.pagination import Paginator, chunk
 
@@ -18,8 +19,8 @@ TYPE_EMOJI = {"shoot": "🥅", "dribble": "🏃", "block": "🛑", "catch": "�
 class ShopCog(commands.Cog):
     """Boutique : techniques, tactiques et coachs, plus ton inventaire."""
 
-    shop_group = app_commands.Group(name="shop", description="Parcourt la boutique INAZUMA BOT")
-    buy_group = app_commands.Group(name="buy", description="Achète un objet de la boutique")
+    shop_group = app_commands.Group(name="shop", description="Parcourt et achète dans la boutique INAZUMA BOT")
+    buy_group = app_commands.Group(name="buy", description="Achète un objet de la boutique", parent=shop_group)
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
@@ -37,7 +38,7 @@ class ShopCog(commands.Cog):
                 for t in group
             ]
             embed = discord.Embed(title="🎴 Boutique — Techniques", description="\n".join(lines), color=config.rarity_embed_color(4))
-            embed.set_footer(text="Achète avec /buy technique <id>")
+            embed.set_footer(text="Achète avec /shop buy technique (tape le nom)")
             pages.append(embed)
         await interaction.response.send_message(embed=pages[0], view=Paginator(interaction.user.id, pages))
 
@@ -53,7 +54,7 @@ class ShopCog(commands.Cog):
                 for t in group
             ]
             embed = discord.Embed(title="🧠 Boutique — Tactiques", description="\n".join(lines), color=config.rarity_embed_color(4))
-            embed.set_footer(text="Achète avec /buy tactic <id>")
+            embed.set_footer(text="Achète avec /shop buy tactic (tape le nom)")
             pages.append(embed)
         await interaction.response.send_message(embed=pages[0], view=Paginator(interaction.user.id, pages))
 
@@ -69,11 +70,13 @@ class ShopCog(commands.Cog):
                 for c in group
             ]
             embed = discord.Embed(title="🧑‍💼 Boutique — Coachs", description="\n".join(lines), color=config.rarity_embed_color(4))
-            embed.set_footer(text="Achète avec /buy coach <id>")
+            embed.set_footer(text="Achète avec /shop buy coach (tape le nom)")
             pages.append(embed)
         await interaction.response.send_message(embed=pages[0], view=Paginator(interaction.user.id, pages))
 
     @app_commands.command(name="technique", description="Affiche la carte détaillée (avec image) d'une technique.")
+    @app_commands.describe(technique_id="Tape le nom de la technique")
+    @app_commands.autocomplete(technique_id=technique_autocomplete)
     async def technique_view(self, interaction: discord.Interaction, technique_id: str):
         async with SessionLocal() as session:
             t = await session.get(TechniqueTemplate, technique_id)
@@ -91,6 +94,8 @@ class ShopCog(commands.Cog):
         await interaction.response.send_message(embed=embed, file=file)
 
     @app_commands.command(name="coach", description="Affiche la carte détaillée (avec image) d'un coach.")
+    @app_commands.describe(coach_id="Tape le nom du coach")
+    @app_commands.autocomplete(coach_id=coach_autocomplete)
     async def coach_view(self, interaction: discord.Interaction, coach_id: str):
         async with SessionLocal() as session:
             c = await session.get(CoachTemplate, coach_id)
@@ -115,6 +120,8 @@ class ShopCog(commands.Cog):
         return user
 
     @buy_group.command(name="technique", description="Achète une technique de la boutique.")
+    @app_commands.describe(technique_id="Tape le nom de la technique")
+    @app_commands.autocomplete(technique_id=technique_autocomplete)
     async def buy_technique(self, interaction: discord.Interaction, technique_id: str):
         async with SessionLocal() as session:
             await get_or_create_user(session, interaction.user.id)
@@ -132,6 +139,8 @@ class ShopCog(commands.Cog):
         await interaction.response.send_message(f"✅ Tu as acheté **{template.name}** pour {price} {config.CURRENCY_SYMBOL} !")
 
     @buy_group.command(name="tactic", description="Achète une tactique de la boutique.")
+    @app_commands.describe(tactic_id="Tape le nom de la tactique")
+    @app_commands.autocomplete(tactic_id=tactic_autocomplete)
     async def buy_tactic(self, interaction: discord.Interaction, tactic_id: str):
         async with SessionLocal() as session:
             await get_or_create_user(session, interaction.user.id)
@@ -149,6 +158,8 @@ class ShopCog(commands.Cog):
         await interaction.response.send_message(f"✅ Tu as acheté **{template.name}** pour {price} {config.CURRENCY_SYMBOL} !")
 
     @buy_group.command(name="coach", description="Achète un coach de la boutique.")
+    @app_commands.describe(coach_id="Tape le nom du coach")
+    @app_commands.autocomplete(coach_id=coach_autocomplete)
     async def buy_coach(self, interaction: discord.Interaction, coach_id: str):
         async with SessionLocal() as session:
             await get_or_create_user(session, interaction.user.id)

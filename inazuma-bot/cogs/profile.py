@@ -33,7 +33,7 @@ class ProfileCog(commands.Cog):
             description=(
                 f"Ton profil est prêt avec **{config.STARTING_CURRENCY} {config.CURRENCY_SYMBOL}** "
                 f"et une équipe vide en formation **4-4-2**.\n\n"
-                f"Utilise `/claim` pour recruter ton premier joueur (toutes les 30 minutes), "
+                f"Utilise `/claim` pour recruter ton premier joueur (illimité, aucun cooldown !), "
                 f"puis `/team` pour composer ton onze de départ.\n"
                 f"Tape `/help` pour voir toutes les commandes."
             ),

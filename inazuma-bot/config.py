@@ -23,7 +23,7 @@ CURRENCY_SYMBOL = "KP"
 # ---------------------------------------------------------------------------
 # Claim system
 # ---------------------------------------------------------------------------
-CLAIM_COOLDOWN_SECONDS = 30 * 60  # 30 minutes
+CLAIM_COOLDOWN_SECONDS = 0  # no cooldown — claim as many times as you want
 CLAIM_VIEW_TIMEOUT = 90  # seconds to decide keep/sell before auto-keep
 
 # Weighted odds for claim pulls, keyed by rarity (must sum to 100)

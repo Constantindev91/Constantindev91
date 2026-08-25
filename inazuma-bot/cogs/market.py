@@ -10,6 +10,7 @@ import config
 from db.database import SessionLocal
 from db.models import MarketListing, PlayerTemplate, Team, TeamSlot, User, UserCard
 from db.repository import get_or_create_user
+from utils.autocomplete import owned_card_autocomplete
 from utils.pagination import Paginator, chunk
 
 POSITION_EMOJI = {"GK": "🧤", "DF": "🛡️", "MF": "🎯", "FW": "⚡"}
@@ -24,7 +25,8 @@ class MarketCog(commands.Cog):
         self.bot = bot
 
     @market_group.command(name="list", description="Met une carte en vente sur le marché des transferts.")
-    @app_commands.describe(card_id="ID de la carte (#...)", price=f"Prix demandé en {config.CURRENCY_SYMBOL}")
+    @app_commands.describe(card_id="Tape le nom du joueur à vendre", price=f"Prix demandé en {config.CURRENCY_SYMBOL}")
+    @app_commands.autocomplete(card_id=owned_card_autocomplete)
     async def list_card(self, interaction: discord.Interaction, card_id: int, price: app_commands.Range[int, config.MARKET_MIN_PRICE, config.MARKET_MAX_PRICE]):
         async with SessionLocal() as session:
             card = await session.get(UserCard, card_id, options=[selectinload(UserCard.player)])
