@@ -1,0 +1,515 @@
+[
+  {
+    "id": "fire_tornado",
+    "name": "Fire Tornado",
+    "type": "shoot",
+    "element": "Fire",
+    "power": 88,
+    "rarity": 4,
+    "description": "Une frappe tourbillonnante enflammée qui déstabilise le gardien adverse."
+  },
+  {
+    "id": "bakunetsu_storm",
+    "name": "Bakunetsu Storm",
+    "type": "shoot",
+    "element": "Fire",
+    "power": 97,
+    "rarity": 5,
+    "description": "Un tir combiné dévastateur où deux tornades de feu fusionnent en un seul boulet de flammes."
+  },
+  {
+    "id": "kaiser_phoenix",
+    "name": "Kaiser Phoenix",
+    "type": "shoot",
+    "element": "Fire",
+    "power": 96,
+    "rarity": 5,
+    "description": "Un phénix de flammes jumelles s'élève vers le ciel avant de fondre sur les buts adverses."
+  },
+  {
+    "id": "dragon_crash",
+    "name": "Dragon Crash",
+    "type": "shoot",
+    "element": "Fire",
+    "power": 82,
+    "rarity": 3,
+    "description": "Un tir en piqué qui explose au sol comme les crocs d'un dragon de feu."
+  },
+  {
+    "id": "eternal_blizzard",
+    "name": "Eternal Blizzard",
+    "type": "shoot",
+    "element": "Wood",
+    "power": 90,
+    "rarity": 4,
+    "description": "Un blizzard éternel combinant glace et flammes en une tempête impossible à arrêter."
+  },
+  {
+    "id": "ice_ground",
+    "name": "Ice Ground",
+    "type": "shoot",
+    "element": "Wood",
+    "power": 75,
+    "rarity": 2,
+    "description": "Un tir glissant qui gèle le terrain sur son passage pour tromper le gardien."
+  },
+  {
+    "id": "hurricane_shoot",
+    "name": "Hurricane Shoot",
+    "type": "shoot",
+    "element": "Wind",
+    "power": 78,
+    "rarity": 2,
+    "description": "Un tir en cyclone qui suit une trajectoire imprévisible."
+  },
+  {
+    "id": "zero_wind",
+    "name": "Zero Wind",
+    "type": "shoot",
+    "element": "Wind",
+    "power": 85,
+    "rarity": 4,
+    "description": "Une frappe si rapide qu'elle semble créer un vide d'air autour du ballon."
+  },
+  {
+    "id": "god_break",
+    "name": "God Break",
+    "type": "shoot",
+    "element": "Wind",
+    "power": 92,
+    "rarity": 5,
+    "description": "Une frappe légendaire capable de briser n'importe quelle défense en un éclair."
+  },
+  {
+    "id": "ittouryoudan",
+    "name": "Ittouryoudan",
+    "type": "shoot",
+    "element": "Earth",
+    "power": 93,
+    "rarity": 5,
+    "description": "Un double tir tranchant, comme deux lames jumelles fendant l'air vers les buts."
+  },
+  {
+    "id": "kishin_riki",
+    "name": "Kishin Riki",
+    "type": "shoot",
+    "element": "Earth",
+    "power": 85,
+    "rarity": 4,
+    "description": "Une frappe habitée par la force d'un dieu guerrier, imparable à courte distance."
+  },
+  {
+    "id": "meteor_break",
+    "name": "Meteor Break",
+    "type": "shoot",
+    "element": "Wind",
+    "power": 80,
+    "rarity": 3,
+    "description": "Un tir qui s'abat comme une météorite enflammée par la vitesse."
+  },
+  {
+    "id": "bakunetsu_screw",
+    "name": "Bakunetsu Screw",
+    "type": "shoot",
+    "element": "Fire",
+    "power": 79,
+    "rarity": 3,
+    "description": "Un tir vrillé qui embrase l'air sur sa trajectoire en spirale."
+  },
+  {
+    "id": "wolf_legend",
+    "name": "Wolf Legend",
+    "type": "shoot",
+    "element": "Earth",
+    "power": 76,
+    "rarity": 3,
+    "description": "Une frappe puissante inspirée par l'instinct féroce du loup solitaire."
+  },
+  {
+    "id": "koku_shippuu_ken",
+    "name": "Kokushippuu Ken",
+    "type": "shoot",
+    "element": "Wind",
+    "power": 72,
+    "rarity": 2,
+    "description": "Un tir tranchant comme une lame de vent noir."
+  },
+  {
+    "id": "armed_gaia",
+    "name": "Armed Gaia",
+    "type": "shoot",
+    "element": "Earth",
+    "power": 87,
+    "rarity": 4,
+    "description": "Une frappe titanesque qui semble faire trembler le sol des buts adverses."
+  },
+  {
+    "id": "bakunetsu_bakushinsei",
+    "name": "Bakunetsu Bakushinsei",
+    "type": "shoot",
+    "element": "Fire",
+    "power": 70,
+    "rarity": 2,
+    "description": "Un tir rugissant qui explose au contact du sol devant le gardien."
+  },
+  {
+    "id": "kazan_no_hoou",
+    "name": "Kazan no Hoou",
+    "type": "shoot",
+    "element": "Fire",
+    "power": 68,
+    "rarity": 2,
+    "description": "Une frappe embrasée qui rappelle l'éruption d'un volcan."
+  },
+  {
+    "id": "shinkuu_kyuu",
+    "name": "Shinkuu Kyuu",
+    "type": "shoot",
+    "element": "Wind",
+    "power": 65,
+    "rarity": 2,
+    "description": "Un tir en vide d'air qui déroute la trajectoire de vol du ballon."
+  },
+  {
+    "id": "daichi_no_ikari",
+    "name": "Daichi no Ikari",
+    "type": "shoot",
+    "element": "Earth",
+    "power": 74,
+    "rarity": 3,
+    "description": "Un tir lourd et brutal, comme la colère de la terre elle-même."
+  },
+  {
+    "id": "genesis_destroyer",
+    "name": "Genesis Destroyer",
+    "type": "shoot",
+    "element": "Earth",
+    "power": 89,
+    "rarity": 4,
+    "description": "Une frappe créée en laboratoire, calibrée pour détruire toute résistance."
+  },
+  {
+    "id": "shippuu_dash_shoot",
+    "name": "Shippuu Dash Shoot",
+    "type": "shoot",
+    "element": "Wind",
+    "power": 60,
+    "rarity": 1,
+    "description": "Un tir simple mais rapide, lancé en pleine course."
+  },
+  {
+    "id": "illusion_ball",
+    "name": "Illusion Ball",
+    "type": "dribble",
+    "element": "Earth",
+    "power": 84,
+    "rarity": 4,
+    "description": "Un dribble hypnotique qui fait perdre toute notion de position au défenseur."
+  },
+  {
+    "id": "kaze_no_tairyuu",
+    "name": "Kaze no Tairyuu",
+    "type": "dribble",
+    "element": "Wind",
+    "power": 78,
+    "rarity": 3,
+    "description": "Une accélération fulgurante portée par un courant d'air invisible."
+  },
+  {
+    "id": "mugen_no_kanata",
+    "name": "Mugen no Kanata",
+    "type": "dribble",
+    "element": "Wind",
+    "power": 90,
+    "rarity": 5,
+    "description": "Un dribble d'une vitesse quasi surnaturelle qui semble effacer la distance."
+  },
+  {
+    "id": "tri_edge_dash",
+    "name": "Tri-Edge Dash",
+    "type": "dribble",
+    "element": "Wood",
+    "power": 76,
+    "rarity": 3,
+    "description": "Trois feintes enchaînées en un instant, laissant le défenseur totalement perdu."
+  },
+  {
+    "id": "odin_sword",
+    "name": "Odin Sword",
+    "type": "dribble",
+    "element": "Earth",
+    "power": 80,
+    "rarity": 3,
+    "description": "Un pas chassé tranchant comme l'épée d'un dieu nordique."
+  },
+  {
+    "id": "kaleidoscope",
+    "name": "Kaleidoscope",
+    "type": "dribble",
+    "element": "Wood",
+    "power": 82,
+    "rarity": 4,
+    "description": "Une série de feintes optiques qui brouille totalement la vue du défenseur."
+  },
+  {
+    "id": "byakuya_no_hime",
+    "name": "Byakuya no Hime",
+    "type": "dribble",
+    "element": "Wood",
+    "power": 70,
+    "rarity": 2,
+    "description": "Un déhanché gracieux et rapide, aussi discret que la nuit blanche."
+  },
+  {
+    "id": "dark_lightning",
+    "name": "Dark Lightning",
+    "type": "dribble",
+    "element": "Earth",
+    "power": 86,
+    "rarity": 4,
+    "description": "Un dribble électrisant qui frappe le terrain comme la foudre."
+  },
+  {
+    "id": "phantom_dribble",
+    "name": "Phantom Dribble",
+    "type": "dribble",
+    "element": "Wind",
+    "power": 66,
+    "rarity": 2,
+    "description": "Une feinte légère qui fait passer le porteur du ballon pour un fantôme."
+  },
+  {
+    "id": "cyclone_step",
+    "name": "Cyclone Step",
+    "type": "dribble",
+    "element": "Wind",
+    "power": 62,
+    "rarity": 1,
+    "description": "Un pas tourbillonnant basique mais efficace pour semer un adversaire."
+  },
+  {
+    "id": "bakunetsu_step",
+    "name": "Bakunetsu Step",
+    "type": "dribble",
+    "element": "Fire",
+    "power": 74,
+    "rarity": 2,
+    "description": "Un enchaînement de pas brûlants qui déséquilibre l'adversaire."
+  },
+  {
+    "id": "maou_no_bumon",
+    "name": "Maou no Bumon",
+    "type": "dribble",
+    "element": "Earth",
+    "power": 91,
+    "rarity": 5,
+    "description": "Un déplacement démoniaque qui rend le porteur du ballon presque intouchable."
+  },
+  {
+    "id": "shadow_moon",
+    "name": "Shadow Moon",
+    "type": "dribble",
+    "element": "Wood",
+    "power": 68,
+    "rarity": 2,
+    "description": "Une feinte furtive exécutée dans l'ombre du défenseur."
+  },
+  {
+    "id": "gale_spin",
+    "name": "Gale Spin",
+    "type": "dribble",
+    "element": "Wind",
+    "power": 58,
+    "rarity": 1,
+    "description": "Une simple pirouette rapide pour gagner quelques précieux mètres."
+  },
+  {
+    "id": "killer_slide",
+    "name": "Killer Slide",
+    "type": "block",
+    "element": "Earth",
+    "power": 80,
+    "rarity": 3,
+    "description": "Un tacle glissé d'une précision chirurgicale qui coupe toute progression."
+  },
+  {
+    "id": "bakunetsu_tackle",
+    "name": "Bakunetsu Tackle",
+    "type": "block",
+    "element": "Fire",
+    "power": 76,
+    "rarity": 2,
+    "description": "Un tacle brûlant qui percute le porteur du ballon de plein fouet."
+  },
+  {
+    "id": "gaia_wall",
+    "name": "Gaia Wall",
+    "type": "block",
+    "element": "Earth",
+    "power": 88,
+    "rarity": 4,
+    "description": "Un mur de terre invisible qui stoppe net n'importe quelle percée."
+  },
+  {
+    "id": "bear_charge",
+    "name": "Bear Charge",
+    "type": "block",
+    "element": "Earth",
+    "power": 72,
+    "rarity": 2,
+    "description": "Un contact frontal aussi puissant que la charge d'un ours."
+  },
+  {
+    "id": "wolf_legend_block",
+    "name": "Wolf Legend Defense",
+    "type": "block",
+    "element": "Earth",
+    "power": 79,
+    "rarity": 3,
+    "description": "Une interception féroce, comme un loup fondant sur sa proie."
+  },
+  {
+    "id": "emperor_penguin_no2",
+    "name": "Emperor Penguin No. 2",
+    "type": "block",
+    "element": "Wood",
+    "power": 84,
+    "rarity": 4,
+    "description": "Un mur de glace formé instantanément pour bloquer toute trajectoire de tir."
+  },
+  {
+    "id": "iron_wall",
+    "name": "Iron Wall",
+    "type": "block",
+    "element": "Earth",
+    "power": 68,
+    "rarity": 2,
+    "description": "Une position défensive rigide, impossible à franchir de front."
+  },
+  {
+    "id": "dark_mist",
+    "name": "Dark Mist",
+    "type": "block",
+    "element": "Wind",
+    "power": 81,
+    "rarity": 3,
+    "description": "Un voile de brume sombre qui désoriente l'attaquant avant l'interception."
+  },
+  {
+    "id": "hell_tower",
+    "name": "Hell Tower",
+    "type": "block",
+    "element": "Fire",
+    "power": 86,
+    "rarity": 4,
+    "description": "Une tour de flammes qui s'élève pour intercepter tir et dribble à la fois."
+  },
+  {
+    "id": "guardian_stone",
+    "name": "Guardian Stone",
+    "type": "block",
+    "element": "Earth",
+    "power": 60,
+    "rarity": 1,
+    "description": "Un simple mais solide barrage corporel face à l'attaquant."
+  },
+  {
+    "id": "raging_gale_wall",
+    "name": "Raging Gale Wall",
+    "type": "block",
+    "element": "Wind",
+    "power": 70,
+    "rarity": 2,
+    "description": "Un rideau de vent violent qui repousse le porteur du ballon."
+  },
+  {
+    "id": "god_hand",
+    "name": "God Hand",
+    "type": "catch",
+    "element": "Earth",
+    "power": 92,
+    "rarity": 5,
+    "description": "Une parade légendaire où le gardien semble démultiplier la portée de ses bras."
+  },
+  {
+    "id": "majin_the_hand",
+    "name": "Majin The Hand",
+    "type": "catch",
+    "element": "Earth",
+    "power": 96,
+    "rarity": 5,
+    "description": "L'évolution démoniaque de The Hand, une muraille humaine que rien ne franchit."
+  },
+  {
+    "id": "the_hand",
+    "name": "The Hand",
+    "type": "catch",
+    "element": "Earth",
+    "power": 84,
+    "rarity": 4,
+    "description": "Une parade à deux mains d'une puissance redoutable."
+  },
+  {
+    "id": "fist_of_justice",
+    "name": "Fist of Justice",
+    "type": "catch",
+    "element": "Fire",
+    "power": 78,
+    "rarity": 3,
+    "description": "Un poing enflammé qui repousse le ballon loin des cages."
+  },
+  {
+    "id": "chaos_break_catch",
+    "name": "Chaos Break",
+    "type": "catch",
+    "element": "Wind",
+    "power": 88,
+    "rarity": 4,
+    "description": "Une parade chaotique où le gardien semble se dédoubler pour couvrir tout le but."
+  },
+  {
+    "id": "gigantic_wind_catch",
+    "name": "Gigantic Wind",
+    "type": "catch",
+    "element": "Wind",
+    "power": 74,
+    "rarity": 2,
+    "description": "Une bourrasque défensive qui dévie le tir au dernier instant."
+  },
+  {
+    "id": "kong_gate",
+    "name": "Kong Gate",
+    "type": "catch",
+    "element": "Earth",
+    "power": 90,
+    "rarity": 5,
+    "description": "Une parade titanesque digne d'un roi des singes gardant sa forteresse."
+  },
+  {
+    "id": "emperor_penguin_catch",
+    "name": "Emperor Penguin No. 1",
+    "type": "catch",
+    "element": "Wood",
+    "power": 71,
+    "rarity": 2,
+    "description": "Une glissade glacée qui permet de dévier un tir à ras de terre."
+  },
+  {
+    "id": "dark_gaia_catch",
+    "name": "Dark Gaia",
+    "type": "catch",
+    "element": "Earth",
+    "power": 82,
+    "rarity": 3,
+    "description": "Une parade sombre qui absorbe la puissance du tir adverse."
+  },
+  {
+    "id": "basic_catch",
+    "name": "Basic Catch",
+    "type": "catch",
+    "element": "Wood",
+    "power": 55,
+    "rarity": 1,
+    "description": "Une simple mais fiable réception du ballon à pleines mains."
+  }
+]

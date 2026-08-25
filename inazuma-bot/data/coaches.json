@@ -1,0 +1,134 @@
+[
+  {
+    "id": "hibiki_seigou",
+    "name": "Hibiki Seigou",
+    "team_origin": "Raimon",
+    "bonus": {
+      "technique": 6,
+      "speed": 3
+    },
+    "rarity": 4,
+    "description": "L'ancien gardien légendaire de Raimon, devenu un entraîneur charismatique qui inspire ses joueurs à se dépasser."
+  },
+  {
+    "id": "kudou_michiya",
+    "name": "Kudou Michiya",
+    "team_origin": "Teikoku Gakuen",
+    "bonus": {
+      "kick": 7,
+      "defense": 4
+    },
+    "rarity": 4,
+    "description": "Un entraîneur exigeant et discipliné, architecte de la puissance implacable de Teikoku."
+  },
+  {
+    "id": "kageyama_reiji",
+    "name": "Kageyama Reiji",
+    "team_origin": "Teikoku Gakuen",
+    "bonus": {
+      "kick": 9,
+      "pass": -3
+    },
+    "rarity": 3,
+    "description": "Un entraîneur obsédé par la victoire à tout prix, quitte à sacrifier l'esprit sportif."
+  },
+  {
+    "id": "zanark",
+    "name": "Zanark",
+    "team_origin": "Zeus",
+    "bonus": {
+      "defense": 8,
+      "kick": 2
+    },
+    "rarity": 4,
+    "description": "Un stratège impitoyable venu d'ailleurs, dont la vision du football n'a que faire de l'amitié."
+  },
+  {
+    "id": "kira_hitomiko_coach",
+    "name": "Kira Hitomiko",
+    "team_origin": "Zeus",
+    "bonus": {
+      "technique": 5,
+      "defense": 3
+    },
+    "rarity": 3,
+    "description": "Une entraîneuse froide et calculatrice, formée à une école du football sans concession."
+  },
+  {
+    "id": "otonashi_kageto",
+    "name": "Otonashi Kageto",
+    "team_origin": "Raimon",
+    "bonus": {
+      "pass": 6,
+      "technique": 4
+    },
+    "rarity": 3,
+    "description": "Un ancien joueur devenu mentor, transmettant son sens tactique aux jeunes générations."
+  },
+  {
+    "id": "endou_daisuke",
+    "name": "Endou Daisuke",
+    "team_origin": "Raimon",
+    "bonus": {
+      "technique": 8,
+      "kick": 4
+    },
+    "rarity": 5,
+    "description": "Le père d'Endou Mamoru, dont l'héritage tactique légendaire continue d'inspirer Raimon des décennies plus tard."
+  },
+  {
+    "id": "fifth_sector_director",
+    "name": "Directeur du Secteur V",
+    "team_origin": "Fifth Sector",
+    "bonus": {
+      "defense": 6,
+      "speed": 2
+    },
+    "rarity": 3,
+    "description": "Un dirigeant froid et calculateur, qui voit avant tout le football comme un outil de pouvoir."
+  },
+  {
+    "id": "kudou_fuyuka_coach",
+    "name": "Fuyukai Sensei",
+    "team_origin": "El Dorado",
+    "bonus": {
+      "technique": 7,
+      "defense": 5
+    },
+    "rarity": 4,
+    "description": "Une figure mystérieuse d'El Dorado, dont les méthodes d'entraînement défient la logique du temps."
+  },
+  {
+    "id": "hibiki_seigou_veteran",
+    "name": "Hibiki Seigou (Vétéran)",
+    "team_origin": "Raimon",
+    "bonus": {
+      "speed": 5,
+      "pass": 3
+    },
+    "rarity": 2,
+    "description": "Un vieil entraîneur bourru mais bienveillant, toujours présent pour ses joueurs en difficulté."
+  },
+  {
+    "id": "kira_hitomiko_galaxy",
+    "name": "Amemiya Taiyou (Coach)",
+    "team_origin": "Earth Eleven",
+    "bonus": {
+      "kick": 6,
+      "speed": 4
+    },
+    "rarity": 4,
+    "description": "Un ancien attaquant devenu entraîneur passionné, prêt à défendre la Terre entière par le football."
+  },
+  {
+    "id": "shuu_zaizen_coach",
+    "name": "Zaizen Touko",
+    "team_origin": "Raimon",
+    "bonus": {
+      "pass": 5,
+      "technique": 3
+    },
+    "rarity": 2,
+    "description": "Une jeune manageuse pleine de ressources, dont l'organisation sans faille soutient toute l'équipe."
+  }
+]

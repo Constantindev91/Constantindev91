@@ -1,0 +1,193 @@
+[
+  {
+    "id": "mountain_style",
+    "name": "Style Montagne",
+    "effect": {
+      "defense": 8,
+      "kick": -2
+    },
+    "rarity": 3,
+    "description": "Une tactique défensive inébranlable, aussi solide qu'une montagne, au prix d'une attaque légèrement moins tranchante."
+  },
+  {
+    "id": "sea_style",
+    "name": "Style Océan",
+    "effect": {
+      "technique": 7,
+      "pass": 3,
+      "defense": -3
+    },
+    "rarity": 3,
+    "description": "Un jeu fluide et changeant qui épouse les mouvements de l'adversaire comme des vagues."
+  },
+  {
+    "id": "wolf_pack_formation",
+    "name": "Formation Meute de Loups",
+    "effect": {
+      "speed": 9,
+      "defense": -4
+    },
+    "rarity": 3,
+    "description": "Une pression collective agressive qui traque le porteur du ballon comme une meute affamée."
+  },
+  {
+    "id": "chaos_tornado",
+    "name": "Tornade du Chaos",
+    "effect": {
+      "kick": 10,
+      "technique": 4,
+      "defense": -6
+    },
+    "rarity": 4,
+    "description": "Une tactique offensive extrême qui sacrifie toute prudence pour submerger l'adversaire."
+  },
+  {
+    "id": "iron_wall_formation",
+    "name": "Formation Muraille de Fer",
+    "effect": {
+      "defense": 12,
+      "speed": -3
+    },
+    "rarity": 4,
+    "description": "Un bloc défensif quasiment impénétrable, conçu pour étouffer toute tentative offensive."
+  },
+  {
+    "id": "swallow_formation",
+    "name": "Formation Hirondelle",
+    "effect": {
+      "speed": 10,
+      "pass": -2
+    },
+    "rarity": 2,
+    "description": "Des déplacements rapides et légers inspirés du vol gracieux de l'hirondelle."
+  },
+  {
+    "id": "phoenix_offense",
+    "name": "Attaque du Phénix",
+    "effect": {
+      "kick": 9,
+      "technique": 6,
+      "defense": -8
+    },
+    "rarity": 4,
+    "description": "Une tactique flamboyante qui renaît sans cesse de ses cendres pour submerger le but adverse."
+  },
+  {
+    "id": "gale_force_press",
+    "name": "Pressing Force du Vent",
+    "effect": {
+      "speed": 11,
+      "defense": 2,
+      "kick": -5
+    },
+    "rarity": 3,
+    "description": "Un pressing incessant qui use l'adversaire par une vitesse d'exécution redoutable."
+  },
+  {
+    "id": "gaia_fortress",
+    "name": "Forteresse Gaia",
+    "effect": {
+      "defense": 10,
+      "technique": -2
+    },
+    "rarity": 3,
+    "description": "Une organisation défensive terrienne qui ne laisse jamais le moindre espace libre."
+  },
+  {
+    "id": "frozen_lockdown",
+    "name": "Verrouillage Glacial",
+    "effect": {
+      "defense": 9,
+      "pass": 4,
+      "speed": -4
+    },
+    "rarity": 3,
+    "description": "Une tactique méthodique et froide qui ralentit le rythme de jeu adverse."
+  },
+  {
+    "id": "thunder_counter",
+    "name": "Contre-Attaque Tonnerre",
+    "effect": {
+      "speed": 8,
+      "kick": 6,
+      "defense": -6
+    },
+    "rarity": 4,
+    "description": "Une transition offensive fulgurante qui frappe l'adversaire dès la récupération du ballon."
+  },
+  {
+    "id": "total_football_flow",
+    "name": "Flux du Football Total",
+    "effect": {
+      "pass": 10,
+      "technique": 5,
+      "kick": -3
+    },
+    "rarity": 4,
+    "description": "Une circulation de balle fluide où chaque joueur peut occuper n'importe quel poste."
+  },
+  {
+    "id": "berserker_charge",
+    "name": "Charge Berserker",
+    "effect": {
+      "kick": 12,
+      "defense": -10
+    },
+    "rarity": 3,
+    "description": "Une tactique du tout pour le tout, misant l'intégralité des ressources sur l'attaque."
+  },
+  {
+    "id": "fortress_zero",
+    "name": "Forteresse Zéro",
+    "effect": {
+      "defense": 11,
+      "kick": -4,
+      "speed": -2
+    },
+    "rarity": 2,
+    "description": "Une posture ultra-défensive qui vise à ne concéder absolument aucun tir."
+  },
+  {
+    "id": "comet_rush",
+    "name": "Ruée de la Comète",
+    "effect": {
+      "speed": 12,
+      "technique": -3
+    },
+    "rarity": 3,
+    "description": "Une accélération collective fulgurante qui déborde la défense adverse par la vitesse pure."
+  },
+  {
+    "id": "aurora_control",
+    "name": "Contrôle Aurore",
+    "effect": {
+      "technique": 9,
+      "pass": 4,
+      "speed": -3
+    },
+    "rarity": 4,
+    "description": "Une maîtrise technique élevée qui hypnotise l'adversaire par la précision du jeu."
+  },
+  {
+    "id": "genesis_protocol",
+    "name": "Protocole Genesis",
+    "effect": {
+      "kick": 8,
+      "defense": 5,
+      "pass": -4
+    },
+    "rarity": 5,
+    "description": "Une tactique expérimentale née en laboratoire, équilibrant puissance brute et rigueur défensive."
+  },
+  {
+    "id": "celestial_harmony",
+    "name": "Harmonie Céleste",
+    "effect": {
+      "pass": 8,
+      "technique": 8,
+      "kick": -6
+    },
+    "rarity": 5,
+    "description": "Une synchronisation quasi parfaite entre tous les joueurs, comme guidée par les étoiles."
+  }
+]
